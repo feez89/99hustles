@@ -7,6 +7,7 @@ import HustleCard from '@/components/hustles/HustleCard'
 import EmailCaptureSection from '@/components/sections/EmailCaptureSection'
 import Badge from '@/components/ui/Badge'
 import NewsletterInlineForm from '@/components/forms/NewsletterInlineForm'
+import YouTubeStats from '@/components/episodes/YouTubeStats'
 import { formatDate } from '@/lib/utils'
 import type { Metadata } from 'next'
 
@@ -88,15 +89,18 @@ export default function EpisodePage({ params }: Props) {
         <div className="container-main py-10">
           <div className="max-w-4xl mx-auto">
             {episode.youtubeId ? (
-              <div className="aspect-video rounded-2xl overflow-hidden bg-brand-black">
-                <iframe
-                  src={`https://www.youtube.com/embed/${episode.youtubeId}`}
-                  className="w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  title={episode.title}
-                />
-              </div>
+              <>
+                <div className="aspect-video rounded-2xl overflow-hidden bg-brand-black">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${episode.youtubeId}`}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title={episode.title}
+                  />
+                </div>
+                <YouTubeStats videoId={episode.youtubeId} />
+              </>
             ) : (
               <div className="aspect-video rounded-2xl bg-brand-black flex flex-col items-center justify-center gap-4 border border-white/10">
                 <div className="w-16 h-16 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
@@ -218,7 +222,7 @@ export default function EpisodePage({ params }: Props) {
                     { name: 'YouTube', href: 'https://youtube.com/@99hustlespodcast', emoji: '▶️' },
                     { name: 'Spotify', href: '#', emoji: '🎵' },
                     { name: 'Apple Podcasts', href: '#', emoji: '🎙️' },
-                    { name: 'Amazon Mus)c', href: '#', emoji: '🎧' },
+                    { name: 'Amazon Music', href: '#', emoji: '🎧' },
                   ].map((platform) => (
                     <a
                       key={platform.name}
