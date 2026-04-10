@@ -1,0 +1,530 @@
+import { Hustle } from '@/types'
+
+export const hustles: Hustle[] = [
+  {
+    id: '1',
+    slug: 'freelance-video-editing',
+    title: 'Freelance Video Editing',
+    tagline: 'Turn a laptop and a free trial into a $5K/month service business.',
+    category: 'Creative Services',
+    categorySlug: 'creative-services',
+    startupCost: '$0 – $300',
+    startupCostRange: [0, 300],
+    timeToFirstIncome: '1–3 weeks',
+    skillLevel: 'Beginner',
+    revenuePotential: '$2K – $15K/month',
+    difficulty: 'Easy',
+    description:
+      'Video editing is one of the most in-demand skills online right now. With content creators, brands, and businesses all racing to produce more video, skilled editors are in constant short supply.',
+    whatItIs:
+      'Freelance video editing means editing video content for clients — YouTubers, brands, course creators, podcasters, and businesses — on a per-project or monthly retainer basis. You work remotely, set your own rates, and build recurring income once clients love your work.',
+    howItMakesMoney:
+      'You charge per video (typically $100–$500 depending on length and complexity) or on a retainer (typically $1,000–$5,000/month for a consistent output). The real money is in landing 3–5 ongoing clients who send you work every week.',
+    howToGetStarted: [
+      'Learn the basics with DaVinci Resolve (free) or CapCut — both are industry-standard tools you can learn in 2–4 weeks via YouTube.',
+      'Build a portfolio by editing 3–5 videos for free or cheap to get samples. Reach out to small YouTubers (10K–100K subscribers) who post inconsistently.',
+      'Create a simple offer: "I edit YouTube videos for busy creators — $150/video, delivered in 48 hours." Keep the pitch short and the promise clear.',
+      'Pitch on Twitter/X, Instagram DMs, YouTube comments, and Upwork. Volume is key — send 20–30 pitches per week until you land your first client.',
+      'Deliver exceptional work and ask for referrals. One great client becomes three through word-of-mouth alone.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'DaVinci Resolve',
+        description: 'Professional editing software with a robust free tier. Industry standard.',
+        cost: 'Free',
+        url: 'https://blackmagicdesign.com/products/davinciresolve',
+      },
+      {
+        name: 'CapCut',
+        description: 'Fast, intuitive editor. Great for short-form content and beginners.',
+        cost: 'Free',
+        url: 'https://capcut.com',
+      },
+      {
+        name: 'Frame.io',
+        description: 'Client review and feedback platform. Dramatically speeds up approval cycles.',
+        cost: '$15/month',
+        url: 'https://frame.io',
+      },
+      {
+        name: 'Notion',
+        description: 'Manage client projects, deadlines, and deliverables in one place.',
+        cost: 'Free',
+        url: 'https://notion.so',
+      },
+    ],
+    mistakesToAvoid: [
+      'Charging too little at the start. Low prices attract bad clients, not good ones. Price based on value, not fear.',
+      'Taking every client. Niching down to one type of creator (e.g. business coaches) lets you get faster and charge more.',
+      'Working without contracts. Use a simple one-page agreement for every client from day one.',
+      'Ignoring retention. Getting a new client costs 5x more than keeping an existing one. Always overdeliver.',
+    ],
+    relatedEpisodeSlug: 'building-a-video-editing-agency',
+    relatedHustleSlugs: ['social-media-agency', 'digital-products', 'newsletter-business'],
+    tags: ['freelance', 'creative', 'remote', 'beginner-friendly', 'service'],
+    featured: true,
+    accentColor: '#EC4899',
+    publishDate: '2024-03-10',
+    readTime: '8 min read',
+  },
+  {
+    id: '2',
+    slug: 'newsletter-business',
+    title: 'Newsletter Business',
+    tagline: 'Build an audience that pays you — without an algorithm deciding your reach.',
+    category: 'Content & Media',
+    categorySlug: 'content-media',
+    startupCost: '$0 – $50',
+    startupCostRange: [0, 50],
+    timeToFirstIncome: '1–6 months',
+    skillLevel: 'Beginner',
+    revenuePotential: '$500 – $50K+/month',
+    difficulty: 'Medium',
+    description:
+      'Email newsletters are the most durable media business on the internet. No algorithm. Direct access. Owned audience. The right niche newsletter can generate significant revenue through sponsorships, paid subscriptions, or affiliate deals.',
+    whatItIs:
+      "A newsletter business is a regular email publication — daily, weekly, or biweekly — sent directly to subscribers' inboxes. You own your list, control your content, and build deep loyalty that no social platform can take from you. Think Morning Brew, The Hustle, or The Milk Road — but in your niche.",
+    howItMakesMoney:
+      'Revenue models include: sponsorships ($20–$50 CPM, meaning per 1,000 subscribers), paid tiers ($5–$15/month), affiliate commissions on recommended products, and selling your own products to a warm audience. A 10,000-subscriber list with 40% open rates can generate $2,000–$8,000/month in sponsorships alone.',
+    howToGetStarted: [
+      'Pick a specific niche with an audience willing to pay attention: personal finance, local business, a specific hobby, industry news, etc.',
+      "Start on Beehiiv (recommended) or ConvertKit — both have generous free tiers to grow your first 1,000 subscribers without spending a dollar.",
+      'Commit to a publishing schedule and don\'t break it. Consistency builds trust. One newsletter a week is plenty to start.',
+      'Grow your list: Tweet your best insights, post newsletter snippets on Instagram, use referral programs (Beehiiv has this built in), and cross-promote with other newsletters.',
+      'Once you hit 1,000 subscribers, reach out to potential sponsors in your niche directly. You don\'t need 100K subscribers to land your first sponsorship deal.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'Beehiiv',
+        description: 'Best-in-class newsletter platform built by ex-Morning Brew team. Has referrals, monetization, and analytics built in.',
+        cost: 'Free up to 2,500 subscribers',
+        url: 'https://beehiiv.com',
+      },
+      {
+        name: 'ConvertKit',
+        description: 'Solid alternative with excellent automation and creator-focused features.',
+        cost: 'Free up to 10,000 subscribers',
+        url: 'https://convertkit.com',
+      },
+      {
+        name: 'Typefully',
+        description: 'Write and schedule Twitter/X threads to drive newsletter subscribers.',
+        cost: 'Free / $12.50 per month',
+        url: 'https://typefully.com',
+      },
+    ],
+    mistakesToAvoid: [
+      'Trying to be too broad. "Business news" is saturated. "What operators of $1M–$10M landscaping businesses need to know" is a goldmine.',
+      'Quitting before 1,000 subscribers. Growth is slow at the start and fast at the end. Most people quit during the slow part.',
+      'Not collecting the email from day one. Even if your newsletter doesn\'t exist yet, start building the list.',
+      'Only writing. The best newsletter writers also distribute aggressively across social channels.',
+    ],
+    relatedEpisodeSlug: 'newsletter-monetization-playbook',
+    relatedHustleSlugs: ['freelance-video-editing', 'digital-products', 'faceless-youtube-channel'],
+    tags: ['content', 'writing', 'audience', 'email', 'media'],
+    featured: true,
+    accentColor: '#7C3AED',
+    publishDate: '2024-02-20',
+    readTime: '10 min read',
+  },
+  {
+    id: '3',
+    slug: 'faceless-youtube-channel',
+    title: 'Faceless YouTube Channel',
+    tagline: "Make money on YouTube without ever showing your face — here's the exact playbook.",
+    category: 'Content & Media',
+    categorySlug: 'content-media',
+    startupCost: '$0 – $200',
+    startupCostRange: [0, 200],
+    timeToFirstIncome: '3–8 months',
+    skillLevel: 'Intermediate',
+    revenuePotential: '$1K – $30K+/month',
+    difficulty: 'Medium',
+    description:
+      "Faceless YouTube channels are one of the fastest-growing content formats. By combining voiceovers, stock footage, and smart scripting, creators are building multi-million-view channels — and serious ad revenue — without ever appearing on camera.",
+    whatItIs:
+      'A faceless YouTube channel uses narration, stock footage, AI tools, and strategic topics to generate views and ad revenue without the creator appearing on screen. Popular niches include true crime, finance breakdowns, history, tech reviews, and motivational content. Channels in these niches regularly hit 100K–1M subscribers.',
+    howItMakesMoney:
+      'Primary revenue is YouTube AdSense (typically $2–$8 CPM, or per 1,000 views). At 500K monthly views, that\'s $1,000–$4,000/month just from ads. Add sponsorships, affiliate deals, and merchandise, and channels with engaged audiences earn significantly more. The model scales because you can batch-produce content and bring on editors.',
+    howToGetStarted: [
+      'Pick a niche that you can produce content in consistently: finance, history, true crime, AI news, productivity. Make sure there are successful channels already in the space — it proves the audience exists.',
+      'Study the top 5 channels in your niche for 2 weeks. Note thumbnail style, video length, title formulas, and comment sections.',
+      'Script your first video using a clear structure: hook (first 30 seconds must hook the viewer), story/content, and call to action.',
+      'Use ElevenLabs or Murf for voiceovers. Source footage from Pexels, Pixabay, or Storyblocks. Edit in DaVinci Resolve or CapCut.',
+      'Publish consistently — 1–2 videos per week minimum. The algorithm rewards channels that post regularly. Most channels take 3–6 months to hit monetization (1,000 subscribers + 4,000 watch hours).',
+    ],
+    toolsNeeded: [
+      {
+        name: 'ElevenLabs',
+        description: 'AI voiceover tool that generates realistic, natural-sounding narration.',
+        cost: 'Free / $5–$22 per month',
+        url: 'https://elevenlabs.io',
+      },
+      {
+        name: 'DaVinci Resolve',
+        description: 'Free professional editing software. Used by industry pros worldwide.',
+        cost: 'Free',
+        url: 'https://blackmagicdesign.com',
+      },
+      {
+        name: 'Pexels / Pixabay',
+        description: 'Free stock footage libraries with thousands of HD and 4K clips.',
+        cost: 'Free',
+        url: 'https://pexels.com',
+      },
+      {
+        name: 'VidIQ',
+        description: 'YouTube SEO tool to find high-traffic, low-competition video topics.',
+        cost: 'Free / $7.50 per month',
+        url: 'https://vidiq.com',
+      },
+    ],
+    mistakesToAvoid: [
+      'Picking a niche you\'ll burn out on. You\'re making 50+ videos. Make sure you actually enjoy the topic.',
+      'Weak thumbnails. On YouTube, the thumbnail is an ad for your video. Invest time here or pay a designer.',
+      'Ignoring audience retention. YouTube ranks videos based on how long viewers watch. A 70%+ retention rate is excellent.',
+      'Giving up at 10 videos. Most successful faceless channels found traction at video 30–60. Persistence wins.',
+    ],
+    relatedEpisodeSlug: 'faceless-youtube-to-100k',
+    relatedHustleSlugs: ['newsletter-business', 'digital-products', 'freelance-video-editing'],
+    tags: ['youtube', 'content', 'passive', 'media', 'faceless'],
+    featured: true,
+    accentColor: '#EF4444',
+    publishDate: '2024-01-15',
+    readTime: '9 min read',
+  },
+  {
+    id: '4',
+    slug: 'print-on-demand',
+    title: 'Print on Demand',
+    tagline: 'Design once. Sell forever. No inventory, no warehouse, no risk.',
+    category: 'E-Commerce',
+    categorySlug: 'ecommerce',
+    startupCost: '$0 – $100',
+    startupCostRange: [0, 100],
+    timeToFirstIncome: '2–8 weeks',
+    skillLevel: 'Beginner',
+    revenuePotential: '$500 – $20K/month',
+    difficulty: 'Easy',
+    description:
+      'Print on demand lets you sell custom-designed merchandise — t-shirts, mugs, hoodies, phone cases, wall art — without ever touching inventory. When someone orders, a third-party company prints and ships directly to the customer.',
+    whatItIs:
+      'Print on demand (POD) is an e-commerce model where you upload designs to a platform (Printful, Printify, Redbubble), list them in your store or marketplace, and earn the margin between the retail price and the base print cost. When a customer orders, the POD company handles printing and shipping entirely.',
+    howItMakesMoney:
+      'You set your retail price above the base cost. A t-shirt that costs $12 to print and ship can sell for $28–$35, netting you $16–$23 per sale. Volume is the game — a store with 5 sales per day averages $2,400–$3,500/month in profit. Top POD sellers on Etsy generate $10K–$80K/month from well-positioned niche stores.',
+    howToGetStarted: [
+      'Pick a profitable niche. The key is specificity: "nurse humor," "beekeeping lifestyle," "dog mom gifts," or "small business owner quotes" all outperform generic designs.',
+      'Create designs using Canva (free), Adobe Illustrator, or hire designers on Fiverr for $5–$30 per design. You don\'t need to be an artist.',
+      'Sign up for Printful or Printify and connect to your Etsy shop or Shopify store. List your first 10–20 products.',
+      'Optimize your Etsy listings with strong keywords, multiple product mockups, and competitive pricing.',
+      'Study best-sellers in your niche using Everbee or Marmalead to understand what designs and products are actually generating sales.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'Printify',
+        description: 'Best pricing and largest catalog. Connects to Etsy, Shopify, and more.',
+        cost: 'Free / $29/month for Premium (recommended)',
+        url: 'https://printify.com',
+      },
+      {
+        name: 'Canva Pro',
+        description: 'Design tool with thousands of templates and a simple learning curve.',
+        cost: 'Free / $13/month Pro',
+        url: 'https://canva.com',
+      },
+      {
+        name: 'Everbee',
+        description: 'Etsy research tool to find profitable niches and spy on competitors.',
+        cost: 'Free / $8/month',
+        url: 'https://everbee.io',
+      },
+      {
+        name: 'Etsy',
+        description: 'Largest marketplace for POD products with 100M+ buyers.',
+        cost: '$0.20 per listing',
+        url: 'https://etsy.com',
+      },
+    ],
+    mistakesToAvoid: [
+      'Creating generic designs. "Coffee lover" mugs compete with millions of listings. "ICU nurse who runs on caffeine and chaos" mugs sell.',
+      'Neglecting mockup quality. Professional-looking mockups are the difference between a click and a scroll.',
+      'Underpricing. Many beginners underprice and kill their margins. Research competitor pricing and price at the higher end of the range.',
+      'Only listing on one platform. Cross-list to Etsy, Redbubble, and your own Shopify store to maximize exposure.',
+    ],
+    relatedEpisodeSlug: 'print-on-demand-80k-year',
+    relatedHustleSlugs: ['digital-products', 'dropshipping', 'newsletter-business'],
+    tags: ['ecommerce', 'passive', 'design', 'etsy', 'beginner-friendly'],
+    featured: false,
+    accentColor: '#0EA5E9',
+    publishDate: '2024-01-28',
+    readTime: '8 min read',
+  },
+  {
+    id: '5',
+    slug: 'social-media-agency',
+    title: 'Social Media Management Agency',
+    tagline: 'Small businesses are drowning in content needs. Step in and get paid.',
+    category: 'Services & Consulting',
+    categorySlug: 'services-consulting',
+    startupCost: '$0 - $500',
+    startupCostRange: [0, 500],
+    timeToFirstIncome: '2–4 weeks',
+    skillLevel: 'Intermediate',
+    revenuePotential: '$3K – $30K/month',
+    difficulty: 'Medium',
+    description:
+      'Social Media Management Agencies (SMMAs) help local businesses and brands manage their social presence. You handle the strategy, content creation, and posting — they focus on running their business.',
+    whatItIs:
+      'An SMMA is a service business where you manage social media accounts for clients — creating content, writing captions, scheduling posts, engaging with followers, and reporting on performance. You can start solo and scale by bringing in contractors as you grow.',
+    howItMakesMoney:
+      'Monthly retainers are the standard model. Entry-level packages start at $500–$1,000/month. Established agencies charge $2",500–$10,000+/month per client. Landing just 5 clients at $1,500/month generates $7,500/month in recurring revenue — life-changing for most people.',
+    howToGetStarted: [
+      'Identify your target client: local restaurants, real estate agents, dentists, gyms, and coaches all need consistent social content but rarely have the time.',
+      'Build a portfolio by offering 30-day free or discounted trials to 2–3 local businesses. Document the results meticulously.',
+      'Create tiered service packages: Basic ($500/month: 12 posts, no ads), Standard ($1,500/month: daily posting + story content), Premium ($3,000/month: full management + paid ad strategy).',
+      'Reach clients through cold DMs, cold email, local networking events, LinkedIn, and asking for referrals. One good referral partner (like a web designer) can send you multiple clients per month.',
+      'Use Notion or ClickUp to manage client workflows. Use Metricool or Later for scheduling and reporting.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'Metricool',
+        description: 'Schedule, analyze, and report on social media accounts across all platforms.',
+        cost: 'Free / $18/month',
+        url: 'https://metricool.com',
+      },
+      {
+        name: 'Canva Pro',
+        description: 'Create on-brand content quickly for multiple clients.',
+        cost: '$13/month',
+        url: 'https://canva.com',
+      },
+      {
+        name: 'ClickUp',
+        description: 'Project management for client deliverables, content calendars, and deadlines.',
+        cost: 'Free',
+        url: 'https://clickup.com',
+      },
+      {
+        name: 'HubSpot CRM',
+        description: 'Track leads and manage client relationships as your agency scales.',
+        cost: 'Free',
+        url: 'https://hubspot.com',
+      },
+    ],
+    mistakesToAvoid: [
+      'Working without contracts. A clear contract protects both you and the client. Use one every time.',
+      'Undercharging. $500/month sounds like a lot until you realize managing a client takes 20+ hours/month. Price accordingly.',
+      'Saying yes to every niche. Specializing in one industry (e.g., restaurants, real estate) makes you far easier to market and charge more for.',
+      'Trying to manage 10 clients solo. Hire a junior content creator or virtual assistant once you hit $5K/month in recurring revenue.',
+    ],
+    relatedEpisodeSlug: 'building-a-video-editing-agency',
+    relatedHustleSlugs: ['freelance-video-editing', 'newsletter-business', 'digital-products'],
+    tags: ['agency', 'services', 'social media', 'client work', 'scalable'],
+    featured: true,
+    accentColor: '#10B981',
+    publishDate: '2024-02-05',
+    readTime: '9 min read',
+  },
+  {
+    id: '6',
+    slug: 'digital-products',
+    title: 'Selling Digital Products',
+    tagline: 'Package what you know into files that sell while you sleep.',
+    category: 'Digital Products',
+    categorySlug: 'digital-products',
+    startupCost: '$0 - $150',
+    startupCostRange: [0, 150],
+    timeToFirstIncome: '1–4 weeks',
+    skillLevel: 'Beginner',
+    revenuePotential: '$1K – $100K+/month',
+    difficulty: 'Easy',
+    description:
+      'Digital products — templates, ebooks, courses, spreadsheets, presets, and guides — are the highest-margin business model on the internet. You create them once and sell them infinitely with zero additional cost.',
+    whatItIs:
+      'A digital product is any file-based asset that delivers value to a buyer: a Notion template, a spreadsheet, a PDF guide, a Canva template pack, a Lightroom preset, an email swipe file. Once created, it lives in a marketplace or your own store and generates passive income with no inventory or shipping.',
+    howItMakesMoney:
+      'Products typically sell for $9–$997+ depending on the depth and transformation offered. A $27 Notion template that generates 5 sales per day nets $3"645/month. A $297 business toolkit that sells 20 copies/month nets $5,940/month. Because margins are 95%+, even modest sales generate meaningful income.',
+    howToGetStarted: [
+      'Identify what you know that others want to learn or what systems/tools others want access to. Think: skills from your job, a system you built, or a process you\'ve refined.',
+      'Create your first product using tools you already have: Notion, Canva, Google Sheets, or a simple PDF. Keep it focused and high-quality.',
+      'List on Gumroad, Lemon Squeezy, or Etsy. Set up a simple product page with a clear value proposition, mockups, and testimonials (if available).',
+      'Promote through social media, especially Twitter/X and TikTok where product creators build audiences quickly. Share behind-the-scenes, tutorials, and proof of results.',
+      'Collect emails of buyers and non-buyers. Your list is the most valuable asset you own — it\'s how you launch your next product to an already warm audience.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'Gumroad',
+        description: 'The simplest way to sell digital products online. Zero upfront cost.',
+        cost: '10% transaction fee (free plan)',
+        url: 'https://gumroad.com',
+      },
+      {
+        name: 'Lemon Squeezy',
+        description: 'Handles payments, VAT, and licensing. Better for global sales.',
+        cost: '5% + $0.50 per transaction',
+        url: 'https://lemonsqueezy.com',
+      },
+      {
+        name: 'Canva',
+        description: 'Create professional ebooks, guide PDFs, and template packs.',
+        cost: 'Free / $13/month Pro',
+        url: 'https://canva.com',
+      },
+      {
+        name: 'Notion',
+        description: 'Build Notion templates and dashboards that customers duplicate into their workspaces.',
+        cost: 'Free',
+        url: 'https://notion.so',
+      },
+    ],
+    mistakesToAvoid: [
+      'Making products nobody asked for. Validate first — look at what people are already buying on Gumroad, Etsy, or Twitter.',
+      'Underpricing. A $7 product and a $47 product take the same time to make. Price for the value delivered, not the file size.',
+      'Only listing and waiting. Distribution is the business. Promote aggressively, especially at launch.',
+      'Skipping the email list. Every buyer should go on your list. Your next launch will generate 30–50% of its revenue from existing customers.',
+    ],
+    relatedEpisodeSlug: 'newsletter-monetization-playbook',
+    relatedHustleSlugs: ['newsletter-business', 'faceless-youtube-channel', 'print-on-demand'],
+    tags: ['passive income', 'digital', 'templates', 'ebook', 'beginner-friendly'],
+    featured: false,
+    accentColor: '#F59E0B',
+    publishDate: '2024-03-01',
+    readTime: '8 min read',
+  },
+  {
+    id: '7',
+    slug: 'dropshipping',
+    title: 'Dropshipping',
+    tagline: 'Run an e-commerce store without touching a single product.',
+    category: 'E-Commerce',
+    categorySlug: 'ecommerce',
+    startupCost: '$200 – $1,000',
+    startupCostRange: [200, 1000],
+    timeToFirstIncome: '2–6 weeks',
+    skillLevel: 'Intermediate',
+    revenuePotential: '$1K – $50K+/month',
+    difficulty: 'Medium',
+    description:
+      'Dropshipping is an e-commerce model where you sell products you never stock. When a customer orders, your supplier ships directly to them. Your job is marketing, branding, and customer experience.',
+    whatItIs:
+      'You build a Shopify store, source products from suppliers on DSers or AutoDS, set your retail price higher than the supplier cost, run ads or SEO to drive traffic, and keep the margin when orders roll in. The business lives or dies on your ability to find winning products and profitable marketing channels.',
+    howItMakesMoney:
+      'Typical margins range from 20–50%. A product that costs $8 from your supplier might sell for $29.99, netting $21.99 before ad spend. Once you find a winning product and nail your cost per acquisition (CPA) on Meta or TikTok ads, the business scales fast. Many dropshippers run $50K–$500K/month in revenue at steady-state margins of 15–30%.',
+    howToGetStarted: [
+      'Research winning products using tools like Minea, AdSpy, or TikTok'\'s Creative Center. Look for products with clear pain points, visual demonstrations, and a "wow factor."',
+      'Build your Shopify store with a professional theme (Dawn is free and excellent). Brand it properly — Name, logo, color palette.',
+      'Source from AliExpress via DSers, or use domestic suppliers (US-based warehouses via AutoDS) for faster shipping.',
+      'Run TikTok organic or paid ads to test products quickly. Start with $20–$50/day on ads and cut fast if it\'s not working.',
+      'When a product shows profitability (positive ROAS after 3–5 days of testing), scale your ad spend aggressively.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'Shopify',
+        description: 'The best e-commerce platform for dropshipping. Integrates with everything.',
+        cost: '$39/month',
+        url: 'https://shopify.com',
+      },
+      {
+        name: 'DSers',
+        description: 'AliExpress dropshipping tool for order automation and supplier management.',
+        cost: 'Free / $19.90/month',
+        url: 'https://dsers.com',
+      },
+      {
+        name: 'Minea',
+        description: 'Product and competitor ad research tool. Find winning products faster.',
+        cost: '$49/month',
+        url: 'https://minea.com',
+      },
+    ],
+    mistakesToAvoid: [
+      'Selling generic products with no differentiation. Branding is everything — people pay for confidence and experience, not just a product.',
+      'Expecting passive income from the start. Dropshipping requires active management of ads, suppliers, and customer service.',
+      'Using slow AliExpress shipping without being transparent about delivery times. This is the #1 cause of chargebacks.',
+      'Not building an email list. Retargeting and email marketing are where the real margins are. Set these up from day one.',
+    ],
+    relatedEpisodeSlug: 'truth-about-dropshipping',
+    relatedHustleSlugs: ['print-on-demand', 'digital-products', 'social-media-agency'],
+    tags: ['ecommerce', 'shopify', 'ads', 'product', 'scalable'],
+    featured: false,
+    accentColor: '#0EA5E9',
+    publishDate: '2024-02-12',
+    readTime: '10 min read',
+  },
+  {
+    id: '8',
+    slug: 'amazon-fba',
+    title: 'Amazon FBA',
+    tagline: "Let Amazon's logistics empire work for your brand.",
+    category: 'E-Commerce',
+    categorySlug: 'ecommerce',
+    startupCost: '$2,000 - $10,000',
+    startupCostRange: [2000, 10000],
+    timeToFirstIncome: '3–6 months',
+    skillLevel: 'Advanced',
+    revenuePotential: '$5K – $200K+/month',
+    difficulty: 'Hard',
+    description:
+      "Amazon FBA (Fulfillment by Amazon) lets you sell physical products on Amazon's marketplace while Amazon handles storage, packing, and shipping. It's a higher-capital business with outsized potential returns.",
+    whatItIs:
+      "You source a private-label product (usually from China via Alibaba), ship inventory to Amazon's warehouses, and Amazon lists, stores, and ships the product when it sells. You manage the listing, PPC ads, reviews, and brand positioning. Amazon handles the rest.",
+    howItMakesMoney:
+      "Successful FBA sellers target 25–40% net margins. A product that retails for $35 might cost $8 to manufacture, $4 to ship to Amazon, and $7–$10 in Amazon fees — leaving $13–$16 in profit per unit. At 200 units sold per month, that's $2,600–$3,200/month from one SKU. Scale to 5 products and you have a serious business.",
+    howToGetStarted: [
+      "Research products using Helium 10 or Jungle Scout. Look for products with $10K–$50K/month in category sales, fewer than 300 reviews in top listings, and a potential retail price of $25–$60.",
+      "Find manufacturers on Alibaba. Order 3–5 sample units from shortlisted suppliers. Negotiate on price only after validating quality.",
+      "Create your Amazon Seller Central account and your private label brand. Get a professional product logo, packaging design, and A+ content from day one.",
+      "Ship your first order to an Amazon FBA warehouse. Plan for 3–5 months from order placement to first sale.",
+      "Launch with a keyword-targeted PPC campaign and an initial review-generation strategy (email sequences via Jungle Scout). Rank, review, and repeat.",
+    ],
+    toolsNeeded: [
+      {
+        name: 'Helium 10',
+        description: "All-in-one Amazon seller suite: product research, keyword tracking, listing optimization.",
+        cost: "$39–$229/month",
+        url: "https://helium10.com",
+      },
+      {
+        name: 'Alibaba',
+        description: "Largest marketplace to find and vet Chinese manufacturers for private label products.",
+        cost: "Free",
+        url: "https://alibaba.com",
+      },
+      {
+        name: 'Amazon Seller Central',
+        description: "Your seller dashboard for listings, inventory, PPC campaigns, and payouts.",
+        cost: "$39.99/month",
+        url: "https://sellercentral.amazon.com",
+      },
+    ],
+    mistakesToAvoid: [
+      "Choosing a product you like vs. one the data supports. Emotion kills FBA businesses.",
+      "Under-capitalizing. You need enough inventory to never go out of stock. Stockouts destroy rankings.",
+      "Ignoring listing quality. Your title, bullets, images, and A+ content are your sales pitch to millions of shoppers.",
+      "Not accounting for all fees. Amazon takes 15% referral + FBA fees + storage. Model your true margin before you order inventory.",
+    ],
+    relatedEpisodeSlug: 'truth-about-dropshipping',
+    relatedHustleSlugs: ['dropshipping', 'print-on-demand', 'digital-products'],
+    tags: ['amazon', 'fba', 'ecommerce', 'physical products', 'advanced'],
+    featured: false,
+    accentColor: '#F59E0B',
+    publishDate: '2024-03-05',
+    readTime: '11 min read',
+  },
+]
+
+export function getHustleBySlug(slug: string): Hustle | undefined {
+  return hustles.find((h) => h.slug === slug)
+}
+
+export function getFeaturedHustles(): Hustle[] {
+  return hustles.filter((h) => h.featured)
+}
+
+export function getRelatedHustles(slugs: string[]): Hustle[] {
+  return hustles.filter((h) => slugs.includes(h.slug)).slice(0, 3)
+}
+
+export function getHustlesByCategory(categorySlug: string): Hustle[] {
+  return hustles.filter((h) => h.categorySlug === categorySlug)
+}
