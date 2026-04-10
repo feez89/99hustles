@@ -7,6 +7,7 @@ import QuickStatsPanel from '@/components/hustles/QuickStatsPanel'
 import HustleCard from '@/components/hustles/HustleCard'
 import EpisodeCard from '@/components/episodes/EpisodeCard'
 import EmailCaptureSection from '@/components/sections/EmailCaptureSection'
+import NewsletterInlineForm from '@/components/forms/NewsletterInlineForm'
 import Badge from '@/components/ui/Badge'
 import { formatDate } from '@/lib/utils'
 import type { Metadata } from 'next'
@@ -135,22 +136,7 @@ export default function HustleBreakdownPage({ params }: Props) {
               <p className="text-white/50 text-sm mb-5">
                 Free weekly breakdowns. No spam. Just the playbooks.
               </p>
-              <form
-                className="flex flex-col sm:flex-row gap-3 max-w-sm mx-auto"
-                onSubmit={(e) => e.preventDefault()}
-              >
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-white/50"
-                />
-                <button
-                  type="submit"
-                  className="btn-primary text-xs whitespace-nowrap"
-                >
-                  Subscribe
-                </button>
-              </form>
+              <NewsletterInlineForm layout="row" />
             </div>
 
             {/* How to Get Started */}
