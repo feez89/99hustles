@@ -52,7 +52,7 @@ export default function EmailCaptureSection({
         isDark && 'bg-brand-black',
         !isDark && !isGold && 'bg-brand-cream',
         isGold && 'bg-white',
-        classNama
+        className
       )}
     >
       <div className="container-main">
