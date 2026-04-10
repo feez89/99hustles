@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, Play, Clock, Users } from 'lucide-react'
 import { Episode } from '@/types'
 import { cn } from '@/lib/utils'
@@ -37,21 +38,31 @@ export default function EpisodeCard({
           featured ? 'md:w-72 aspect-video md:aspect-auto' : 'aspect-video',
         )}
       >
-        <div
-          className={cn(
-            'w-full h-full flex flex-col items-center justify-center',
-            isDark ? 'bg-[#1C1C1C]' : 'bg-neutral-100',
-          )}
-        >
-          <span
+        {episode.youtubeId && episode.youtubeId !== 'dQw4w9WgXcQ' ? (
+          <Image
+            src={`https://i.ytimg.com/vi/${episode.youtubeId}/hqdefault.jpg`}
+            alt={episode.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
+          />
+        ) : (
+          <div
             className={cn(
-              'font-display font-bold text-5xl select-none leading-none',
-              isDark ? 'text-white/[0.05]' : 'text-black/[0.05]',
+              'w-full h-full flex flex-col items-center justify-center',
+              isDark ? 'bg-[#1C1C1C]' : 'bg-neutral-100',
             )}
           >
-            99
-          </span>
-        </div>
+            <span
+              className={cn(
+                'font-display font-bold text-5xl select-none leading-none',
+                isDark ? 'text-white/[0.05]' : 'text-black/[0.05]',
+              )}
+            >
+              99
+            </span>
+          </div>
+        )}
 
         {/* Play overlay */}
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black/20">
