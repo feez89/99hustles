@@ -28,7 +28,7 @@ const paths = [
   },
   {
     icon: Users,
-    emoji: '🔙️',
+    emoji: '🎙️',
     headline: 'Learn from Real Founders',
     description:
       'No motivational fluff. Just deep-dive podcast conversations with people building real income — including the mistakes, pivots, and actual numbers.',
