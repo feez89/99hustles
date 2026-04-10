@@ -411,7 +411,7 @@ export const hustles: Hustle[] = [
     howItMakesMoney:
       'Typical margins range from 20–50%. A product that costs $8 from your supplier might sell for $29.99, netting $21.99 before ad spend. Once you find a winning product and nail your cost per acquisition (CPA) on Meta or TikTok ads, the business scales fast. Many dropshippers run $50K–$500K/month in revenue at steady-state margins of 15–30%.',
     howToGetStarted: [
-      'Research winning products using tools like Minea, AdSpy, or TikTok'\'s Creative Center. Look for products with clear pain points, visual demonstrations, and a "wow factor."',
+      'Research winning products using tools like Minea, AdSpy, or TikTok\'s Creative Center. Look for products with clear pain points, visual demonstrations, and a "wow factor."',
       'Build your Shopify store with a professional theme (Dawn is free and excellent). Brand it properly — Name, logo, color palette.',
       'Source from AliExpress via DSers, or use domestic suppliers (US-based warehouses via AutoDS) for faster shipping.',
       'Run TikTok organic or paid ads to test products quickly. Start with $20–$50/day on ads and cut fast if it\'s not working.',
