@@ -29,12 +29,12 @@ export default function SectionHeading({
         className,
       )}
     >
-      <div className={cn('max-w-xl', align === 'center' && 'mx-auto')}>
+      <div className={cn('max-w-2xl', align === 'center' && 'mx-auto')}>
         {eyebrow && (
           <p className={cn('mb-3', isDark ? 'eyebrow' : 'eyebrow-dark')}>
             {eyebrow}
           </p>
-         )}
+        )}
         <h2
           className={cn(
             'font-display font-bold leading-tight tracking-tight text-balance',
