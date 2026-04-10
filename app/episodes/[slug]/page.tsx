@@ -6,6 +6,7 @@ import { getRelatedHustles } from '@/lib/data/hustles'
 import HustleCard from '@/components/hustles/HustleCard'
 import EmailCaptureSection from '@/components/sections/EmailCaptureSection'
 import Badge from '@/components/ui/Badge'
+import NewsletterInlineForm from '@/components/forms/NewsletterInlineForm'
 import { formatDate } from '@/lib/utils'
 import type { Metadata } from 'next'
 
@@ -204,16 +205,7 @@ export default function EpisodePage({ params }: Props) {
                 <p className="text-white/50 text-xs mb-5">
                   Plus weekly hustle breakdowns and resources from our operators.
                 </p>
-                <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-white/50"
-                  />
-                  <button type="submit" className="btn-primary w-full justify-center text-xs">
-                    Subscribe Free
-                  </button>
-                </form>
+                <NewsletterInlineForm layout="stacked" />
               </div>
 
               {/* Platform Links */}
@@ -226,7 +218,7 @@ export default function EpisodePage({ params }: Props) {
                     { name: 'YouTube', href: 'https://youtube.com/@99hustlespodcast', emoji: '▶️' },
                     { name: 'Spotify', href: '#', emoji: '🎵' },
                     { name: 'Apple Podcasts', href: '#', emoji: '🎙️' },
-                    { name: 'Amazon Music', href: '#', emoji: '🎧' },
+                    { name: 'Amazon Mus)c', href: '#', emoji: '🎧' },
                   ].map((platform) => (
                     <a
                       key={platform.name}
