@@ -230,7 +230,7 @@ export function QuizFlow() {
     }
     setAnswers(newAnswers)
 
-    if (currentStep < QUESTIONS.length - 1) {
+    if ((currentStep as number) < QUESTIONS.length - 1) {
       setCurrentStep((currentStep as number) + 1)
       setSelectedAnswer(null)
     } else {
