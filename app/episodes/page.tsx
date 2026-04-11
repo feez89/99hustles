@@ -27,7 +27,7 @@ export default function EpisodesPage() {
               <h1 className="font-display font-bold text-white text-4xl md:text-5xl lg:text-6xl leading-tight mb-5">
                 Real conversations.
                 <br />
-                <span className="text-white">Real operators.</span>
+                <span className="text-white">Real hustlers.</span>
               </h1>
               <p className="text-white/60 text-lg leading-relaxed">
                 Long-form deep dives into how specific people built specific income streams — with
@@ -58,7 +58,7 @@ export default function EpisodesPage() {
             {/* Episode count */}
             <div className="flex items-center gap-6 bg-white/5 border border-white/10 rounded-2xl p-6">
               <div className="text-center">
-                <p className="font-display font-bold text-white text-3xl">{episodes.length}+</p>
+                <p className="font-display font-bold text-white text-3xl">40+</p>
                 <p className="text-white/40 text-xs mt-1">Episodes</p>
               </div>
               <div className="w-px h-12 bg-white/10" />
