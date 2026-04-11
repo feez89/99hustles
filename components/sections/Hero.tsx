@@ -1,107 +1,79 @@
-import Link from 'next/link'
-import { ArrowRight, Play, TrendingUp, Users, Mic } from 'lucide-react'
-
-const stats = [
-  { icon: TrendingUp, value: '99+', label: 'Hustles Documented' },
-  { icon: Mic, value: '50+', label: 'Real Episodes' },
-  { icon: Users, value: '10K+', label: 'Builders in the Community' },
-]
+import Link from 'next/link';
+import { ArrowRight, TrendingUp, Users, Mic } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative bg-brand-black overflow-hidden pt-16">
-      {/* Background texture */}
-      <div className="absolute inset-0 opacity-20">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              'radial-gradient(circle at 25% 60%, rgba(201,168,76,0.15) 0%, transparent 50%), radial-gradient(circle at 75% 20%, rgba(201,168,76,0.08) 0%, transparent 45%)',
-          }}
-        />
-      </div>
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:48px_48px]" />
+    <section className="relative w-full overflow-hidden bg-brand-black pt-20 pb-16 md:pt-32 md:pb-24">
+      {/* Grid texture background */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:50px_50px] pointer-events-none" />
 
-      <div className="relative container-main pt-16 pb-0 md:pt-24 md:pb-0">
-        <div className="max-w-5xl">
-          {/* Eyebrow */}
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-            <span className="text-white text-xs font-semibold uppercase tracking-widest">
-              New episode every week
-            </span>
-          </div>
+      {/* Gold radial gradient accent */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-20 pointer-events-none"
+        style={{ background: 'radial-gradient(circle, #C9A84C 0%, transparent 70%)' }}
+      />
 
-          {/* Main Headline */}
-          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-none tracking-tight text-balance">
-            Real People.
-            <br />
-            <span className="text-gradient-gold">Real Income.</span>
-            <br />
-            Real Breakdowns.
-          </h1>
-
-          {/* Subheadline */}
-          <p className="mt-7 text-white/60 text-lg md:text-xl max-w-2xl leading-relaxed">
-            We document exactly how everyday people build income streams, side hustles, and
-            businesses — with the numbers, the tools, and the truth about what it actually takes.
-          </p>
-
-          {/* CTAs */}
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/hustles"
-              className="btn-primary text-sm md:text-base px-6 py-3.5 md:px-8 md:py-4 rounded-xl shadow-sm"
-            >
-              Explore the Hustle Library
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-            <Link
-              href="/episodes"
-              className="inline-flex items-center gap-2.5 text-white/80 hover:text-white border border-white/20 hover:border-white/40 rounded-xl px-6 py-3.5 md:px-8 md:py-4 text-sm md:text-base font-semibold transition-all duration-200"
-            >
-              <span className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
-                <Play className="w-3.5 h-3.5 fill-current" />
-              </span>
-              Listen to the Podcast
-            </Link>
-          </div>
-
-          {/* Trust strip */}
-          <div className="mt-14 flex items-center gap-3">
-            <div className="flex -space-x-2">
-              {['#C9A84C', '#10B981', '#7C3AED', '#EC4899', '#0EA5E9'].map((color, i) => (
-                <div
-                  key={i}
-                  className="w-8 h-8 rounded-full border-2 border-brand-black"
-                  style={{ backgroundColor: color + '40', borderColor: color }}
-                />
-              ))}
-            </div>
-            <p className="text-white/40 text-sm">
-              Join <span className="text-white/80 font-semibold">10,000+</span> builders getting the weekly breakdown
-            </p>
-          </div>
+      <div className="container-main relative z-10">
+        {/* Eyebrow */}
+        <div className="flex justify-center mb-8">
+          <span className="eyebrow text-white/60">The #1 Platform for Side Hustle Discovery</span>
         </div>
 
-        {/* Stats Bar — floats at the bottom of the hero */}
-        <div className="mt-16 -mx-4 sm:mx-0 bg-white/5 backdrop-blur-sm border-t border-x border-white/10 rounded-t-2xl sm:rounded-t-2xl">
-          <div className="grid grid-cols-3 divide-x divide-white/10">
-            {stats.map((stat) => (
-              <div
-                key={stat.label}
-                className="flex flex-col items-center justify-center py-6 px-4 gap-1 group"
-              >
-                <stat.icon className="w-4 h-4 text-white mb-1" />
-                <span className="font-display font-bold text-white text-2xl md:text-3xl">
-                  {stat.value}
-                </span>
-                <span className="text-white/40 text-xs text-center">{stat.label}</span>
-              </div>
-            ))}
+        {/* Headline */}
+        <h1 className="heading-xl text-white text-center mb-6 max-w-4xl mx-auto">
+          Find a Side Hustle That Actually Makes Money
+        </h1>
+
+        {/* Subheadline */}
+        <p className="text-white/70 text-center text-lg max-w-2xl mx-auto mb-12 font-sans">
+          Explore real income streams broken down with startup costs, time to first dollar, income potential, and honest operator playbooks.
+        </p>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+          <Link href="/hustles" className="btn-primary">
+            Explore Hustles
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+          <Link href="/quiz" className="btn-secondary">
+            Take the Hustle Quiz
+          </Link>
+        </div>
+
+        {/* Trust Strip */}
+        <div className="text-center text-white/50 text-sm mb-16 font-sans">
+          <p>99+ hustles documented Â· Real episodes with real numbers Â· Built for operators, not gurus</p>
+        </div>
+
+        {/* Stats Bar */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 pt-16 border-t border-brand-border">
+          {/* Stat 1 */}
+          <div className="text-center">
+            <div className="flex justify-center mb-4">
+              <TrendingUp className="w-8 h-8 text-white/80" />
+            </div>
+            <p className="text-white text-lg font-display font-semibold">99+ Hustles Documented</p>
+            <p className="text-white/50 text-sm mt-2 font-sans">Real income streams with real numbers</p>
+          </div>
+
+          {/* Stat 2 */}
+          <div className="text-center">
+            <div className="flex justify-center mb-4">
+              <Mic className="w-8 h-8 text-white/80" />
+            </div>
+            <p className="text-white text-lg font-display font-semibold">50+ Real Episodes</p>
+            <p className="text-white/50 text-sm mt-2 font-sans">Deep dives with operators making money</p>
+          </div>
+
+          {/* Stat 3 */}
+          <div className="text-center">
+            <div className="flex justify-center mb-4">
+              <Users className="w-8 h-8 text-white/80" />
+            </div>
+            <p className="text-white text-lg font-display font-semibold">10K+ Builders</p>
+            <p className="text-white/50 text-sm mt-2 font-sans">Community of hustlers finding their fit</p>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
