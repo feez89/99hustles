@@ -41,16 +41,32 @@ export default function Footer() {
                 One real income breakdown, every week. Free.
               </p>
             </div>
-            <div className="flex w-full md:w-auto gap-3 min-w-[320px]">
+            <form
+              action="/newsletter"
+              method="GET"
+              className="flex w-full md:w-auto gap-3 min-w-[320px]"
+              aria-label="Newsletter signup"
+            >
+              <label htmlFor="footer-email" className="sr-only">
+                Email address
+              </label>
               <input
+                id="footer-email"
                 type="email"
+                name="email"
                 placeholder="Your email address"
+                required
+                aria-label="Email address"
                 className="flex-1 bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-white/50 focus:bg-white/15 transition-all"
               />
-              <button className="btn-primary whitespace-nowrap flex-shrink-0">
-                <ArrowRight className="w-4 h-4" />
+              <button
+                type="submit"
+                aria-label="Subscribe to newsletter"
+                className="btn-primary whitespace-nowrap flex-shrink-0"
+              >
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -85,7 +101,7 @@ export default function Footer() {
                 className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white hover:text-brand-black text-white/60 transition-all duration-200"
                 aria-label="Instagram"
               >
-                <Instagram className="w-4 h-4" />
+                <Instagram className="w-4 h-4" aria-hidden="true" />
               </a>
               <a
                 href="https://youtube.com/@99hustlespodcast"
@@ -94,14 +110,14 @@ export default function Footer() {
                 className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white hover:text-brand-black text-white/60 transition-all duration-200"
                 aria-label="YouTube"
               >
-                <Youtube className="w-4 h-4" />
+                <Youtube className="w-4 h-4" aria-hidden="true" />
               </a>
               <a
                 href="mailto:hello@99hustles.com"
                 className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white hover:text-brand-black text-white/60 transition-all duration-200"
-                aria-label="Email"
+                aria-label="Email us"
               >
-                <Mail className="w-4 h-4" />
+                <Mail className="w-4 h-4" aria-hidden="true" />
               </a>
             </div>
           </div>
