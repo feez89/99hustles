@@ -1,8 +1,9 @@
 import { QuizFlow } from '@/components/quiz/QuizFlow'
 
 export const metadata = {
-  title: 'Find Your Perfect Side Hustle | Free Quiz | 99 Hustles',
-  description: 'Take our free 60-second quiz to discover the best side hustle for your time, budget, and skills. Get matched to top income streams instantly.',
+  title: 'Find Your Perfect Side Hustle | Free Quiz',
+  description:
+    'Take our free 60-second quiz to discover the best side hustle for your time, budget, and skills. Get matched to top income streams instantly.',
 }
 
 export default function QuizPage() {
