@@ -1,22 +1,9 @@
 'use client'
 
 import { useState, useMemo } from 'react'
+import type { Hustle } from '@/types'
 import HustleCard from '@/components/hustles/HustleCard'
 import HustleFilters from '@/components/hustles/HustleFilters'
-
-interface Hustle {
-  id: string
-  slug: string
-  title: string
-  description: string
-  category: string
-  difficulty: 'Easy' | 'Medium' | 'Hard'
-  startupCost: string
-  timeToFirstIncome: string
-  revenuePotential: string
-  icon?: string
-  featured?: boolean
-}
 
 interface FilteredHustlesProps {
   hustles: Hustle[]
