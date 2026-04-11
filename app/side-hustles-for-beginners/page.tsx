@@ -6,18 +6,18 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Best Side Hustles for Beginners in 2025 | 99 Hustles',
-  description: 'Discover the best side hustles for beginners â no experience needed. We break down startup costs, time to first dollar, and realistic income for every hustle.',
+  description: 'Discover the best side hustles for beginners — no experience needed. We break down startup costs, time to first dollar, and realistic income for every hustle.',
   keywords: ['side hustles for beginners', 'easy side hustles', 'beginner friendly', 'no experience needed', 'make money as a beginner'].join(', '),
   openGraph: {
     title: 'Best Side Hustles for Beginners in 2025',
-    description: 'Discover the best side hustles for beginners â no experience needed. We break down startup costs, time to first dollar, and realistic income for every hustle.',
+    description: 'Discover the best side hustles for beginners — no experience needed. We break down startup costs, time to first dollar, and realistic income for every hustle.',
     url: 'https://99hustles.com/side-hustles-for-beginners',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Best Side Hustles for Beginners in 2025',
-    description: 'Discover the best side hustles for beginners â no experience needed.',
+    description: 'Discover the best side hustles for beginners — no experience needed.',
   },
   alternates: {
     canonical: 'https://99hustles.com/side-hustles-for-beginners',
@@ -27,11 +27,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'What are the easiest side hustles to start?',
-    a: 'The easiest side hustles are typically those that require minimal upfront investment and don\'t require specialized skills. Options like freelancing, content creation, and online tutoring are great for beginners. Start with something that aligns with your existing skillsâyou already have a head start.',
+    a: 'The easiest side hustles are typically those that require minimal upfront investment and don\'t require specialized skills. Options like freelancing, content creation, and online tutoring are great for beginners. Start with something that aligns with your existing skills—you already have a head start.',
   },
   {
     q: 'How much money can I realistically make as a beginner?',
-    a: 'This varies widely by hustle, but most beginners can expect $500â$2,000 per month once established. Some hustles (like freelancing) have high earning potential if you\'re willing to invest time in building a client base. Others (like surveys) offer modest but reliable income.',
+    a: 'This varies widely by hustle, but most beginners can expect $500–$2,000 per month once established. Some hustles (like freelancing) have high earning potential if you\'re willing to invest time in building a client base. Others (like surveys) offer modest but reliable income.',
   },
   {
     q: 'How long before I make my first dollar?',
@@ -39,11 +39,11 @@ const faqs = [
   },
   {
     q: 'Do I need to pay taxes on side hustle income?',
-    a: 'Yes, all side hustle income is taxable. Keep records of your earnings and expenses, and set aside 20â30% for taxes. Consider consulting a tax professional to understand your specific obligations and potential deductions.',
+    a: 'Yes, all side hustle income is taxable. Keep records of your earnings and expenses, and set aside 20–30% for taxes. Consider consulting a tax professional to understand your specific obligations and potential deductions.',
   },
   {
     q: 'Can I do multiple side hustles at once?',
-    a: 'Absolutely. Many people combine 2â3 side hustles to diversify income and minimize risk. Start with one to understand the workload, then add others as you build systems and routines.',
+    a: 'Absolutely. Many people combine 2–3 side hustles to diversify income and minimize risk. Start with one to understand the workload, then add others as you build systems and routines.',
   },
 ]
 
@@ -72,7 +72,7 @@ export default function SideHustlesForBeginnersPage() {
               Best Side Hustles for Beginners
             </h1>
             <p className="prose-light text-lg text-gray-300 leading-relaxed mb-8">
-              No experience? No problem. We've curated the best side hustles perfect for beginnersâones with low startup costs, quick time to first income, and realistic earning potential. Each hustle is broken down with honest numbers so you know exactly what to expect.
+              No experience? No problem. We've curated the best side hustles perfect for beginners—ones with low startup costs, quick time to first income, and realistic earning potential. Each hustle is broken down with honest numbers so you know exactly what to expect.
             </p>
             <p className="prose-light text-base text-gray-400">
               Whether you want to earn extra cash in your spare time or test a business idea, these hustles are designed for people just getting started.
@@ -141,7 +141,7 @@ export default function SideHustlesForBeginnersPage() {
               >
                 <p className="font-display font-semibold text-brand-black group-hover:text-brand-black transition-colors flex items-center gap-2">
                   {link.label}
-                  <span className="text-gray-400 group-hover:translate-x-1 transition-transform">â</span>
+                  <span className="text-gray-400 group-hover:translate-x-1 transition-transform">→</span>
                 </p>
               </Link>
             ))}
