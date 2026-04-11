@@ -1684,7 +1684,7 @@ export const hustles: Hustle[] = [
         name: 'Notion',
         description: 'Manage episode pipelines and publishing schedules',
         cost: 'Free',
-    2   url: 'https://notion.so',
+        url: 'https://notion.so',
       },
     ],
     mistakesToAvoid: [
@@ -1840,7 +1840,7 @@ export const hustles: Hustle[] = [
     startupCost: '$100 – $500',
     startupCostRange: [100, 500],
     timeToFirstIncome: '4–8 weeks',
-  2 skillLevel: 'Intermediate',
+    skillLevel: 'Intermediate',
     revenuePotential: '$2K – $50K/month',
     difficulty: 'Medium',
     description:
