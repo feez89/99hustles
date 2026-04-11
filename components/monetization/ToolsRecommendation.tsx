@@ -133,7 +133,7 @@ export default function ToolsRecommendation({
                 {tool.description}
               </p>
 
-              {/* CTA Button */~
+              {/* CTA Button */}
               <a
                 href={tool.url}
                 target="_blank"
