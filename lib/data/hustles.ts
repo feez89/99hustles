@@ -409,7 +409,7 @@ export const hustles: Hustle[] = [
     howToGetStarted: [
       'Research winning products using tools like Minea, AdSpy, or TikTok\'s Creative Center. Look for products with clear pain points, visual demonstrations, and a "wow factor."',
       'Build your Shopify store with a professional theme (Dawn is free and excellent). Brand it properly \u2014 name, logo, color palette.',
-      'Source from AliExpress via DSers, or US-based warehouses via AutoDS for faster shipping.',
+      'Source from AliExpress via DSers, or use domestic suppliers (US-based warehouses via AutoDS) for faster shipping.',
       'Run TikTok organic or paid ads to test products quickly. Start with $20\u2013$50/day on ads and cut fast if it\'s not working.',
       'When a product shows profitability (positive ROAS after 3\u20135 days of testing), scale your ad spend aggressively.',
     ],
@@ -496,146 +496,580 @@ export const hustles: Hustle[] = [
     mistakesToAvoid: [
       "Choosing a product you like vs. one the data supports. Emotion kills FBA businesses.",
       "Under-capitalizing. You need enough inventory to never go out of stock. Stockouts destroy rankings.",
-      "Ignoring listing quality. Your title, bullets, images, and A+ content are your sales pitch to millions of shoppers.",����X���[�[���܈[�Y\ˈ[X^�ۈZ�\�MIH�Y�\��[
-���H�Y\�
-��ܘY�K�[�[[�\��YHX\��[��Y�ܙH[�Hܙ\�[��[�ܞK���K��[]Y\\��T�YΈ	�ܚ\�[�[���[�\�X[X^�ۋY��I���[]Y\�T�Y�Έ�����\[���	��[�[ۋY[X[�	�	�Y�][\��X���K�Y�Έ��[X^�ۉ�	٘�I�	�X��[Y\��I�	�\�X�[��X���	�Y�[��Y	�K��X]\�Y��[�K�X��[���܎�	�эNQL���X�\�]N�	̌�L�L
-I���XY[YN�	�LHZ[��XY	��K����KKH�]�\�\����H�X[��\�\\��\�KKB��Y�	�I���YΈ	ܙX[Y\�]K\�[�[���]N�	ԙ[�[��\�H[��\�[����Y�[�N�	НZ[Hܝ��[�]^\�[�H]�\�H[۝�[H[�H�Y\����]Y�ܞN�	ԙX[\�]H	�[��\�[�����]Y�ܞT�YΈ	ܙX[Y\�]I���\�\����	�
-KL�L�	�	���\�\����[��N��L�K�[YUњ\��[���YN�	�WL�L��[۝�����[]�[�	�[�\�YYX]I���]�[�YT�[�X[�	�R�L�L�	
-L���[۝	��Y��X�[N�	�YY][I��\�ܚ\[ێ��	ԙ[�[��\�H[��\�[��\�ۙHوH�\�[�[���[XX�H]���[�[��X[[�\[�[��K�[�H�^H��\�Y\��[�[H�[�[��[���X�HY��\�[��H�]�Y[�[�\�[���YH[�^[��\�\��\����L�M[۝Y�\�[۝YX\�Y�\�YX\�����]]\΂�	ԙ[�[��\�H[��\�[��YX[��\��\�[���\�Y[�X[܈�X[��[Y\��X[��\�Y\�[��[�[��[H�[�[�ˈH[���YH�ݙ\��[�\�[ܝ�Y�H[�^[��\�[�H�\�\�\�[�\��\���ˈݙ\�[YK[�[��^H�ۈ[�\�[ܝ�Y�H�[HH��\�H\�X�X]\�L�MܙX][��\]Z]H[�H�[��Z[��\������]XZ�\�[ۙ^N��	�H��\�H�[�\�][��	K�[۝[��[��]H	K��[۝[ܝ�Y�H[�	�[�^[��\��]�	
-�[۝�\���ˈ]L�X���\�Y\�]\�	
-�[۝[�\��]�H[���YK�H�������]Y�H
-�^K�ZX��[��Y�[�[��K�\X]
-H]�[�H�X�X�HH�[YH�\][[��][\H��\�Y\��]�]�ۜ�[�H�YY[����\��ۈ^[Y[�[ۙ^K�������]�\�Y�	��\��]�\�HX��[�Έ�^HH\^܈�X[][KY�[Z[K]�H[�ۙH[�][��[�H�\�ˈ\��ݙ\��[�\�[ܝ�Y�H[�XX�\�[�H[�ܙ[���]Z[�[X[�\�ˉ��	��]�KX\�ݙY�܈H[ܝ�Y�H�Y�ܙH[�H�\����[��]��\�Y\ˈۛ��[�\��^Z[����\�[��]�[X�\���YY��ܚ��܈��]]�H�\���ˉ��	ԝ[�H�[X�\��ۈ]�\�HX[�\��]��\�Y\��\�H[۝H�[�\�]X\�IHوH\��\�H�X�H
-HIH�[JH\�H]ZX���[\����	НZ[HX[N�H�X[\�]HY�[����ܚ���][��\�ܜ�H��\�H[��X�܋H�X[\�]H]ܛ�^K[�H��\�HX[�Y�\�ۘ�H[�H��[H\��L�L�H[�]ˉ��	��ۜ�Y\���\�HX[�Y�[Y[����HH�\��H���X[�Y�\�����L�L�L�Hو[۝H�[�[�\��ܝ]�\�H�\��܈[�\��[�]H[�[YH��YY�K���K���әYYY��[YN�	֚[����X[܋���I��\�ܚ\[ێ�	���\�H�X\��]�ܛ\��]�[�[\�[X]H����܈]ZX���\����[�[\�\ˉ������	ќ�YI��\��	�΋�ޚ[�˘��I��K��[YN�	�X[�X����\�ܚ\[ێ�	ԙX[\�]H[��\�Y[�[�[\�\�\�܈]ZX���\����[���H�[�[][ۜˉ������	ќ�YH�	K�NK�[۝	��\��	�΋��X[�X�˚[���K��[YN�	��\��I��\�ܚ\[ێ�	ќ�YHܝ��[��X��[��[�X���[�[�����Z[�X�Y�X�[H�܈[�ܙˉ������	ќ�YI��\��	�΋���\��K���I��K��[YN�	�\���[�[�	��\�ܚ\[ێ�	�[�[��ܙY[�[���[���X�[ۋ[�X\�HX[�Y�[Y[�]�ܛK�������	ќ�YH�܈[�ܙ���\��	�΋��\���[�[����I��K�K�Z\�Z�\��]��Y�	Н^Z[���܈\�X�X][ۈ[��XYو�\���ˈY�H��\�H�\����\������]]�H���H^HۙK[�H\�H�X�[][����[��\�[�ˉ��	���\[��[�[��ܙY[�[�ˈۙH�Y[�[��[����[ܙH[�[XY�\�[�Y�[�Y\�[�L�[۝�و�[���ܙY[�Y�ܙ\��]�[H[�Y�[K���	�[�\�\�[X][��XZ[�[�[��H���ˈ�Y�]
-WL�L�L	Hو[��X[�[��܈�\Z\��[�XZ[�[�[��HL�M]�[\[����	�ݙ\�[]�\�Y�[�����\����[[���]��]X�X�[���]H�\�\��HܙX]\�H��Y�[Hܝ��[�ۙH�Y[۝�[�ܘX�ˉ��K��[]Y\\��T�YΈ	�\�[�ZZ[�\�\�X[Y\�]I���[]Y\�T�Y�Έ��[ؚ[KZ�YKZ[��\�[���	ܙX[Y\�]KY]�[�Y[�	�	�\��X�\�\�[�[	�K�Y�Έ�ܙX[\�]I�	�\��]�H[���YI�	ܙ[�[��	�[��\�[���	��\�����K��X]\�Y��YK�X��[���܎�	��M�L�I��X�\�]N�	̌�LL
-I���XY[YN�	�LZ[��XY	��K�Y�	�L	���YΈ	�\��X�\�\�[�[	��]N�	�\���\��[�[�\�[�\����Y�[�N�	�\��[�\��\�L�M܈H�Y]L�M[��H[۝H�\����XX�[�K����]Y�ܞN�	ԙX[\�]H	�[��\�[�����]Y�ܞT�YΈ	ܙX[Y\�]I���\�\����	�
-KL�L�	�	���\�\����[��N��L�K�[YUњ\��[���YN�	̗L�L��YZ������[]�[�	ЙY�[��\����]�[�YT�[�X[�	�
-LL�L�	L���[۝	��Y��X�[N�	�X\�I��\�ܚ\[ێ��	�\��\�HZ\����و�\�ˈ[�H\�[�\��ZX�H
-܈�ZX�\�HۈH]�ܛK�][�\��ۈ�]\�[�X\���[�[[���YH�[��Y\�����ˈH�\��\�]ܜ�\��H�[��H�\�[��H�ٚ]X�H\��]L�M[���[H[��H�[�Y]�\�[�\�ˉ���]]\΂�	�\��\�HY\�]�\Y\��\��\�[��X\��]X�H�\�H�ZX�H�ۙ\���[�Z\��\����\�Y�YY�Y\���HH^H܈�YZˈ[�H�][�\��ۈ�X�[��]�Z[X�[]K[�X��\�[\ˈ\��[�\�^[Y[����\��[��[��ݚY\�H�\�[[�H]�[و[��\�[��H�ݙ\�Y�K�[�\��؈\���Y\H�\���X[�]�Z[X�K[��[\�]�Y]�Y�����]XZ�\�[ۙ^N��	�H�[XX�H�Y[�\�Y]	
-LL�L�
-��^H�]
-�	H][^�][ۈX\���	K
-LL�L�K
+      "Ignoring listing quality. Your title, bullets, images, and A+ content are your sales pitch to millions of shoppers.",
+      "Not accounting for all fees. Amazon takes 15% referral + FBA fees + storage. Model your true margin before you order inventory.",
+    ],
+    relatedEpisodeSlug: 'kristin-ostrander-amazon-fba',
+    relatedHustleSlugs: ['dropshipping', 'print-on-demand', 'digital-products'],
+    tags: ['amazon', 'fba', 'ecommerce', 'physical products', 'advanced'],
+    featured: false,
+    accentColor: '#F59E0B',
+    publishDate: '2024-03-05',
+    readTime: '11 min read',
+  },
 
-��[۝ܛ��ˈY�\�\��	���YH
-�L�L�	JK[��\�[��KXZ[�[�[��K[��X[�[��^X�	
-L�L��[۝�]\��ZX�K���[H�
-H�ZX�\�[�[�H\�H���[��]	�L�L�
-�[۝�^\�H�ZX�\��[�X\��	MLL�L�
-L�^H�]]�H��\�][^�][ۈ[�Y�\�XZ[�[�[��H�\�ˉ������]�\�Y�	�\�H�ZX�H[�H[�XYH�ۈ
-܈�^HۙH�X�Y�X�[H�܈\��K�X�ۛ�^H�\��Z�H�[�H�[\�KۙH�]�X�[�][�ZH[[��HX\��H[���ۜ�\�[�HYH�Y�[X[�[���XZ[�[�[��H���ˉ��	�ܙX]HH]Z[Y\�[���]�ٙ\��[ۘ[���X��\�]H\�ܚ\[ۜ�[��X\�X��\[���X�[ۜˈ�\��[\�\��[ۜ��]�H����[���]\ˉ��	��]��\]]]�H�X�[��\�[��\��	��[�[ZX��X�[����[�Y�\�X[�X[H�\�Yۈ��[]�[���X\�ۜ�[�[X[�]\��ˉ��	�[]�\�^�\[ۘ[�Y\�^\�Y[��\Έ�X[��\����\��[][�X�][ۋ[�\��KY��YHX��\�[�\��\��L�]�Y]���]H�Z�X�ܞH�܈[�\�[�\�H\���\�Y\����	���[H�H�Z[��\�[���ٚ]�[��H�X�ۙ�ZX�Hۘ�H[�\��\��\��ۜ�\�[�H�ٚ]X�K�X[�H�\������\�]H�Y]�و
-WL�L�MH�ZX�\ˉ��K���әYYY��[YN�	�\����\�ܚ\[ێ�	�H]�ܛH]�[��[�\�[����[��^[Y[�[��\�X�[��\�[��K�������	ќ�YH�\���L�L�	H]�ܛH�YI��\��	�΋��\�˘��I��K��[YN�	ђV	��\�ܚ\[ێ�	�Б��ZX�HX[[ۚ]܈][\��[�H�XZ[�[�[��H\��Y\��Y�ܙH^H�X��YH��XZ��ۜˉ������	�NK�NH]�X�H
-�\	��\��	�΋�ٚ^\���I��K��[YN�	ԙ[^I��\�ܚ\[ێ�	Н\�[�\���[��[��X���[��]�X�XX���[��\��X��܈�X��[��[���YH\��ZX�K�������	ќ�YI��\��	�΋�ܙ[^Y�K���I��K�K�Z\�Z�\��]��Y�	���\[����\�[��\�[��K�\��	��[��YY��X�[ۈ\�����\�Z[��]�K�[�\��[�^X�H�]\��ݙ\�Y�Y�ܙH[�H\����	��\�[���]H^\�H�ZX�K�H^�HZ[H�]H�\�[H��\[��]\��܈��\�][^�][ۋY�\��\Z\�����[�H��\��و��[��\���]�[��H	
-���\����	�Yۛܚ[���]�Y]�ˈ[�\�\���][��\�[�\�[�\�H�\�[�\���\]][ۋ�؜�\��ݙ\��Y\�^\�Y[��H���H^HۙK���	�\�[��H�ZX�H�]YX�[�X�[\��Y\ˈۙH��XZ��ۈۈH�Y\��\�[��\�[[�H�Y�]�Y]�H�Z[K[�H���]�\\��][۝�و�ٚ]���K��[]Y\\��T�YΈ	��Y�[�[X\�]X\�]\�����[]Y\�T�Y�Έ�ܙX[Y\�]K\�[�[��	�[ؚ[KZ�YKZ[��\�[���K�Y�Έ��\���	��\���	�\��]�H[���YI�	ܙ[�[	�	�\��]X�\�Y	�K��X]\�Y��[�K�X��[���܎�	��PMQNI��X�\�]N�	̌�L
-LMI���XY[YN�	�Z[��XY	��K�Y�	�LI���YΈ	��X��[��X�\�[�\����]N�	��X��[���\�[�\����Y�[�N�	�ۙH�X��H�[�H�Y��۝�X��L�MH
-�Y�Y�\�H��ZY��\�[�\��\��Z[���H^X�H]����]Y�ܞN�	��\��X�\�	��ۜ�[[�����]Y�ܞT�YΈ	��\��X�\�X�ۜ�[[�����\�\����	�LL�L�	
-�	���\�\����[��N��L
-�K�[YUњ\��[���YN�	�WL�L��[۝�����[]�[�	�[�\�YYX]I���]�[�YT�[�X[�	�
-R�L�L�	����[۝	��Y��X�[N�	�\�	��\�ܚ\[ێ��	��X��[��\�ۙHوH[��[�\��]Y�\�[�\���ܝ[�]Y\�[�[Y\�X�K�H��[��H�[��ۈ��ZY�H[X[��]�\����[�H�\��Y\��[��H\�H�X��H�[�H�[[�ۙ\����[��[[ܛ�\��ܚ�][��[�HYۛܙK����]]\΂�	�H�X��[���\�[�\���\��\�[��ۙ\�[�\�]܎�[�H�ۈ܈X\�HH��[Y\��X[�X��؝Z[�[�\��ۈ]]ܚ]H
-P��[X�\�K[�][��ZY��܈�\\��܈��ZY�����\�ˈ\�[�H��[K[�H\�H�]�\��Y[ܙH�X���[��[��][ۈ���H�\�]܈��\�[�\���ۙ\�L�MX[�Y�[��H�Y]�[HH�X����[�\�]H�]�[�YK�����]XZ�\�[ۙ^N��	��ۙ\�[�\�]ܜ�ܛ���	MLL�L��L�YX\�[��]�[�YK�][��	
-�WL�L�LY�\�^[��\ˈYH�X�ۙ�]�\�[�H�X�ۙ�X��[�[�\��]Y��X�]�[H�X�\��[H[�\�\��ۘ[�]�[��[YH�YX�\ˈ]
-H�X����][\�YY�]�\��H�[\�[��\�][ۈ�[�\�]\�	
-L
-�[�ܛ����]�[�YH�]MWL�L̍IH�]X\��[�ˉ������]�\�Y�	�؝Z[�[�\���[Y\��X[�]�\�	��X�[��H
-�
-K���Z[�[����ܘ[\��[��L�L��YZ��[����	�L�L�L���YH�\��Y\��ٙ�\�ZY��Z[�[��[�^�[��H�܈H�]�[����[Z]Y[����	��][�\��ۈ]]ܚ]N��Y�\�\��]H�P��K؝Z[�[�\�P��[X�\�[��X�\�HXX�[]H[��\�[��H
-	
-KL�L�L�YX\�H[��\���[��\�[��K���	њ[�[��H[�\��\���X�ˈ�]��X������	L�L�L�ML�ˈ\�Y�X����[��HX�]Z\�Y�܈	�L�L��[�\���X�X[^�H[���[Y\��X[�X��[��\]Z\Y[�L�M�YZ�[H�]���	њ[��Y���Y���ZY�����\��
-U�X�������K�۝��JH[�[[�H�Z[\�X��\\��[][ۜ�\ˈ����\��Y��][�H[ݚ[��[[YYX][H�[H[�H]�[�[�\��]�ܚˉ��	��]�H�X\��[�\�H���[K��[�L�L�L�N[۝�[�\��[�[��H�\�[�\�����HH�X�[��\�[X]^�H[�\�H[�\��\���]�\����K���әYYY��[YN�	�U�Y��\�	��\�ܚ\[ێ�	�H\��\���ZY�X\��]X�K�\��[�X[�܈�[�[���Y�\�H�]��\��Y\��������	�
+  // --- New hustles from real podcast episodes ---
 
-WL�L���[۝	��\��	�΋��]���I��K��[YN�	��Y\�X��[�
-[�]�JI��\�ܚ\[ێ�	�[X��ۚX����[��]�X�H
-S
-H�܈�P��H��\X[��H[��Y]�X��[�ˉ������	��WL�L�
+  {
+    id: '9',
+    slug: 'real-estate-rentals',
+    title: 'Rental Property Investing',
+    tagline: 'Build a portfolio that pays you every month while you sleep.',
+    category: 'Real Estate & Investing',
+    categorySlug: 'real-estate',
+    startupCost: '$5,000 \u2013 $30,000',
+    startupCostRange: [5000, 30000],
+    timeToFirstIncome: '1\u20133 months',
+    skillLevel: 'Intermediate',
+    revenuePotential: '$1K \u2013 $50K+/month',
+    difficulty: 'Medium',
+    description:
+      'Rental property investing is one of the oldest and most reliable paths to financial independence. You buy properties, rent them to tenants, and collect the difference between your income and expenses as cash flow \u2014 month after month, year after year.',
+    whatItIs:
+      'Rental property investing means purchasing residential or small commercial properties and renting them to tenants. The income covers your mortgage and expenses, and the surplus is your cash flow. Over time, tenants pay down your mortgage while the property appreciates \u2014 creating equity you can reinvest.',
+    howItMakesMoney:
+      'A property generating $1,800/month in rent with a $1,200/month mortgage and $200 in expenses nets $400/month cash flow. At 10 such properties, that is $4,000/month in passive income. The BRRRR strategy (Buy, Rehab, Rent, Refinance, Repeat) lets you recycle the same capital into multiple properties without constantly needing fresh down payment money.',
+    howToGetStarted: [
+      'Start with house hacking: buy a duplex or small multi-family, live in one unit, and rent the others. This covers your mortgage and teaches you landlording with minimal risk.',
+      'Get pre-approved for a mortgage before you start looking at properties. Know your buying power and what numbers need to work for positive cash flow.',
+      'Run the numbers on every deal: target properties where monthly rent is at least 1% of the purchase price (the 1% rule) as a quick filter.',
+      'Build a team: a real estate agent who works with investors, a property inspector, a real estate attorney, and a property manager once you scale past 3\u20135 units.',
+      'Consider property management from the start. A good manager costs 8\u201312% of monthly rent and is worth every dollar for your sanity and time freedom.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'Zillow / Realtor.com',
+        description: 'Property search platforms with rental estimate tools for quick cash flow analysis.',
+        cost: 'Free',
+        url: 'https://zillow.com',
+      },
+      {
+        name: 'DealCheck',
+        description: 'Real estate investment analysis app for quick cash flow and ROI calculations.',
+        cost: 'Free / $9.99/month',
+        url: 'https://dealcheck.io',
+      },
+      {
+        name: 'Stessa',
+        description: 'Free portfolio tracking and accounting tool built specifically for landlords.',
+        cost: 'Free',
+        url: 'https://stessa.com',
+      },
+      {
+        name: 'TurboTenant',
+        description: 'Tenant screening, rent collection, and lease management platform.',
+        cost: 'Free for landlords',
+        url: 'https://turbotenant.com',
+      },
+    ],
+    mistakesToAvoid: [
+      'Buying for appreciation instead of cash flow. If the property does not cash flow positive from day one, you are speculating, not investing.',
+      'Skipping tenant screening. One bad tenant can cost more in damages and legal fees than 12 months of rent. Screen aggressively and legally.',
+      'Underestimating maintenance costs. Budget 5\u201310% of annual rent for repairs and maintenance \u2014 it will happen.',
+      'Over-leveraging too fast. Scaling with too much debt and too little reserve creates a fragile portfolio one bad month can crack.',
+    ],
+    relatedEpisodeSlug: 'dustin-heiner-real-estate',
+    relatedHustleSlugs: ['mobile-home-investing', 'real-estate-development', 'turo-car-rental'],
+    tags: ['real estate', 'passive income', 'rentals', 'investing', 'cash flow'],
+    featured: true,
+    accentColor: '#16A34A',
+    publishDate: '2024-08-05',
+    readTime: '10 min read',
+  },
+  {
+    id: '10',
+    slug: 'turo-car-rental',
+    title: 'Turo Car Rental Business',
+    tagline: 'Turn your car \u2014 or a fleet \u2014 into a monthly cash flow machine.',
+    category: 'Real Estate & Investing',
+    categorySlug: 'real-estate',
+    startupCost: '$5,000 \u2013 $30,000',
+    startupCostRange: [5000, 30000],
+    timeToFirstIncome: '2\u20134 weeks',
+    skillLevel: 'Beginner',
+    revenuePotential: '$500 \u2013 $10K+/month',
+    difficulty: 'Easy',
+    description:
+      'Turo is the Airbnb of cars. You list your vehicle (or vehicles) on the platform, set your own rates, and earn rental income when guests book. The best operators turn a single car into a profitable asset \u2014 and scale into a full fleet business.',
+    whatItIs:
+      'Turo is a peer-to-peer car sharing marketplace where vehicle owners rent their cars to verified guests by the day or week. You set your own pricing, availability, and pickup rules. Turo handles payment processing and provides a baseline level of insurance coverage. Your job is to keep the cars clean, available, and well-reviewed.',
+    howItMakesMoney:
+      'A reliable sedan listed at $50\u2013$70/day with 70% utilization earns $1,050\u2013$1,470/month gross. After Turo\'s fee (20\u201340%), insurance, maintenance, and cleaning, expect $400\u2013$800/month net per vehicle. Scale to 5 vehicles and you are looking at $2,000\u2013$4,000/month. Luxury vehicles can earn $150\u2013$500/day but have lower utilization and higher maintenance risk.',
+    howToGetStarted: [
+      'List a vehicle you already own (or buy one specifically for Turo). Economy cars like Toyota Camry, Honda Civic, and Hyundai Elantra earn the most consistently due to high demand and low maintenance costs.',
+      'Create a detailed listing with professional photos, accurate descriptions, and clear pickup instructions. First impressions drive booking rates.',
+      'Set competitive pricing using Turo\'s dynamic pricing tool, then adjust manually based on local events, seasons, and demand patterns.',
+      'Deliver exceptional guest experiences: clean cars, prompt communication, and hassle-free pickup. Your first 10 reviews set the trajectory for your entire Turo career.',
+      'Scale by reinvesting profits into a second vehicle once your first is consistently profitable. Many top Turo hosts operate fleets of 5\u201315 vehicles.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'Turo',
+        description: 'The platform itself. Handles all booking, payment, and basic insurance.',
+        cost: 'Free to list; 20\u201340% platform fee',
+        url: 'https://turo.com',
+      },
+      {
+        name: 'FIXD',
+        description: 'OBD2 vehicle health monitor that alerts you to maintenance issues before they become breakdowns.',
+        cost: '$19.99 device + app',
+        url: 'https://fixdapp.com',
+      },
+      {
+        name: 'Relay',
+        description: 'Business banking account with sub-accounts, perfect for tracking income per vehicle.',
+        cost: 'Free',
+        url: 'https://relayfi.com',
+      },
+    ],
+    mistakesToAvoid: [
+      'Skipping proper insurance. Turo\'s included protection is not comprehensive. Understand exactly what is covered before you list.',
+      'Starting with a luxury vehicle. The extra daily rate rarely compensates for lower utilization, higher repair costs, and the stress of strangers driving a $60K car.',
+      'Ignoring reviews. Your Turo rating is your entire business reputation. Obsess over guest experience from day one.',
+      'Listing a vehicle with mechanical issues. One breakdown on a guest trip can result in a bad review, a claim, and a loss that wipes out months of profit.',
+    ],
+    relatedEpisodeSlug: 'stefan-marquardt-turo',
+    relatedHustleSlugs: ['real-estate-rentals', 'mobile-home-investing'],
+    tags: ['turo', 'cars', 'passive income', 'rental', 'asset-based'],
+    featured: false,
+    accentColor: '#0EA5E9',
+    publishDate: '2024-04-15',
+    readTime: '8 min read',
+  },
+  {
+    id: '11',
+    slug: 'trucking-business',
+    title: 'Trucking Business',
+    tagline: 'One truck, a CDL, and the right contracts \u2014 a 7-figure freight business is built from exactly that.',
+    category: 'Services & Consulting',
+    categorySlug: 'services-consulting',
+    startupCost: '$10,000 \u2013 $60,000',
+    startupCostRange: [10000, 60000],
+    timeToFirstIncome: '1\u20133 months',
+    skillLevel: 'Intermediate',
+    revenuePotential: '$5K \u2013 $30K+/month',
+    difficulty: 'Hard',
+    description:
+      'Trucking is one of the most underrated business opportunities in America. The country runs on freight, the demand never stops, and the barrier to entry is a truck, a CDL, and the willingness to do unglamorous work that most people ignore.',
+    whatItIs:
+      'A trucking business starts as an owner-operator: you own or lease a commercial truck, obtain your own authority (MC number), and haul freight for shippers or freight brokers. As you scale, you hire drivers, add more trucks, and transition from operator to business owner \u2014 managing the fleet while the trucks generate revenue.',
+    howItMakesMoney:
+      'Owner-operators gross $150,000\u2013$250,000/year in revenue, netting $60,000\u2013$100,000 after expenses. Add a second driver and a second truck and your net effectively doubles while your personal driving time reduces. At 5 trucks with employed drivers, a well-run operation generates $500,000+ in gross revenue with 15\u201325% net margins.',
+    howToGetStarted: [
+      'Obtain your Commercial Driver\'s License (CDL). CDL training programs run 3\u20138 weeks and cost $3,000\u2013$10,000. Some carriers offer paid CDL training in exchange for a driving commitment.',
+      'Get your own authority: register with the FMCSA, obtain your MC number, and secure liability insurance ($5,000\u2013$10,000/year) and cargo insurance.',
+      'Finance your first truck. New trucks cost $100K\u2013$150K+. Used trucks can be acquired for $30,000\u2013$80,000. Lenders specialize in commercial trucking equipment \u2014 seek them out.',
+      'Find loads through freight brokers (DAT, Truckstop.com, Convoy) until you build direct shipper relationships. Broker loads get you moving immediately while you develop your network.',
+      'Drive to learn, then hire to scale. Spend 12\u201318 months understanding the business from the cab, then systematize and hire your first driver.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'DAT Load Board',
+        description: 'The largest freight marketplace. Essential for finding loads as a new carrier.',
+        cost: '$45\u2013$300/month',
+        url: 'https://dat.com',
+      },
+      {
+        name: 'KeepTruckin (Motive)',
+        description: 'Electronic Logging Device (ELD) for FMCSA compliance and fleet tracking.',
+        cost: '$35\u2013$45/month per truck',
+        url: 'https://gomotive.com',
+      },
+      {
+        name: 'ATBS',
+        description: 'Trucking-specific accounting and tax service that handles owner-operator bookkeeping.',
+        cost: '$69\u2013$179/month',
+        url: 'https://atbs.com',
+      },
+    ],
+    mistakesToAvoid: [
+      'Ignoring FMCSA compliance. A serious violation can result in an out-of-service order. Regulations are non-negotiable.',
+      'Under-capitalizing. New owner-operators often underestimate fuel, insurance, and maintenance costs. Have 3 months of operating expenses in reserve.',
+      'Relying solely on spot loads forever. Broker loads are fine to start, but direct shipper contracts are how you build predictable income and better margins.',
+      'Scaling too fast before systems exist. Adding trucks without proper dispatch, accounting, and driver management creates chaos that destroys margins.',
+    ],
+    relatedEpisodeSlug: 'darrius-gates-trucking-empire',
+    relatedHustleSlugs: ['real-estate-rentals', 'turo-car-rental'],
+    tags: ['trucking', 'logistics', 'CDL', 'freight', 'fleet'],
+    featured: false,
+    accentColor: '#78716C',
+    publishDate: '2024-04-01',
+    readTime: '11 min read',
+  },
+  {
+    id: '12',
+    slug: 'fashion-styling-business',
+    title: 'Personal Styling Business',
+    tagline: 'Turn a great eye for style into a premium service people pay for month after month.',
+    category: 'Creative Services',
+    categorySlug: 'creative-services',
+    startupCost: '$0 \u2013 $500',
+    startupCostRange: [0, 500],
+    timeToFirstIncome: '2\u20136 weeks',
+    skillLevel: 'Beginner',
+    revenuePotential: '$2K \u2013 $15K+/month',
+    difficulty: 'Easy',
+    description:
+      'Personal styling is a high-trust, high-retention service business that requires no inventory and no location. If you have an eye for fashion and the ability to understand what makes a person feel confident, clients will pay you well \u2014 and keep coming back.',
+    whatItIs:
+      'A personal styling business involves helping clients build, edit, or transform their wardrobes. Services range from one-time closet audits to monthly shopping trips to ongoing wardrobe management retainers. Stylists work with executives, brides, new moms, entrepreneurs, and anyone navigating a major life or career transition.',
+    howItMakesMoney:
+      'Stylists typically charge $100\u2013$500 per hour for consultations, $200\u2013$800 for closet audits, and $500\u2013$2,500+ for full shopping packages. Monthly wardrobe management retainers are the highest-leverage model \u2014 at $500\u2013$1,500/month per client, landing 10 retainer clients generates $5,000\u2013$15,000 in predictable monthly recurring revenue.',
+    howToGetStarted: [
+      'Build your own wardrobe as your portfolio. Your personal style is your business card \u2014 document it obsessively on Instagram.',
+      'Offer free or discounted styling sessions to 3\u20135 friends or followers to build testimonials and before/after content.',
+      'Define your niche: executive wardrobe consulting, bridal styling, plus-size fashion, sustainable clothing \u2014 a niche makes marketing far more efficient.',
+      'Partner with photographers, wedding planners, real estate agents, and corporate HR teams who serve clients who need to look polished.',
+      'Launch retainer packages once you have repeat clients. Monthly wardrobe management is more profitable and more stable than one-off sessions.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'Instagram / TikTok',
+        description: 'Your primary portfolio and client acquisition channel. Document your work and style perspective consistently.',
+        cost: 'Free',
+        url: 'https://instagram.com',
+      },
+      {
+        name: 'Canva',
+        description: 'Create mood boards, style guides, and client lookbooks as professional deliverables.',
+        cost: 'Free / $13/month Pro',
+        url: 'https://canva.com',
+      },
+      {
+        name: 'Dubsado',
+        description: 'Client management system for onboarding, contracts, invoicing, and questionnaires.',
+        cost: 'Free trial / $20/month',
+        url: 'https://dubsado.com',
+      },
+    ],
+    mistakesToAvoid: [
+      'Undercharging because you think styling is not a "real" business. Premium clients pay premium rates \u2014 and often prefer them as a quality signal.',
+      'Working without a style questionnaire. Understanding a client\'s lifestyle, goals, and budget before touching their wardrobe prevents misfires and refunds.',
+      'Neglecting your own brand presence. If your social media does not reflect excellent taste, potential clients have no evidence you can deliver it for them.',
+      'Trying to serve everyone. Specializing in one type of client (executives, brides, men\'s professional wear) makes referrals and marketing dramatically easier.',
+    ],
+    relatedEpisodeSlug: 'brianna-wise-fashion-styling',
+    relatedHustleSlugs: ['social-media-agency', 'digital-products'],
+    tags: ['fashion', 'styling', 'creative', 'service', 'premium'],
+    featured: false,
+    accentColor: '#EC4899',
+    publishDate: '2024-01-15',
+    readTime: '8 min read',
+  },
+  {
+    id: '13',
+    slug: 'catering-business',
+    title: 'Catering Business',
+    tagline: 'Turn cooking into contracts \u2014 from weekend events to recurring corporate accounts.',
+    category: 'Services & Consulting',
+    categorySlug: 'services-consulting',
+    startupCost: '$1,000 \u2013 $10,000',
+    startupCostRange: [1000, 10000],
+    timeToFirstIncome: '2\u20136 weeks',
+    skillLevel: 'Intermediate',
+    revenuePotential: '$3K \u2013 $20K+/month',
+    difficulty: 'Medium',
+    description:
+      'Catering is a relationship business built on execution. Get the food right, deliver it on time, and make the event memorable \u2014 and you will never need to advertise. Word-of-mouth from a great catering performance sells more events than any marketing campaign.',
+    whatItIs:
+      'A catering business prepares and serves food for events: weddings, corporate lunches, birthday parties, graduations, nonprofit galas, and more. You may work from a commercial kitchen (rented or your own), a food truck, or a home kitchen (depending on local cottage food laws). Revenue comes from per-head pricing, package deals, or ongoing corporate accounts.',
+    howItMakesMoney:
+      'Event catering typically earns $30\u2013$100+ per person depending on menu complexity and market. A 100-person event at $50/head generates $5,000 in revenue. Corporate lunch contracts \u2014 recurring weekly or daily orders \u2014 provide predictable income that smooths out the feast-or-famine cycle of event-only businesses.',
+    howToGetStarted: [
+      'Research your local cottage food and catering laws. Most states require a health permit and licensed commercial kitchen access \u2014 get legal before you take your first paid booking.',
+      'Start small with backyard events, family gatherings, or pop-up dinners to refine your process, pricing, and menu without the pressure of a large event.',
+      'Define your signature offering: BBQ, soul food, Mediterranean, corporate box lunches. A clear culinary identity makes marketing easier and referrals more likely.',
+      'Build relationships with event venues, wedding planners, corporate event coordinators, and nonprofit coordinators who hire caterers regularly.',
+      'Create tiered packages with clear per-head pricing, minimum headcounts, and service fees. Ambiguous pricing creates disputes; clear packages create easy decisions.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'Square',
+        description: 'Point-of-sale, invoicing, and payment processing for events and deposits.',
+        cost: 'Free + 2.6% per transaction',
+        url: 'https://squareup.com',
+      },
+      {
+        name: 'Caterease',
+        description: 'Catering-specific event management software for quotes, menus, and event logistics.',
+        cost: '$85\u2013$175/month',
+        url: 'https://caterease.com',
+      },
+      {
+        name: 'Google Workspace',
+        description: 'Docs for menus and contracts, Sheets for event cost calculations, Calendar for scheduling.',
+        cost: '$6\u2013$12/month',
+        url: 'https://workspace.google.com',
+      },
+    ],
+    mistakesToAvoid: [
+      'Operating without permits. Health department violations can shut down your business and permanently damage your reputation in a local market.',
+      'Underpricing to win business. Low pricing attracts high-volume, low-margin work that burns out operators. Know your food cost (target 28\u201335%) and price above it.',
+      'Taking every event type. Weddings, corporate, and casual events require completely different logistics. Specialize early.',
+      'Not collecting deposits. Require 25\u201350% upfront for all events. No-shows and last-minute cancellations are a real risk and deposits protect your time.',
+    ],
+    relatedEpisodeSlug: 'bryan-sanders-catering-business',
+    relatedHustleSlugs: ['social-media-agency', 'digital-products'],
+    tags: ['food', 'catering', 'events', 'service', 'local business'],
+    featured: false,
+    accentColor: '#D97706',
+    publishDate: '2024-06-24',
+    readTime: '9 min read',
+  },
+  {
+    id: '14',
+    slug: 'real-estate-development',
+    title: 'Real Estate Development',
+    tagline: 'Go beyond buying \u2014 build, renovate, and create value from the ground up.',
+    category: 'Real Estate & Investing',
+    categorySlug: 'real-estate',
+    startupCost: '$20,000 \u2013 $100,000+',
+    startupCostRange: [20000, 100000],
+    timeToFirstIncome: '6\u201318 months',
+    skillLevel: 'Advanced',
+    revenuePotential: '$20K \u2013 $500K+ per project',
+    difficulty: 'Hard',
+    description:
+      'Real estate development is the highest-leverage play in real estate. You are not just buying a cash-flowing asset \u2014 you are creating value from raw land, distressed properties, or underutilized buildings. Done right, a single deal can generate more than most people earn in years.',
+    whatItIs:
+      'Real estate development involves acquiring land or distressed properties, improving or building on them, and selling or holding the result for profit or income. Developers work on projects ranging from single-family flips to multi-family new construction to commercial builds. The value created is the difference between your total cost (land + construction + financing) and the end market value.',
+    howItMakesMoney:
+      'A simple value-add deal \u2014 buying a distressed duplex for $150,000, spending $40,000 on renovation, and selling for $250,000 \u2014 generates $60,000 in profit. Larger ground-up developments can create $200,000\u2013$2M+ in equity per project. Developers also earn from holding completed projects as rental income while positioning for future sale.',
+    howToGetStarted: [
+      'Start with a simple fix-and-flip or BRRRR deal before attempting ground-up development. Understanding the rehab and financing process is essential before scaling to larger projects.',
+      'Build your team: a real estate attorney, a general contractor, an architect (for larger projects), a lender who does construction loans, and a real estate agent who specializes in investment properties.',
+      'Understand your local zoning laws. What can be built on a parcel determines its potential value \u2014 zoning knowledge is one of the most underappreciated edges in development.',
+      'Raise capital by partnering with passive investors. Most deals are structured with a developer (who manages the project) and limited partners (who provide capital) splitting profits 70/30 or 80/20.',
+      'Underwrite conservatively. Build in a 15\u201320% contingency on all renovation and construction budgets. The deals that fail are the ones where costs overran a tight underwrite.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'CoStar / LoopNet',
+        description: 'Commercial real estate listing platforms for finding development sites and comps.',
+        cost: 'Free (LoopNet) / $300+/month (CoStar)',
+        url: 'https://loopnet.com',
+      },
+      {
+        name: 'Procore',
+        description: 'Construction project management platform for larger development projects.',
+        cost: 'Custom pricing',
+        url: 'https://procore.com',
+      },
+      {
+        name: 'DealCheck',
+        description: 'Real estate underwriting tool for analyzing development deal economics.',
+        cost: 'Free / $9.99/month',
+        url: 'https://dealcheck.io',
+      },
+    ],
+    mistakesToAvoid: [
+      'Underestimating construction costs. Contractor bids are not fixed prices. Add a 20% contingency to every budget before you underwrite the deal.',
+      'Ignoring carrying costs. Construction loans accrue interest. A 12-month project with $5,000/month in financing costs adds $60,000 to your total cost basis.',
+      'Building without market validation. Confirm there is demand for what you are building before you break ground. Talk to agents, review comps, study absorption rates.',
+      'Going into development without a team. This is not a solo sport. Without a reliable GC, attorney, and lender, even great deals fall apart.',
+    ],
+    relatedEpisodeSlug: 'd1-basketball-to-real-estate',
+    relatedHustleSlugs: ['real-estate-rentals', 'mobile-home-investing'],
+    tags: ['real estate', 'development', 'construction', 'investing', 'advanced'],
+    featured: false,
+    accentColor: '#1D4ED8',
+    publishDate: '2024-06-10',
+    readTime: '12 min read',
+  },
+  {
+    id: '15',
+    slug: 'mobile-home-investing',
+    title: 'Mobile Home Investing',
+    tagline: 'The overlooked real estate niche that cash flows harder than almost anything else.',
+    category: 'Real Estate & Investing',
+    categorySlug: 'real-estate',
+    startupCost: '$10,000 \u2013 $50,000',
+    startupCostRange: [10000, 50000],
+    timeToFirstIncome: '1\u20133 months',
+    skillLevel: 'Intermediate',
+    revenuePotential: '$1K \u2013 $15K+/month',
+    difficulty: 'Medium',
+    description:
+      'Mobile home investing is the best-kept secret in real estate. Lower acquisition costs, higher cash-on-cash returns, and tenants who are far less likely to move than traditional renters make this a cash flow strategy most investors overlook \u2014 to their loss.',
+    whatItIs:
+      'Mobile home investing involves purchasing manufactured homes \u2014 either park-owned or tenant-owned \u2014 and renting or selling them on lease-to-own terms. The park-owned model means you own the home and collect monthly rent. The tenant-owned (lot rental) model means you own the land the home sits on and collect lot rent \u2014 a lower-management, high-yield approach.',
+    howItMakesMoney:
+      'A mobile home purchased for $20,000 and rented at $600/month generates a 36% gross cash-on-cash return before expenses \u2014 dramatically outperforming traditional real estate. The lot rental model (owning land in a mobile home park) can yield $200\u2013$600/month per lot with almost no active management. Sellers who use lease-to-own structures earn premium prices and retain income during the payoff period.',
+    howToGetStarted: [
+      'Study the two main mobile home investing models: (1) buy, rehab, and rent individual homes inside parks; (2) purchase or develop mobile home parks and collect lot rent.',
+      'Find inventory on Facebook Marketplace, Craigslist, mobile-home-specific platforms like MH Village, and by driving mobile home parks and talking to park managers.',
+      'Always inspect before you buy. Mobile homes can have moisture issues, roof problems, and HVAC challenges that are expensive to fix. Get a professional inspection.',
+      'Build relationships with park managers and owners. They often know of available homes before they hit the market and can become referral partners for your acquisition pipeline.',
+      'Consider the lease-to-own model. Selling a home on a lease-to-own agreement allows you to collect a down payment, charge a premium price, and maintain cash flow during the payoff period.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'MH Village',
+        description: 'The largest mobile home listing marketplace for finding inventory.',
+        cost: 'Free to search',
+        url: 'https://mhvillage.com',
+      },
+      {
+        name: 'Facebook Marketplace',
+        description: 'Excellent source for finding distressed mobile home deals directly from sellers.',
+        cost: 'Free',
+        url: 'https://facebook.com/marketplace',
+      },
+      {
+        name: 'Stessa',
+        description: 'Portfolio tracking and financial reporting for landlords, including mobile home investors.',
+        cost: 'Free',
+        url: 'https://stessa.com',
+      },
+    ],
+    mistakesToAvoid: [
+      'Buying without a thorough inspection. Moisture damage and foundation issues on mobile homes can turn a great deal into a money pit overnight.',
+      'Ignoring park rules and regulations. Each mobile home park has its own rules about who can own homes there. Violating these can result in eviction of your home.',
+      'Overlooking title issues. Mobile homes can have complicated title histories. Always work with a title company experienced in manufactured housing.',
+      'Underestimating the lot rent escalation risk. If you own a home inside a park, rising lot rent can squeeze your tenants and increase vacancies.',
+    ],
+    relatedEpisodeSlug: 'rachel-hernandez-mobile-homes',
+    relatedHustleSlugs: ['real-estate-rentals', 'real-estate-development'],
+    tags: ['mobile homes', 'real estate', 'cash flow', 'investing', 'beginner-friendly'],
+    featured: false,
+    accentColor: '#16A34A',
+    publishDate: '2024-05-27',
+    readTime: '9 min read',
+  },
+  {
+    id: '16',
+    slug: 'online-fitness-coaching',
+    title: 'Online Fitness Coaching',
+    tagline: 'Trade one-on-one sessions for scalable programs that serve hundreds at once.',
+    category: 'Services & Consulting',
+    categorySlug: 'services-consulting',
+    startupCost: '$0 \u2013 $500',
+    startupCostRange: [0, 500],
+    timeToFirstIncome: '1\u20134 weeks',
+    skillLevel: 'Beginner',
+    revenuePotential: '$2K \u2013 $30K+/month',
+    difficulty: 'Easy',
+    description:
+      'Online fitness coaching is the digital evolution of personal training. You trade geography and a 1:1 ceiling for a global client base and scalable programs \u2014 serving more people, generating more income, and working on your own schedule.',
+    whatItIs:
+      'Online fitness coaching means delivering training programs, nutritional guidance, accountability coaching, and fitness communities through digital channels: video calls, apps, email, and private communities. Coaches can offer 1:1 virtual sessions, group programs, self-paced courses, or monthly membership communities \u2014 or all four.',
+    howItMakesMoney:
+      '1:1 virtual coaching sessions typically run $75\u2013$200/hour. Group programs of 10\u201350 clients at $97\u2013$297/month each generate $1,000\u2013$15,000/month. Self-paced digital fitness programs sell for $47\u2013$497 and can be sold repeatedly with no additional time investment. Monthly membership communities at $29\u2013$97/month create highly predictable recurring revenue.',
+    howToGetStarted: [
+      'Obtain a recognized fitness certification if you don\'t already have one: NASM, ACE, ISSA, or NSCA are all respected and open doors with clients and platforms.',
+      'Define your niche: postpartum fitness, strength training for executives, marathon prep, weight loss for beginners. A specific transformation you deliver is worth more than general fitness guidance.',
+      'Build your audience on Instagram, TikTok, or YouTube by sharing free value: workout demonstrations, nutrition tips, client transformations (with permission).',
+      'Offer a free challenge (5\u20137 days) or a low-cost introductory program to build your client base, gather testimonials, and prove your methodology works.',
+      'Graduate your best clients from 1:1 into group programs once your 1:1 slots are full. Group programs scale your income without scaling your hours.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'TrueCoach',
+        description: 'Coaching platform for delivering personalized workout plans, tracking, and client communication.',
+        cost: '$19\u2013$79/month',
+        url: 'https://truecoach.co',
+      },
+      {
+        name: 'Kajabi',
+        description: 'All-in-one platform for selling fitness courses, memberships, and coaching programs.',
+        cost: '$149\u2013$399/month',
+        url: 'https://kajabi.com',
+      },
+      {
+        name: 'Zoom',
+        description: 'Video platform for live coaching sessions, group classes, and client check-ins.',
+        cost: 'Free / $15.99/month Pro',
+        url: 'https://zoom.us',
+      },
+    ],
+    mistakesToAvoid: [
+      'Staying stuck in 1:1 sessions forever. One-on-one coaching has an income ceiling. Build group programs and digital products to break through it.',
+      'Undercharging because fitness feels "easy" to you. Your expertise is years in the making. Price it accordingly.',
+      'Neglecting your online presence. Your social media is your portfolio and your primary marketing channel. Post consistently or pay someone to help you do so.',
+      'Skipping client onboarding. A thorough intake questionnaire, health history, and goal-setting process reduces liability and dramatically improves client outcomes.',
+    ],
+    relatedEpisodeSlug: 'virtual-fitness-instructor',
+    relatedHustleSlugs: ['digital-products', 'newsletter-business'],
+    tags: ['fitness', 'coaching', 'online', 'health', 'scalable'],
+    featured: false,
+    accentColor: '#EC4899',
+    publishDate: '2023-04-05',
+    readTime: '8 min read',
+  },
+  {
+    id: '17',
+    slug: 'tech-startup',
+    title: 'Building a Tech Startup',
+    tagline: 'From idea to product to traction \u2014 the operator\'s guide to building a tech company.',
+    category: 'Tech & Startups',
+    categorySlug: 'tech-startups',
+    startupCost: '$0 \u2013 $50,000',
+    startupCostRange: [0, 50000],
+    timeToFirstIncome: '3\u201318 months',
+    skillLevel: 'Advanced',
+    revenuePotential: '$0 to unlimited',
+    difficulty: 'Hard',
+    description:
+      'Building a tech startup is the highest-risk, highest-reward path on this entire platform. Most fail. Some generate life-changing outcomes. The difference between the ones that make it and the ones that don\'t is almost never the idea \u2014 it\'s the execution, the market insight, and the founder\'s ability to learn faster than the competition.',
+    whatItIs:
+      'A tech startup is a company built around a software product, app, or digital platform designed to scale. Unlike a service business (which scales by adding people), a tech product can serve thousands of customers with the same code base \u2014 making it the highest-leverage business model when it works. Founders typically raise venture capital or bootstrap to profitability.',
+    howItMakesMoney:
+      'Tech startups monetize through SaaS subscriptions ($10\u2013$500/month per user), freemium upgrades, transaction fees, API access, or marketplace commissions. A software product with 1,000 paying users at $50/month generates $50,000/month in recurring revenue. The economics improve dramatically with scale since the marginal cost of each new user approaches zero.',
+    howToGetStarted: [
+      'Identify a real, painful, frequent problem \u2014 ideally one you have experienced yourself. The best startups are built by founders who deeply understand the customer because they were the customer.',
+      'Validate before you build. Talk to 20\u201350 potential users before writing a line of code. Understand exactly what they would pay for and why.',
+      'Build a Minimum Viable Product (MVP) \u2014 the simplest version of your product that delivers the core value. No extra features, no polish. Just the core job done.',
+      'Get 10 paying customers before you raise money or scale. Revenue is the most credible proof that you have found product-market fit.',
+      'Decide early: bootstrap or raise. Bootstrapping gives you control; venture capital gives you speed and resources. Neither is universally better \u2014 it depends on your market and your goals.',
+    ],
+    toolsNeeded: [
+      {
+        name: 'Bubble / Webflow',
+        description: 'No-code platforms to build functional app prototypes without engineering resources.',
+        cost: '$29\u2013$249/month',
+        url: 'https://bubble.io',
+      },
+      {
+        name: 'Stripe',
+        description: 'Payment infrastructure for subscriptions, one-time purchases, and marketplace payouts.',
+        cost: '2.9% + $0.30 per transaction',
+        url: 'https://stripe.com',
+      },
+      {
+        name: 'Linear',
+        description: 'Product and engineering project management for fast-moving startup teams.',
+        cost: 'Free / $8/user/month',
+        url: 'https://linear.app',
+      },
+    ],
+    mistakesToAvoid: [
+      'Building in stealth for too long. The more time you spend building without customer feedback, the more time you spend building the wrong thing.',
+      'Chasing investors before finding product-market fit. The best time to raise money is when you don\'t desperately need it \u2014 when traction is already clear.',
+      'Co-founder conflicts. Define equity, roles, and decision-making authority in writing before you build anything. More startups die from founder disputes than from bad products.',
+      'Ignoring unit economics. A startup that grows but loses money on every customer will not survive to scale. Know your customer acquisition cost (CAC) and lifetime value (LTV) early.',
+    ],
+    relatedEpisodeSlug: 'saria-parker-sportsimist',
+    relatedHustleSlugs: ['digital-products', 'social-media-agency', 'newsletter-business'],
+    tags: ['startup', 'tech', 'SaaS', 'product', 'advanced'],
+    featured: false,
+    accentColor: '#7C3AED',
+    publishDate: '2024-09-15',
+    readTime: '12 min read',
+  },
+]
 
-K�[۝\��X����\��	�΋����[�]�K���I��K��[YN�	�U����\�ܚ\[ێ�	��X��[��\�X�Y�X�X���[�[��[�^�\��X�H][�\��ۙ\�[�\�]܈�����Y\[�ˉ������	�
-�WL�L�M�K�[۝	��\��	�΋��]�˘��I��K�K�Z\�Z�\��]��Y�	�Yۛܚ[���P��H��\X[��K�H�\�[�\��[�][ۈ�[��\�[[�[��][ً\�\��X�Hܙ\���Y�[][ۜ�\�H�ۋ[�Y��XX�K���	�[�\�X�\][^�[�ˈ�]��ۙ\�[�\�]ܜ�ٝ[�[�\�\�[X]H�Y[[��\�[��K[�XZ[�[�[��H���ˈ]�H�[۝�و�\�][��^[��\�[��\�\��K���	ԙ[Z[����[Hۈ���Y��ܙ]�\������\��Y�\�H�[�H��\��]\�X��\\��۝�X��\�H��[�H�Z[�YX�X�H[���YH[��]\�X\��[�ˉ��	���[[�����\��Y�ܙH�\�[\�^\��Y[���X����]�]��\�\�]�X���[�[��[��]�\�X[�Y�[Y[�ܙX]\��[��]\���\�X\��[�ˉ��K��[]Y\\��T�YΈ	�\��]\�Y�]\�]�X��[��Y[\\�I���[]Y\�T�Y�Έ�ܙX[Y\�]K\�[�[��	�\��X�\�\�[�[	�K�Y�Έ���X��[���	���\�X���	��	�	ٜ�ZY�	�	ٛY]	�K��X]\�Y��[�K�X��[���܎�	���
-�M����X�\�]N�	̌�L
-LI���XY[YN�	�LHZ[��XY	��K�Y�	�L����YΈ	٘\�[ۋ\�[[��X�\�[�\����]N�	�\��ۘ[�[[���\�[�\����Y�[�N�	�\��HܙX]^YH�܈�[H[��H�[Z][H�\��X�H[�H^H�܈[۝Y�\�[۝����]Y�ܞN�	�ܙX]]�H�\��X�\����]Y�ܞT�YΈ	�ܙX]]�K\�\��X�\����\�\����	�L�L�	
-L	���\�\����[��N��
-LK�[YUњ\��[���YN�	̗L�L͈�YZ������[]�[�	ЙY�[��\����]�[�YT�[�X[�	���L�L�	MR���[۝	��Y��X�[N�	�X\�I��\�ܚ\[ێ��	�\��ۘ[�[[��\�HY�]�\�Y�\�][�[ۈ�\��X�H�\�[�\��]�\]Z\�\���[��[�ܞH[�����][ۋ�Y�[�H]�H[�^YH�܈�\�[ۈ[�HX�[]H�[�\��[��]XZ�\�H\��ۈ�Y[�ۙ�Y[��Y[���[^H[�H�[L�M[��Y\��Z[���X�ˉ���]]\΂�	�H\��ۘ[�[[���\�[�\��[����\�[[���Y[���Z[Y]܈�[�ٛܛHZ\��\��ؙ\ˈ�\��X�\��[��H���HۙK][YH���]]Y]��[۝H��[���\��ۙ��[���\��ؙHX[�Y�[Y[��]Z[�\�ˈ�[\���ܚ��]^X�]]�\���Y\��]�[�\�[��\�[�]\��[�[�[ۙH�]�Y�][��HXZ�܈Y�H܈�\�Y\��[��][ۋ�����]XZ�\�[ۙ^N��	��[\��\X�[H�\��H	LL�L�
-L\��\��܈�ۜ�[][ۜ�	�L�L��܈���]]Y]�[�	
-LL�L��
-L
-��܈�[��[��X��Y�\ˈ[۝H�\��ؙHX[�Y�[Y[��]Z[�\��\�HHY�\�[]�\�Y�H[�[L�M]	
-LL�L�K
-L�[۝\��Y[�[�[��L�]Z[�\��Y[���[�\�]\�	
-KL�L�MK[��YX�X�H[۝H�X�\��[���]�[�YK�������]�\�Y�	НZ[[�\��ۈ�\��ؙH\�[�\�ܝ��[ˈ[�\�\��ۘ[�[H\�[�\��\�[�\���\�L�M��[Y[�]؜�\��]�[Hۈ[��Yܘ[K���	�ٙ�\���YH܈\���[�Y�[[���\��[ۜ���L�L�H��Y[��܈����\����Z[\�[[ۚX[�[��Y�ܙK�Y�\��۝[����	�Y�[�H[�\��X�N�^X�]]�H�\��ؙH�ۜ�[[����Y[�[[��\�\�^�H�\�[ۋ�\�Z[�X�H��[��L�MH�X�HXZ�\�X\��][���\�[ܙHY��X�Y[����	�\��\��]��ܘ\\���Y[��[��\���X[\�]HY�[��[��ܜܘ]H�X[\����\��H�Y[�����YY�����\�Y���	�][���]Z[�\�X��Y�\�ۘ�H[�H]�H�\X]�Y[�ˈ[۝H�\��ؙHX[�Y�[Y[�\�[ܙH�ٚ]X�H[�[ܙH�X�H[�ۙK[ٙ��\��[ۜˉ��K���әYYY��[YN�	�[��Yܘ[H�Z�����\�ܚ\[ێ�	�[�\��[X\�Hܝ��[�[��Y[�X�]Z\�][ۈ�[��[���[Y[�[�\��ܚ�[��[H\��X�]�H�ۜ�\�[�K�������	ќ�YI��\��	�΋��[��Yܘ[K���I��K��[YN�	��[��I��\�ܚ\[ێ�	�ܙX]H[����\���[H�ZY\�[��Y[���؛����\��ٙ\��[ۘ[[]�\�X�\ˉ������	ќ�YH�	L��[۝����\��	�΋���[��K���I��K��[YN�	�X��Y���\�ܚ\[ێ�	��Y[�X[�Y�[Y[��\�[H�܈ۘ��\�[���۝�X��[���X�[��[�]Y\�[ۛ�Z\�\ˉ������	ќ�YH�X[�	��[۝	��\��	�΋��X��Y˘��I��K�K�Z\�Z�\��]��Y�	�[�\��\��[���X�]\�H[�H[���[[��\���H��X[��\�[�\�ˈ�[Z][H�Y[��^H�[Z][H�]\�L�M[�ٝ[��Y�\�[H\�H]X[]H�Yۘ[���	��ܚ�[���]�]H�[H]Y\�[ۛ�Z\�K�[�\��[�[��H�Y[�	��Y�\�[K��[�[��Y�]�Y�ܙH�X�[��Z\��\��ؙH�]�[��Z\ٚ\�\�[��Y�[�ˉ��	әY�X�[��[�\��ۈ��[��\�[��K�Y�[�\����X[YYXH�\����Y�X�^�[[�\�K�[�X[�Y[��]�H��]�Y[��H[�H�[�[]�\�]�܈[K���	��Z[����\��H]�\�[ۙK��X�X[^�[��[�ۙH\Hو�Y[�
-^X�]]�\���Y\�Y[�	���ٙ\��[ۘ[�X\�HXZ�\��Y�\��[�[�X\��][���[X]X�[HX\�Y\����K��[]Y\\��T�YΈ	؜�X[��K]�\�KY�\�[ۋ\�[[�����[]Y\�T�Y�Έ�����X[[YYXKXY�[��I�	�Y�][\��X���K�Y�Έ�٘\�[ۉ�	��[[���	�ܙX]]�I�	��\��X�I�	��[Z][I�K��X]\�Y��[�K�X��[���܎�	��P�NI��X�\�]N�	̌�LKLMI���XY[YN�	�Z[��XY	��K�Y�	�L����YΈ	��]\�[��X�\�[�\����]N�	��]\�[���\�[�\����Y�[�N�	�\������[��[���۝�X��L�M���H�YZ�[�]�[����X�\��[���ܜܘ]HX���[�ˉ���]Y�ܞN�	��\��X�\�	��ۜ�[[�����]Y�ܞT�YΈ	��\��X�\�X�ۜ�[[�����\�\����	�KL�L�	L	���\�\����[��N��LLK�[YUњ\��[���YN�	̗L�L͈�YZ������[]�[�	�[�\�YYX]I���]�[�YT�[�X[�	���L�L�	����[۝	��Y��X�[N�	�YY][I��\�ܚ\[ێ��	��]\�[��\�H�[][ۜ�\�\�[�\���Z[ۈ^X�][ۋ��]H����Y�[]�\�]ۈ[YK[�XZ�HH]�[�Y[[ܘX�HL�M[�[�H�[�]�\��YY�Y�\�\�K��ܙ[ً[[�]���HHܙX]�]\�[��\��ܛX[��H�[�[ܙH]�[��[�[�HX\��][���[\ZYۋ����]]\΂�	�H�]\�[���\�[�\���\\�\�[��\��\�����܈]�[�Έ�Y[����ܜܘ]H[��\��\�^H\�Y\�ܘYX][ۜ��ۜ�ٚ]�[\�[�[ܙK�[�HX^H�ܚ����HH��[Y\��X[�]�[�
-�[�Y܈[�\��ۊKH����X��܈H�YH�]�[�
-\[�[��ۈ��[��Y�H���]��K��]�[�YH��Y\����H\�ZXY�X�[��X��Y�HX[�܈ۙ��[���ܜܘ]HX���[�ˉ����]XZ�\�[ۙ^N��	�]�[��]\�[��\X�[HX\���	�L�L�L
-�\�\��ۈ\[�[��ۈY[�H��\^]H[�X\��]�HL\\��ۈ]�[�]	
-L�XY�[�\�]\�	
-K[��]�[�YK��ܜܘ]H[���۝�X��L�M�X�\��[���YZ�H܈Z[Hܙ\��L�M�ݚYH�YX�X�H[���YH]�[����]H�X\�[܋Y�[Z[�H�X�Hو]�[�[ۛH�\�[�\��\ˉ������]�\�Y�	ԙ\�X\��[�\���[��Y�H���[��]\�[��]�ˈ[���]\��\]Z\�HHX[\�Z][�X�[��Y��[Y\��X[�]�[�X��\��L�M�]Y�[�Y�ܙH[�HZ�H[�\��\��ZY����[�ˉ��	��\��X[�]�X��X\�]�[���[Z[H�]\�[���܈�]\[��\����Y�[�H[�\����\���X�[��[�Y[�H�]�]H�\��\�HوH\��H]�[����	�Y�[�H[�\��Yۘ]\�Hٙ�\�[�Έ��K��[���YY]\��[�X[��ܜܘ]H��[��\ˈH�X\��[[�\�HY[�]HXZ�\�X\��][��X\�Y\�[��Y�\��[�[ܙHZ�[K���	НZ[�[][ۜ�\��]]�[��[�Y\��Y[��[��\���ܜܘ]H]�[���ܙ[�]ܜ�[��ۜ�ٚ]��ܙ[�]ܜ���\�H�]\�\���Y�[\�K���	�ܙX]HY\�YX��Y�\��]�X\�\�ZXY�X�[��Z[�[][HXY��[��[��\��X�H�Y\ˈ[X�Y�[�\��X�[��ܙX]\�\�]\���X\�X��Y�\�ܙX]HX\�HX�\�[ۜˉ��K���әYYY��[YN�	��]X\�I��\�ܚ\[ێ�	��[�[ً\�[K[���X�[��[�^[Y[����\��[���܈]�[��[�\��]ˉ������	ќ�YH
-����H\��[��X�[ۉ��\��	�΋���]X\�]\���I��K��[YN�	��]\�X\�I��\�ܚ\[ێ�	��]\�[��\�X�Y�X�]�[�X[�Y�[Y[��ٝ�\�H�܈][�\�Y[�\�[�]�[���\�X�ˉ������	�
-WL�L�M�K�[۝	��\��	�΋���]\�X\�K���I��K��[YN�	�����H�ܚ��X�I��\�ܚ\[ێ�	�����܈Y[�\�[��۝�X���Y]��܈]�[�����[�[][ۜ��[[�\��܈��Y[[�ˉ������	�
-�L�L�L��[۝	��\��	�΋���ܚ��X�K�����K���I��K�K�Z\�Z�\��]��Y�	��\�][���]�]\�Z]ˈX[\\�Y[��[�][ۜ��[��]�ۈ[�\��\�[�\��[�\�X[�[�H[XY�H[�\��\]][ۈ[�H��[X\��]���	�[�\��X�[����[��\�[�\�ˈ���X�[��]�X��Y�]��[YK��[X\��[��ܚ�]�\����]�\�]ܜˈۛ��[�\�������
-\��]�L�L��IJH[��X�HX�ݙH]���	�Z�[��]�\�H]�[�\K��Y[����ܜܘ]K[��\�X[]�[���\]Z\�H��\][HY��\�[���\�X�ˈ�X�X[^�HX\�K���	ӛ���X�[��\��]ˈ�\]Z\�H�WL�L�L	H\��۝�܈[]�[�ˈ��\����[�\�[Z[�]H�[��[][ۜ�\�HH�X[�\��[�\��]���X�[�\�[YK���K��[]Y\\��T�YΈ	؜�X[�\�[�\��X�]\�[��X�\�[�\�����[]Y\�T�Y�Έ�����X[[YYXKXY�[��I�	�Y�][\��X���K�Y�Έ�ٛ��	�	��]\�[���	�]�[���	��\��X�I�	���[�\�[�\���K��X]\�Y��[�K�X��[���܎�	��M��
-���X�\�]N�	̌�L
-�L�	���XY[YN�	�HZ[��XY	��K�Y�	�M	���YΈ	ܙX[Y\�]KY]�[�Y[�	��]N�	ԙX[\�]H]�[�Y[�	��Y�[�N�	����^[ۙ�^Z[��L�M�Z[�[�ݘ]K[�ܙX]H�[YH���HHܛ�[�\����]Y�ܞN�	ԙX[\�]H	�[��\�[�����]Y�ܞT�YΈ	ܙX[Y\�]I���\�\����	��L�L�	L
-����\�\����[��N�̌LK�[YUњ\��[���YN�	͗L�L�N[۝�����[]�[�	�Y�[��Y	���]�[�YT�[�X[�	���L�L�	
-L��\��ڙX�	��Y��X�[N�	�\�	��\�ܚ\[ێ��	ԙX[\�]H]�[�Y[�\�HY�\�[]�\�Y�H^H[��X[\�]K�[�H\�H���\��^Z[��H�\�Y���[��\��]L�M[�H\�HܙX][���[YH���H�]�[�\��\��Y��\�Y\�܈[�\�][^�Y�Z[[��ˈۙH�Y�H�[��HX[�[��[�\�]H[ܙH[�[��[�HX\��[�YX\�ˉ���]]\΂�	ԙX[\�]H]�[�Y[�[����\�X�]Z\�[��[�܈\��\��Y��\�Y\�[\�ݚ[��܈�Z[[��ۈ[K[��[[��܈�[��H�\�[�܈�ٚ]܈[���YK�]�[�\���ܚ�ۈ�ڙX���[��[�����H�[��KY�[Z[H�\��][KY�[Z[H�]��ۜ��X�[ۈ���[Y\��X[�Z[ˈH�[YHܙX]Y\�HY��\�[��H�]�Y[�[�\��[���
-[�
-��ۜ��X�[ۈ
-��[�[��[��H[�H[�X\��]�[YK�����]XZ�\�[ۙ^N��	�H�[\H�[YKXYX[L�M�^Z[��H\��\��Y\^�܈	ML�[�[��	
-ۈ�[�ݘ][ۋ[��[[���܈	�LL�M�[�\�]\�	
-�[��ٚ]�\��\�ܛ�[�]\]�[�Y[���[�ܙX]H	�L�L��J�[�\]Z]H\��ڙX��]�[�\��[��X\�����H�[����\]Y�ڙX��\��[�[[���YH�[H��][ۚ[���܈�]\�H�[K�������]�\�Y�	��\��]H�[\H�^X[�Y�\܈�����X[�Y�ܙH][\[��ܛ�[�]\]�[�Y[��[�\��[�[��H�ZX�[��[�[��[�����\��\�\��[�X[�Y�ܙH��[[���\��\��ڙX�ˉ��	НZ[[�\�X[N�H�X[\�]H]ܛ�^KH�[�\�[�۝�X�܋[�\��]X�
-�܈\��\��ڙX��KH[�\����\��ۜ��X�[ۈ�[��[�H�X[\�]HY�[����X�X[^�\�[�[��\�Y[���\�Y\ˉ��	�[�\��[�[�\���[�ۚ[��]�ˈ�]�[��H�Z[ۈH\��[]\�Z[�\�]��[�X[�[YHL�M�ۚ[��ۛ��Y�H\�ۙHوH[��[�\�\�X�X]YY�\�[�]�[�Y[����	ԘZ\�H�\][�H\��\�[���]\��]�H[��\�ܜˈ[��X[�\�H��X�\�Y�]H]�[�\�
-��X[�Y�\�H�ڙX�
-H[�[Z]Y\��\��
-���ݚYH�\][
-H�][���ٚ]�
-���܈̌���	�[�\�ܚ]H�ۜ�\��]]�[K��Z[[�HMWL�Ľ	H�۝[��[��Hۈ[�[�ݘ][ۈ[��ۜ��X�[ۈ�Y�]ˈHX[�]�Z[\�HHۙ\��\�H����ݙ\��[�HY�[�\�ܚ]K���K���әYYY��[YN�	����\�����]	��\�ܚ\[ێ�	���[Y\��X[�X[\�]H\�[��]�ܛ\��܈�[�[��]�[�Y[��]\�[���\ˉ������	ќ�YH
-���]
-H�	�
-��[۝
-���\�I��\��	�΋�����]���I��K��[YN�	����ܙI��\�ܚ\[ێ�	��ۜ��X�[ۈ�ڙX�X[�Y�[Y[�]�ܛH�܈\��\�]�[�Y[��ڙX�ˉ������	��\��H�X�[����\��	�΋�����ܙK���I��K��[YN�	�X[�X����\�ܚ\[ێ�	ԙX[\�]H[�\�ܚ][�����܈[�[^�[��]�[�Y[�X[X�ۛ�ZX�ˉ������	ќ�YH�	K�NK�[۝	��\��	�΋��X[�X�˚[���K�K�Z\�Z�\��]��Y�	�[�\�\�[X][���ۜ��X�[ۈ���ˈ�۝�X�܈�Y�\�H���^Y�X�\ˈYH�	H�۝[��[��H�]�\�H�Y�]�Y�ܙH[�H[�\�ܚ]HHX[���	�Yۛܚ[���\��Z[�����ˈ�ۜ��X�[ۈ�[��X�ܝYH[�\�\��HL�[[۝�ڙX��]	
-K�[۝[��[�[��[������Y�	
-��[�\��[����\�\ˉ��	НZ[[���]�]X\��]�[Y][ۋ��ۙ�\�H\�H\�[X[��܈�][�H\�H�Z[[���Y�ܙH[�H��XZ�ܛ�[��[��Y�[���]�Y]���\��YHX��ܜ[ۈ�]\ˉ��	���[��[��]�[�Y[��]�]HX[K�\�\���H����ܝ��]�]H�[XX�H��]ܛ�^K[�[�\�]�[�ܙX]X[��[\\����K��[]Y\\��T�YΈ	�KX�\��]�[]�\�X[Y\�]I���[]Y\�T�Y�Έ�ܙX[Y\�]K\�[�[��	�[ؚ[KZ�YKZ[��\�[���K�Y�Έ�ܙX[\�]I�	�]�[�Y[�	�	��ۜ��X�[ۉ�	�[��\�[���	�Y�[��Y	�K��X]\�Y��[�K�X��[���܎�	��Q
-Q	��X�\�]N�	̌�L
-�LL	���XY[YN�	�L�Z[��XY	��K�Y�	�MI���YΈ	�[ؚ[KZ�YKZ[��\�[����]N�	�[ؚ[H�YH[��\�[����Y�[�N�	�Hݙ\����Y�X[\�]H�X�H]�\�����\�\�[�[[��[�][��[�K����]Y�ܞN�	ԙX[\�]H	�[��\�[�����]Y�ܞT�YΈ	ܙX[Y\�]I���\�\����	�LL�L�	
-L	���\�\����[��N��L
-LK�[YUњ\��[���YN�	�WL�L��[۝�����[]�[�	�[�\�YYX]I���]�[�YT�[�X[�	�R�L�L�	MR���[۝	��Y��X�[N�	�YY][I��\�ܚ\[ێ��	�[ؚ[H�YH[��\�[��\�H�\�Z�\�Xܙ][��X[\�]K���\�X�]Z\�][ۈ����Y�\��\�[ۋX�\��]\���[�[�[����\�H�\�\��Z�[H�[ݙH[��Y][ۘ[�[�\��XZ�H\�H�\������]Y�H[��[��\�ܜ�ݙ\����L�M�Z\���ˉ���]]\΂�	�[ؚ[H�YH[��\�[��[����\�\��\�[��X[�Y�X�\�Y�Y\�L�MZ]\�\��[�ۙY܈[�[�[�ۙYL�M[��[�[��܈�[[��[HۈX\�K]�[�ۈ\�\ˈH\��[�ۙY[�[YX[��[�H�ۈH�YH[���X�[۝H�[��H[�[�[�ۙY
-��[�[
-H[�[YX[��[�H�ۈH[�H�YH�]�ۈ[���X���[�L�MH��\�[X[�Y�[Y[�Y�^ZY[\��X������]XZ�\�[ۙ^N��	�H[ؚ[H�YH\��\�Y�܈	�[��[�Y]	
-��[۝�[�\�]\�H͉Hܛ����\�[ۋX�\��]\���Y�ܙH^[��\�L�M�[X]X�[H�]\��ܛZ[���Y][ۘ[�X[\�]K�H��[�[[�[
-�ۚ[��[�[�H[ؚ[H�YH\��H�[�ZY[	�L�L�
-��[۝\���][[����X�]�HX[�Y�[Y[���[\����\�HX\�K]�[�ۈ��X�\�\�X\���[Z][H�X�\�[��]Z[�[���YH\�[��H^[ٙ�\�[��������]�\�Y�	��YHH��XZ[�[ؚ[H�YH[��\�[��[�[Έ
-JH�^K�ZX�[��[�[�]�YX[�Y\�[��YH\����
-�H\��\�H܈]�[�[ؚ[H�YH\���[���X���[����	њ[�[��[�ܞHۈ�X�X����X\��]X�KܘZY��\�[ؚ[KZ�YK\�X�Y�X�]�ܛ\�Z�HR�[Y�K[��H�]�[��[ؚ[H�YH\���[�[�[���\��X[�Y�\�ˉ��	�[�^\�[��X��Y�ܙH[�H�^K�[ؚ[H�Y\��[�]�H[�\�\�H\��Y\���و�؛[\�[��P��[[��\�]\�H^[��]�H��^��]H�ٙ\��[ۘ[[��X�[ۋ���	НZ[�[][ۜ�\��]\��X[�Y�\��[��ۙ\�ˈ^Hٝ[�ۛ��و]�Z[X�H�Y\��Y�ܙH^H]HX\��][��[��X��YH�Y�\��[\��\���܈[�\�X�]Z\�][ۈ\[[�K���	��ۜ�Y\�HX\�K]�[�ۈ[�[��[[��H�YHۈHX\�K]�[�ۈYܙY[Y[�[���[�H���X�H�ۈ^[Y[��\��HH�[Z][H�X�K[�XZ[�Z[��\����\�[��H^[ٙ�\�[����K���әYYY��[YN�	�R�[Y�I��\�ܚ\[ێ�	�H\��\�[ؚ[H�YH\�[��X\��]X�H�܈�[�[��[��[�ܞK�������	ќ�YH��X\��	��\��	�΋��Z�[Y�K���I��K��[YN�	јX�X����X\��]X�I��\�ܚ\[ێ�	�^�[[���\��H�܈�[�[��\��\��Y[ؚ[H�YHX[�\�X�H���H�[\�ˉ������	ќ�YI��\��	�΋�٘X�X���˘��K�X\��]X�I��K��[YN�	��\��I��\�ܚ\[ێ�	�ܝ��[��X��[��[��[�[��X[�\ܝ[���܈[�ܙ�[��Y[��[ؚ[H�YH[��\�ܜˉ������	ќ�YI��\��	�΋���\��K���I��K�K�Z\�Z�\��]��Y�	Н^Z[���]�]Hܛ�Y�[��X�[ۋ�[�\�\�H[XY�H[���[�][ۈ\��Y\�ۈ[ؚ[H�Y\��[�\��HܙX]X[[��H[ۙ^H]ݙ\��Y����	�Yۛܚ[��\���[\�[��Y�[][ۜˈXX�[ؚ[H�YH\��\�]��ۈ�[\�X��]���[��ۈ�Y\�\�K��[�][��\�H�[��\�[[�]�X�[ۈو[�\��YK���	�ݙ\����[��]H\��Y\ˈ[ؚ[H�Y\��[�]�H��\X�]Y]H\�ܚY\ˈ[�^\��ܚ��]H]H��\[�H^\�Y[��Y[�X[�Y�X�\�Y�\�[�ˉ��	�[�\�\�[X][��H��[�\��[][ۈ�\�ˈY�[�H�ۈH�YH[��YHH\���\�[����[��[��]YY^�H[�\�[�[��[�[�ܙX\�H�X�[��Y\ˉ��K��[]Y\\��T�YΈ	ܘX�[Z\��[�^�[[ؚ[KZ�Y\����[]Y\�T�Y�Έ�ܙX[Y\�]K\�[�[��	ܙX[Y\�]KY]�[�Y[�	�K�Y�Έ��[ؚ[H�Y\��	ܙX[\�]I�	��\�����	�[��\�[���	ؙY�[��\�Y��Y[�I�K��X]\�Y��[�K�X��[���܎�	��M�L�I��X�\�]N�	̌�L
-KL�����XY[YN�	�HZ[��XY	��K�Y�	�M����YΈ	�ۛ[�KY�]�\��X��X�[����]N�	�ۛ[�H�]�\����X�[����Y�[�N�	��YHۙK[ۋ[ۙH�\��[ۜ��܈��[X�H��ܘ[\�]�\��H[��Y�]ۘ�K����]Y�ܞN�	��\��X�\�	��ۜ�[[�����]Y�ܞT�YΈ	��\��X�\�X�ۜ�[[�����\�\����	�L�L�	
-L	���\�\����[��N��
-LK�[YUњ\��[���YN�	�WL�L��YZ������[]�[�	ЙY�[��\����]�[�YT�[�X[�	���L�L�	����[۝	��Y��X�[N�	�X\�I��\�ܚ\[ێ��	�ۛ[�H�]�\����X�[��\�HY�][]��][ۈو\��ۘ[�Z[�[�ˈ[�H�YH�[�ܘ\H[�HN�H�Z[[���܈H�ؘ[�Y[��\�H[���[X�H��ܘ[\�L�M�\��[��[ܙH[�K�[�\�][��[ܙH[���YK[��ܚ�[��ۈ[�\��ۈ��Y[K����]]\΂�	�ۛ[�H�]�\����X�[��YX[��[]�\�[���Z[�[����ܘ[\��]�][ۘ[�ZY[��KX���[�X�[]H��X�[��[��]�\����[][�]Y\���Y�Y�][�[��[Έ�Y[��[�\�[XZ[[��]�]H��[][�]Y\ˈ��X�\��[�ٙ�\�N�H�\�X[�\��[ۜ�ܛ�\��ܘ[\��[�\X�Y��\��\�܈[۝HY[X�\��\��[][�]Y\�L�M܈[��\������]XZ�\�[ۙ^N��	�N�H�\�X[��X�[���\��[ۜ�\X�[H�[�	
-�WL�L����\��ܛ�\��ܘ[\�وLL�L�L�Y[��]	M�L�L��M��[۝XX��[�\�]H	KL�L�MK�[۝��[�\X�YY�][�]�\����ܘ[\��[�܈	
+export function getHustleBySlug(slug: string): Hustle | undefined {
+  return hustles.find((h) => h.slug === slug)
+}
 
-�L�L�
-M�[��[��H���\X]YH�]��Y][ۘ[[YH[��\�Y[��[۝HY[X�\��\��[][�]Y\�]	�WL�L�M��[۝ܙX]HY�H�YX�X�H�X�\��[���]�[�YK�������]�\�Y�	�؝Z[�H�X��ۚ^�Y�]�\���\�Y�X�][ۈY�[�Hۗ	�[�XYH]�HۙN��T�KP�KT��K܈���H\�H[�\�X�Y[��[��ܜ��]�Y[��[�]�ܛ\ˉ��	�Y�[�H[�\��X�N���\�[H�]�\����[���Z[�[���܈^X�]]�\�X\�]ۈ�\�ZY�����܈�Y�[��\�ˈH�X�Y�X��[�ٛܛX][ۈ[�H[]�\�\��ܝ[ܙH[��[�\�[�]�\���ZY[��K���	НZ[[�\�]YY[��Hۈ[��Yܘ[KZ���܈[�UX�H�H�\�[����YH�[YN��ܚ��][[ۜ��][ۜ��]�][ۈ\��Y[��[�ٛܛX][ۜ�
-�]\�Z\��[ۊK���	�ٙ�\�H��YH�[[��H
+export function getFeaturedHustles(): Hustle[] {
+  return hustles.filter((h) => h.featured)
+}
 
-WL�L��^\�H܈H��X���[���X�ܞH��ܘ[H��Z[[�\��Y[��\�K�]\�\�[[ۚX[�[��ݙH[�\�Y]����H�ܚ�ˉ��	�ܘYX]H[�\��\��Y[�����HN�H[��ܛ�\��ܘ[\�ۘ�H[�\�N�H���\�H�[�ܛ�\��ܘ[\���[H[�\�[���YH�]�]��[[��[�\��\�ˉ��K���әYYY��[YN�	��YP��X�	��\�ܚ\[ێ�	���X�[��]�ܛH�܈[]�\�[��\��ۘ[^�Y�ܚ��][���X��[��[��Y[���[][�X�][ۋ�������	�NWL�L�
-�K�[۝	��\��	�΋���YX��X������K��[YN�	��Z�X�I��\�ܚ\[ێ�	�[Z[�[ۙH]�ܛH�܈�[[���]�\����\��\�Y[X�\��\�[���X�[����ܘ[\ˉ������	�MWL�L��NK�[۝	��\��	�΋���Z�X�K���I��K��[YN�	֛��I��\�ܚ\[ێ�	՚Y[�]�ܛH�܈]�H��X�[���\��[ۜ�ܛ�\�\��\�[��Y[��X��Z[�ˉ������	ќ�YH�	MK�NK�[۝����\��	�΋�ޛ��K�\���K�K�Z\�Z�\��]��Y�	��^Z[���X��[�N�H�\��[ۜ��ܙ]�\��ۙK[ۋ[ۙH��X�[��\�[�[���YH�Z[[�ˈ�Z[ܛ�\��ܘ[\�[�Y�][��X�����XZ���Y�]���	�[�\��\��[���X�]\�H�]�\���Y[��X\�H��[�K�[�\�^\�\�H\�YX\��[�HXZ�[�ˈ�X�H]X��ܙ[��K���	әY�X�[��[�\�ۛ[�H�\�[��K�[�\����X[YYXH\�[�\�ܝ��[�[�[�\��[X\�HX\��][���[��[����ۜ�\�[�H܈^H��Y[ۙH�[[�H��ˉ��	���\[���Y[�ۘ��\�[�ˈHܛ�Y�[�Z�H]Y\�[ۛ�Z\�KX[\�ܞK[���[\�][�����\���YX�\�XX�[]H[��[X]X�[H[\�ݙ\��Y[��]��Y\ˉ��K��[]Y\\��T�YΈ	ݚ\�X[Y�]�\��Z[���X�܉���[]Y\�T�Y�Έ��Y�][\��X���	ۙ]��]\�X�\�[�\���K�Y�Έ�ٚ]�\���	���X�[���	�ۛ[�I�	�X[	�	���[X�I�K��X]\�Y��[�K�X��[���܎�	��P�NI��X�\�]N�	̌��L
-L
-I���XY[YN�	�Z[��XY	��K�Y�	�M����YΈ	�X�\�\�\	��]N�	НZ[[��HX��\�\	��Y�[�N�	ќ��HYXH���X���X�[ۈL�MH�\�]ܗ	���ZYH��Z[[��HX���\[�K����]Y�ܞN�	�X�	��\�\����]Y�ܞT�YΈ	�X�\�\�\����\�\����	�L�L�	
-L	���\�\����[��N��
-LK�[YUњ\��[���YN�	��L�L�N[۝�����[]�[�	�Y�[��Y	���]�[�YT�[�X[�	��[�[Z]Y	��Y��X�[N�	�\�	��\�ܚ\[ێ��	НZ[[��HX��\�\\�HY�\�\�\��Y�\�\�]�\�]ۈ\�[�\�H]�ܛK�[���Z[���YH�[�\�]HY�KX�[��[���]��Y\ˈHY��\�[��H�]�Y[�Hۙ\�]XZ�H][�Hۙ\�]ۗ	�\�[[���]�\�HYXHL�M]	��H^X�][ۋHX\��][��Y�[�H��[�\�	��X�[]H�X\���\�\�[�H��\]][ۋ����]]\΂�	�HX��\�\\�H��\[�H�Z[\��[�H�ٝ�\�H��X�\܈Y�][]�ܛH\�YۙY���[K�[�Z�HH�\��X�H�\�[�\��
-�X���[\��HY[��[�JKHX���X��[��\��H�\�[��و�\��Y\���]H�[YH��H�\�HL�MXZ�[��]HY�\�[]�\�Y�H�\�[�\��[�[�[�]�ܚ�ˈ��[�\��\X�[H�Z\�H�[�\�H�\][܈�����\��ٚ]X�[]K�����]XZ�\�[ۙ^N��	�X��\�\�[ۙ]^�H��Y��XT��X��ܚ\[ۜ�
-	LL�L�
-L�[۝\�\�\�K��Y[Z][H\ܘY\��[��X�[ۈ�Y\�THX��\��܈X\��]X�H��[Z\��[ۜˈH�ٝ�\�H��X��]K^Z[��\�\��]	
-L�[۝�[�\�]\�	
-L�[۝[��X�\��[���]�[�YK�HX�ۛ�ZX��[\�ݙH�[X]X�[H�]��[H�[��HHX\��[�[���وXX��]�\�\�\��X�\��\�ˉ������]�\�Y�	�Y[�Y�HH�X[Z[��[��\]Y[��؛[HL�MYX[HۙH[�H]�H^\�Y[��Y[�\��[��H�\��\�\�\�H�Z[�H��[�\����Y\H[�\��[�H�\��Y\��X�]\�H^H�\�HH�\��Y\����	՘[Y]H�Y�ܙH[�H�Z[�[���L�L�L�[�X[\�\���Y�ܙHܚ][��H[�Hو��K�[�\��[�^X�H�]^H��[^H�܈[��K���	НZ[HZ[�[][H�XX�H��X�
-U�
-HL�MH�[\\��\��[ۈو[�\���X�][]�\��H�ܙH�[YK���^�H�X]\�\����\���\�H�ܙH�؈ۙK���	��]L^Z[���\��Y\���Y�ܙH[�H�Z\�H[ۙ^H܈��[K��]�[�YH\�H[��ܙYX�H��و][�H]�H��[���X�[X\��]�]���	�X�YHX\�N������\܈�Z\�K������\[���]�\�[�H�۝����[�\�H�\][�]�\�[�H�YY[��\��\��\ˈ�Z]\�\�[�]�\��[H�]\�L�M]\[��ۈ[�\�X\��][�[�\���[ˉ��K���әYYY��[YN�	НX��H��X������\�ܚ\[ێ�	ӛ�X��H]�ܛ\���Z[�[��[ۘ[\���\\��]�][��[�Y\�[���\��\��\ˉ������	��WL�L��K�[۝	��\��	�΋�؝X��K�[���K��[YN�	���\I��\�ܚ\[ێ�	�^[Y[�[���\��X�\�H�܈�X��ܚ\[ۜ�ۙK][YH\��\�\�[�X\��]X�H^[�]ˉ������	̋�IH
-�	��\��[��X�[ۉ��\��	�΋����\K���I��K��[YN�	�[�X\���\�ܚ\[ێ�	���X�[�[��[�Y\�[���ڙX�X[�Y�[Y[��܈�\�[[ݚ[���\�\X[\ˉ������	ќ�YH�	�\�\��[۝	��\��	�΋��[�X\��\	��K�K�Z\�Z�\��]��Y�	НZ[[��[��X[�܈��ۙˈH[ܙH[YH[�H�[��Z[[���]�]�\��Y\��YY�X��H[ܙH[YH[�H�[��Z[[��Hܛۙ�[�ˉ��	��\�[��[��\�ܜ��Y�ܙH�[�[����X�[X\��]�]�H�\�[YH��Z\�H[ۙ^H\��[�[�Hۗ	�\�\�][H�YY]L�M�[��X�[ۈ\�[�XYH�X\����	���Y��[�\��ۙ�X�ˈY�[�H\]Z]K��\�[�X�\�[ۋ[XZ�[��]]ܚ]H[�ܚ][���Y�ܙH[�H�Z[[�][�ˈ[ܙH�\�\�YH���H��[�\�\�]\�[����H�Y��X�ˉ��	�Yۛܚ[��[�]X�ۛ�ZX�ˈH�\�\]ܛ����]��\�[ۙ^Hۈ]�\�H�\��Y\��[���\��]�H���[K�ۛ��[�\��\��Y\�X�]Z\�][ۈ���
-�P�H[�Y�][YH�[YH
-�HX\�K���K��[]Y\\��T�YΈ	��\�XK\\��\�\�ܝ�[Z\�	���[]Y\�T�Y�Έ��Y�][\��X���	����X[[YYXKXY�[��I�	ۙ]��]\�X�\�[�\���K�Y�Έ���\�\	�	�X�	�	��XT��	���X�	�	�Y�[��Y	�K��X]\�Y��[�K�X��[���܎�	�����QQ	��X�\�]N�	̌�LKLMI���XY[YN�	�L�Z[��XY	��K�B��^ܝ�[��[ۈ�]\�P�T�Y��YΈ��[��N�\�H[�Y�[�Y�]\��\�\˙�[�
+export function getRelatedHustles(slugs: string[]): Hustle[] {
+  return hustles.filter((h) => slugs.includes(h.slug)).slice(0, 3)
+}
 
-
-HO���Y�OOH�Y�B�B��^ܝ�[��[ۈ�]�X]\�Y\�\�
-N�\�V�H�]\��\�\˙�[\�
-
-HO���X]\�Y
-B�B��^ܝ�[��[ۈ�]�[]Y\�\��Y�Έ��[���JN�\�V�H�]\��\�\˙�[\�
-
-HO��Y�˚[��Y\���Y�JK��X�J�B�B��^ܝ�[��[ۈ�]\�\ОP�]Y�ܞJ�]Y�ܞT�YΈ��[��N�\�V�H�]\��\�\˙�[\�
-
-HO���]Y�ܞT�Y�OOH�]Y�ܞT�Y�B�B
+export function getHustlesByCategory(categorySlug: string): Hustle[] {
+  return hustles.filter((h) => h.categorySlug === categorySlug)
+}
