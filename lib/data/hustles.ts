@@ -1073,3 +1073,7 @@ export function getRelatedHustles(slugs: string[]): Hustle[] {
 export function getHustlesByCategory(categorySlug: string): Hustle[] {
   return hustles.filter((h) => h.categorySlug === categorySlug)
 }
+
+export function getAllHustles(): Hustle[] {
+  return hustles
+}
