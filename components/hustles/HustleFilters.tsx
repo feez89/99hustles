@@ -1,117 +1,121 @@
 'use client'
 
-import { useState } from 'react'
 import { Search, X, SlidersHorizontal } from 'lucide-react'
-import { categories } from '@/lib/data/categories'
-import { cn } from '@/lib/utils'
+import { Dispatch, SetStateAction } from 'react'
+
+type SortOption = 'popular' | 'newest' | 'difficulty-asc' | 'difficulty-desc' | 'cost-asc' | 'cost-desc'
 
 interface HustleFiltersProps {
-  onSearch: (query: string) => void
+  categories: string[]
+  selectedCategories: string[]
   onCategoryChange: (category: string) => void
-  onDifficultyChange: (difficulty: string) => void
-  activeCategory: string
-  activeDifficulty: string
+  selectedDifficulty: string | null
+  onDifficultyChange: Dispatch<SetStateAction<string | null>>
   searchQuery: string
+  onSearchChange: Dispatch<SetStateAction<string>>
+  sortBy: SortOption
+  onSortChange: Dispatch<SetStateAction<SortOption>>
+  onClearFilters: () => void
+  hasActiveFilters: boolean | string
 }
 
-const difficulties = ['All', 'Easy', 'Medium', 'Hard']
-
 export default function HustleFilters({
-  onSearch,
+  categories,
+  selectedCategories,
   onCategoryChange,
+  selectedDifficulty,
   onDifficultyChange,
-  activeCategory,
-  activeDifficulty,
   searchQuery,
+  onSearchChange,
+  sortBy,
+  onSortChange,
+  onClearFilters,
+  hasActiveFilters,
 }: HustleFiltersProps) {
-  const [showFilters, setShowFilters] = useState(false)
+  const difficulties = ['Easy', 'Medium', 'Hard']
+  const sortOptions: { value: SortOption; label: string }[] = [
+    { value: 'popular', label: 'Most Popular' },
+    { value: 'newest', label: 'Newest' },
+    { value: 'difficulty-asc', label: 'Easiest First' },
+    { value: 'difficulty-desc', label: 'Hardest First' },
+    { value: 'cost-asc', label: 'Lowest Cost' },
+    { value: 'cost-desc', label: 'Highest Cost' },
+  ]
 
   return (
-    <div className="space-y-5">
-      {/* Search Bar */}
+    <div className="space-y-6">
+      {/* Search */}
       <div className="relative">
-        <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+        <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-brand-white/40" />
         <input
           type="text"
+          placeholder="Search hustles..."
           value={searchQuery}
-          onChange={(e) => onSearch(e.target.value)}
-          placeholder="Search hustles by name, category, or keyword..."
-          className="w-full pl-11 pr-10 py-3.5 bg-white border border-brand-border rounded-xl text-sm text-brand-black placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-white/50 transition-all"
+          onChange={(e) => onSearchChange(e.target.value)}
+          className="w-full pl-12 pr-4 py-3 bg-brand-black border border-brand-border rounded-xl text-brand-white placeholder-brand-white/40 focus:outline-none focus:border-brand-gold transition-colors"
         />
-        {searchQuery && (
+      </div>
+
+      <div className="flex flex-wrap gap-4 items-center">
+        {/* Sort */}
+        <div className="flex items-center gap-2">
+          <SlidersHorizontal className="w-4 h-4 text-brand-white/50" />
+          <select
+            value={sortBy}
+            onChange={(e) => onSortChange(e.target.value as SortOption)}
+            className="bg-brand-black border border-brand-border rounded-lg px-3 py-2 text-brand-white text-sm focus:outline-none focus:border-brand-gold"
+          >
+            {sortOptions.map((opt) => (
+              <option key={opt.value} value={opt.value}>{opt.label}</option>
+            ))}
+          </select>
+        </div>
+
+        {/* Difficulty filter */}
+        <div className="flex gap-2">
+          {difficulties.map((d) => (
+            <button
+              key={d}
+              onClick={() => onDifficultyChange(selectedDifficulty === d ? null : d)}
+              className={`px-3 py-1.5 rounded-lg text-sm font-medium border transition-all ${
+                selectedDifficulty === d
+                  ? 'bg-brand-gold text-brand-black border-brand-gold'
+                  : 'border-brand-border text-brand-white/70 hover:border-brand-gold/50'
+              }`}
+            >
+              {d}
+            </button>
+          ))}
+        </div>
+
+        {/* Clear */}
+        {hasActiveFilters && (
           <button
-            onClick={() => onSearch('')}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-brand-black transition-colors"
-            aria-label="Clear search"
+            onClick={onClearFilters}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-brand-white/60 hover:text-brand-white transition-colors"
           >
             <X className="w-4 h-4" />
+            Clear filters
           </button>
         )}
       </div>
 
-      {/* Filter Toggle (mobile) */}
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2 overflow-x-auto pb-1 hide-scrollbar">
-          {/* Category Pills */}
+      {/* Category chips */}
+      <div className="flex flex-wrap gap-2">
+        {categories.map((cat) => (
           <button
-            onClick={() => onCategoryChange('all')}
-            className={cn(
-              'whitespace-nowrap text-xs font-semibold px-3.5 py-2 rounded-full border transition-all duration-150 flex-shrink-0',
-              activeCategory === 'all'
-                ? 'bg-brand-black text-white border-brand-black'
-                : 'bg-white text-gray-600 border-brand-border hover:border-brand-black'
-            )}
+            key={cat}
+            onClick={() => onCategoryChange(cat)}
+            className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-all ${
+              selectedCategories.includes(cat)
+                ? 'bg-brand-gold text-brand-black border-brand-gold'
+                : 'border-brand-border text-brand-white/60 hover:border-brand-gold/50'
+            }`}
           >
-            All Categories
+            {cat}
           </button>
-          {categories.map((cat) => (
-            <button
-              key={cat.slug}
-              onClick={() => onCategoryChange(cat.slug)}
-              className={cn(
-                'whitespace-nowrap text-xs font-semibold px-3.5 py-2 rounded-full border transition-all duration-150 flex-shrink-0',
-                activeCategory === cat.slug
-                  ? 'bg-brand-black text-white border-brand-black'
-                  : 'bg-white text-gray-600 border-brand-border hover:border-brand-black'
-              )}
-            >
-              {cat.icon} {cat.name}
-            </button>
-          ))}
-        </div>
-        <button
-          onClick={() => setShowFilters(!showFilters)}
-          className="flex items-center gap-2 text-xs font-semibold text-gray-600 border border-brand-border rounded-lg px-3 py-2 hover:border-brand-black transition-all ml-3 flex-shrink-0"
-        >
-          <SlidersHorizontal className="w-3.5 h-3.5" />
-          Filters
-        </button>
+        ))}
       </div>
-
-      {/* Expanded Filters */}
-      {showFilters && (
-        <div className="bg-brand-cream border border-brand-border rounded-xl p-5">
-          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
-            Difficulty
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {difficulties.map((diff) => (
-              <button
-                key={diff}
-                onClick={() => onDifficultyChange(diff === 'All' ? 'all' : diff)}
-                className={cn(
-                  'text-xs font-semibold px-3.5 py-2 rounded-full border transition-all',
-                  activeDifficulty === (diff === 'All' ? 'all' : diff)
-                    ? 'bg-brand-black text-white border-brand-black'
-                    : 'bg-white text-gray-600 border-brand-border hover:border-brand-black'
-                )}
-              >
-                {diff}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
     </div>
   )
 }
