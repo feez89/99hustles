@@ -1,256 +1,408 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { ArrowLeft, CheckCircle2, ExternalLink, Mic, AlertTriangle } from 'lucide-react'
-import { getHustleBySlug, getRelatedHustles, hustles } from '@/lib/data/hustles'
-import { getEpisodeBySlug } from '@/lib/data/episodes'
-import QuickStatsPanel from '@/components/hustles/QuickStatsPanel'
-import HustleCard from '@/components/hustles/HustleCard'
-import EpisodeCard from '@/components/episodes/EpisodeCard'
+import { ArrowRight, DollarSign, Clock, TrendingUp, Zap, CheckCircle2, AlertTriangle, BookOpen, ExternalLink } from 'lucide-react'
+import { getHustleBySlug, getAllHustles, getRelatedHustles } from '@/lib/data/hustles'
 import EmailCaptureSection from '@/components/sections/EmailCaptureSection'
-import NewsletterInlineForm from '@/components/forms/NewsletterInlineForm'
-import Badge from '@/components/ui/Badge'
-import { formatDate } from '@/lib/utils'
+import HustleCard from '@/components/hustles/HustleCard'
 import type { Metadata } from 'next'
 
-interface Props {
-  params: { slug: string }
-}
-
-export async function generateStaticParams() {
-  return hustles.map((h) => ({ slug: h.slug }))
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const hustle = getHustleBySlug(params.slug)
-  if (!hustle) return {}
-  return {
-    title: `${hustle.title} — How It Works, What It Pays`,
-    description: hustle.tagline,
+interface PageProps {
+  params: {
+    slug: string
   }
 }
 
-export default function HustleBreakdownPage({ params }: Props) {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const hustle = getHustleBySlug(params.slug)
-  if (!hustle) notFound()
+
+  if (!hustle) {
+    return {
+      title: 'Hustle Not Found | 99 Hustles',
+      description: 'This hustle does not exist.',
+    }
+  }
+
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://99hustles.com'
+  const description = `${hustle.tagline} Learn how to get started with ${hustle.title}, including startup costs, time to first income, and realistic earnings potential.`
+
+  return {
+    title: `${hustle.title} - Side Hustle Guide | 99 Hustles`,
+    description,
+    keywords: [hustle.title, hustle.category, ...hustle.tags, 'side hustle', 'make money online'].join(', '),
+    openGraph: {
+      title: `${hustle.title} - Side Hustle Guide`,
+      description,
+      url: `${baseUrl}/hustles/${hustle.slug}`,
+      type: 'article',
+      publishedTime: hustle.publishDate,
+      tags: hustle.tags,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${hustle.title} - Side Hustle Guide`,
+      description,
+    },
+    alternates: {
+      canonical: `${baseUrl}/hustles/${hustle.slug}`,
+    },
+  }
+}
+
+export async function generateStaticParams() {
+  const hustles = getAllHustles()
+  return hustles.map((hustle) => ({
+    slug: hustle.slug,
+  }))
+}
+
+export default function HustleDetailPage({ params }: PageProps) {
+  const hustle = getHustleBySlug(params.slug)
+
+  if (!hustle) {
+    notFound()
+  }
 
   const relatedHustles = getRelatedHustles(hustle.relatedHustleSlugs)
-  const relatedEpisode = hustle.relatedEpisodeSlug
-    ? getEpisodeBySlug(hustle.relatedEpisodeSlug)
-    : null
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: `How to Start ${hustle.title}`,
+    description: hustle.whatItIs,
+    image: '/images/hustles/placeholder.jpg',
+    estimatedCost: {
+      '@type': 'PriceSpecification',
+      priceCurrency: 'USD',
+      price: hustle.startupCostRange[1].toString(),
+    },
+    totalTime: hustle.timeToFirstIncome,
+    step: hustle.howToGetStarted.map((step, index) => ({
+      '@type': 'HowToStep',
+      position: (index + 1).toString(),
+      name: `Step ${index + 1}`,
+      text: step,
+    })),
+  }
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-brand-black pt-16">
-        <div className="container-main py-12 md:py-16">
-          {/* Breadcrumb */}
-          <div className="flex items-center gap-2 mb-8 text-sm">
-            <Link
-              href="/hustles"
-              className="flex items-center gap-1.5 text-white/50 hover:text-white transition-colors"
-            >
-              <ArrowLeft className="w-3.5 h-3.5" />
-              Hustle Library
-            </Link>
-            <span className="text-white/20">/</span>
-            <span className="text-white/70">{hustle.category}</span>
-          </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
-          {/* Category + Meta */}
-          <div className="flex flex-wrap items-center gap-3 mb-6">
-            <Badge variant="on-dark" size="md">
+      {/* HERO SECTION */}
+      <section className="bg-brand-black py-16 lg:py-24">
+        <div className="container-main">
+          <div className="mb-6 inline-block">
+            <div className="badge-on-dark">
               {hustle.category}
-            </Badge>
-            <span className="text-white/30 text-xs">·</span>
-            <span className="text-white/50 text-xs">{hustle.readTime}</span>
-            <span className="text-white/30 text-xs">·</span>
-            <span className="text-white/50 text-xs">Updated {formatDate(hustle.publishDate)}</span>
+            </div>
           </div>
 
-          {/* Title */}
-          <h1 className="font-display font-bold text-white text-3xl md:text-5xl lg:text-6xl leading-tight max-w-4xl mb-5">
+          <h1 className="heading-xl mb-4 text-white">
             {hustle.title}
           </h1>
 
-          {/* Tagline */}
-          <p className="text-white/60 text-lg md:text-xl max-w-2xl leading-relaxed mb-8">
+          <p className="prose-light mb-12 max-w-2xl text-lg">
             {hustle.tagline}
           </p>
 
-          {/* Tags */}
-          <div className="flex flex-wrap gap-2">
-            {hustle.tags.map((tag) => (
-              <span
-                key={tag}
-                className="text-xs px-2.5 py-1 rounded-full bg-white/10 text-white/50 border border-white/10"
-              >
-                #{tag}
-              </span>
-            ))}
+          {/* METRICS STRIP */}
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+            <div className="rounded-lg bg-brand-dark p-4">
+              <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
+                Startup Cost
+              </div>
+              <div className="text-lg font-display font-semibold text-white">
+                {hustle.startupCost}
+              </div>
+            </div>
+
+            <div className="rounded-lg bg-brand-dark p-4">
+              <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
+                Time to First Dollar
+              </div>
+              <div className="text-lg font-display font-semibold text-white">
+                {hustle.timeToFirstIncome}
+              </div>
+            </div>
+
+            <div className="rounded-lg bg-brand-dark p-4">
+              <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
+                Income Potential
+              </div>
+              <div className="text-lg font-display font-semibold text-white">
+                {hustle.revenuePotential}
+              </div>
+            </div>
+
+            <div className="rounded-lg bg-brand-dark p-4">
+              <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
+                Difficulty
+              </div>
+              <div className="text-lg font-display font-semibold text-white">
+                {hustle.difficulty}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Quick Stats */}
-      <section className="bg-brand-cream border-b border-brand-border">
-        <div className="container-main py-8">
-          <QuickStatsPanel hustle={hustle} />
-        </div>
-      </section>
-
-      {/* Article Body */}
-      <section className="bg-white">
-        <div className="container-main py-14">
-          <div className="max-w-3xl">
-
-            {/* What This Hustle Is */}
-            <div className="mb-12">
-              <div className="flex items-center gap-3 mb-5">
-                <span className="text-2xl">💡</span>
-                <h2 className="font-display font-bold text-brand-black text-2xl">
-                  What this hustle is
+      {/* MAIN CONTENT + SIDEBAR */}
+      <section className="section-y bg-white">
+        <div className="container-main">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-12">
+            {/* LEFT COLUMN - MAIN CONTENT */}
+            <div className="lg:col-span-2">
+              {/* What It Is */}
+              <div className="mb-16">
+                <h2 className="heading-lg font-display mb-6 text-brand-black">
+                  What It Is
                 </h2>
+                <p className="prose-light text-lg leading-relaxed text-gray-700">
+                  {hustle.whatItIs}
+                </p>
               </div>
-              <p className="text-gray-600 text-base leading-relaxed">{hustle.whatItIs}</p>
-            </div>
 
-            {/* How It Makes Money */}
-            <div className="mb-12">
-              <div className="flex items-center gap-3 mb-5">
-                <span className="text-2xl">💰</span>
-                <h2 className="font-display font-bold text-brand-black text-2xl">
-                  How it makes money
+              {/* How It Makes Money */}
+              <div className="mb-16">
+                <h2 className="heading-lg font-display mb-6 text-brand-black">
+                  How It Makes Money
                 </h2>
+                <p className="prose-light text-lg leading-relaxed text-gray-700">
+                  {hustle.howItMakesMoney}
+                </p>
               </div>
-              <p className="text-gray-600 text-base leading-relaxed">{hustle.howItMakesMoney}</p>
-            </div>
 
-            {/* Email Capture Mid-Page */}
-            <div className="my-14 rounded-2xl bg-brand-black p-8 text-center">
-              <p className="text-white text-xs font-semibold uppercase tracking-widest mb-2">
-                Stay in the loop
-              </p>
-              <h3 className="font-display font-bold text-white text-xl md:text-2xl mb-3">
-                Get this breakdown + weekly new ones.
-              </h3>
-              <p className="text-white/50 text-sm mb-5">
-                Free weekly breakdowns. No spam. Just the playbooks.
-              </p>
-              <NewsletterInlineForm layout="row" />
-            </div>
-
-            {/* How to Get Started */}
-            <div className="mb-12">
-              <div className="flex items-center gap-3 mb-5">
-                <span className="text-2xl">🚀</span>
-                <h2 className="font-display font-bold text-brand-black text-2xl">
-                  How to get started
+              {/* How to Get Started */}
+              <div className="mb-16">
+                <h2 className="heading-lg font-display mb-8 text-brand-black">
+                  How to Get Started
                 </h2>
-              </div>
-              <div className="space-y-4">
-                {hustle.howToGetStarted.map((step, i) => (
-                  <div key={i} className="flex gap-4">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-black text-white font-bold text-sm flex items-center justify-center mt-0.5">
-                      {i + 1}
-                    </div>
-                    <p className="text-gray-600 text-base leading-relaxed pt-1">{step}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Tools Needed */}
-            <div className="mb-12">
-              <div className="flex items-center gap-3 mb-5">
-                <span className="text-2xl">🛠️</span>
-                <h2 className="font-display font-bold text-brand-black text-2xl">Tools needed</h2>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {hustle.toolsNeeded.map((tool) => (
-                  <div
-                    key={tool.name}
-                    className="border border-brand-border rounded-xl p-4 bg-brand-cream hover:border-white/20 transition-colors"
-                  >
-                    <div className="flex items-start justify-between mb-2">
-                      <h4 className="font-semibold text-brand-black text-sm">{tool.name}</h4>
-                      {tool.url && (
-                        <a
-                          href={tool.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-gray-400 hover:text-white transition-colors ml-2"
-                          aria-label={`Visit ${tool.name}`}
+                <ol className="space-y-6">
+                  {hustle.howToGetStarted.map((step, index) => (
+                    <li key={index} className="flex gap-4">
+                      <div className="flex-shrink-0">
+                        <div
+                          className="flex h-8 w-8 items-center justify-center rounded-full font-display font-semibold text-white"
+                          style={{ backgroundColor: hustle.accentColor }}
                         >
-                          <ExternalLink className="w-3.5 h-3.5" />
-                        </a>
-                      )}
-                    </div>
-                    <p className="text-gray-500 text-xs leading-relaxed mb-2">{tool.description}</p>
-                    <span className="text-xs font-semibold text-black">{tool.cost}</span>
-                  </div>
-                ))}
+                          {index + 1}
+                        </div>
+                      </div>
+                      <div className="flex-1 pt-1">
+                        <p className="text-base text-gray-700 leading-relaxed">
+                          {step}
+                        </p>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
               </div>
-            </div>
 
-            {/* Mistakes to Avoid */}
-            <div className="mb-12">
-              <div className="flex items-center gap-3 mb-5">
-                <span className="text-2xl">⚠️</span>
-                <h2 className="font-display font-bold text-brand-black text-2xl">
-                  Mistakes to avoid
-                </h2>
-              </div>
-              <div className="space-y-3">
-                {hustle.mistakesToAvoid.map((mistake, i) => (
-                  <div
-                    key={i}
-                    className="flex gap-3 p-4 bg-red-50 border border-red-100 rounded-xl"
-                  >
-                    <AlertTriangle className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-700 text-sm leading-relaxed">{mistake}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Related Episode */}
-            {relatedEpisode && (
-              <div className="mb-12">
-                <div className="flex items-center gap-3 mb-5">
-                  <Mic className="w-5 h-5 text-black" />
-                  <h2 className="font-display font-bold text-brand-black text-2xl">
-                    Related episode
+              {/* Tools & Platforms */}
+              {hustle.toolsNeeded.length > 0 && (
+                <div className="mb-16">
+                  <h2 className="heading-lg font-display mb-8 text-brand-black">
+                    Tools & Platforms
                   </h2>
+                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                    {hustle.toolsNeeded.map((tool, index) => (
+                      <div
+                        key={index}
+                        className="card-light border border-brand-subtle rounded-lg p-6 hover:shadow-md transition-shadow"
+                      >
+                        <div className="flex items-start justify-between mb-3">
+                          <h3 className="font-display font-semibold text-brand-black">
+                            {tool.name}
+                          </h3>
+                          {tool.url && (
+                            <ExternalLink className="h-4 w-4 text-gray-400 flex-shrink-0" />
+                          )}
+                        </div>
+                        <p className="text-sm text-gray-600 mb-4">
+                          {tool.description}
+                        </p>
+                        <div className="flex items-center justify-between">
+                          <span
+                            className="text-sm font-semibold"
+                            style={{ color: hustle.accentColor }}
+                          >
+                            {tool.cost}
+                          </span>
+                          {tool.url && (
+                            <Link
+                              href={tool.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-sm font-semibold text-gray-600 hover:text-brand-black transition-colors"
+                            >
+                              Visit
+                              <ArrowRight className="inline-block h-3 w-3 ml-1" />
+                            </Link>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <EpisodeCard episode={relatedEpisode} />
+              )}
+
+              {/* Common Mistakes to Avoid */}
+              {hustle.mistakesToAvoid.length > 0 && (
+                <div className="mb-16">
+                  <h2 className="heading-lg font-display mb-8 text-brand-black flex items-center gap-3">
+                    <AlertTriangle className="h-6 w-6" style={{ color: hustle.accentColor }} />
+                    Common Mistakes to Avoid
+                  </h2>
+                  <div className="space-y-4">
+                    {hustle.mistakesToAvoid.map((mistake, index) => (
+                      <div
+                        key={index}
+                        className="flex gap-4 rounded-lg border-l-4 p-4"
+                        style={{ borderLeftColor: hustle.accentColor, backgroundColor: '#FFFBF7' }}
+                      >
+                        <AlertTriangle className="h-5 w-5 flex-shrink-0 mt-0.5" style={{ color: hustle.accentColor }} />
+                        <p className="text-gray-700">
+                          {mistake}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Related Hustles */}
+              {relatedHustles.length > 0 && (
+                <div className="mb-16">
+                  <h2 className="heading-lg font-display mb-8 text-brand-black">
+                    Related Hustles
+                  </h2>
+                  <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                    {relatedHustles.map((relatedHustle) => (
+                      <HustleCard key={relatedHustle.id} hustle={relatedHustle} />
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* RIGHT COLUMN - STICKY SIDEBAR */}
+            <div className="lg:col-span-1">
+              <div className="sticky top-24">
+                <div className="card-dark rounded-lg p-8 bg-brand-card border border-brand-subtle">
+                  <div className="space-y-6 mb-8">
+                    {/* Startup Cost */}
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <DollarSign className="h-4 w-4 text-gray-400" />
+                        <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                          Startup Cost
+                        </span>
+                      </div>
+                      <div
+                        className="text-xl font-display font-semibold"
+                        style={{ color: hustle.accentColor }}
+                      >
+                        {hustle.startupCost}
+                      </div>
+                      <p className="text-xs text-gray-500 mt-1">
+                        {hustle.startupCostRange[0]} - ${hustle.startupCostRange[1]}
+                      </p>
+                    </div>
+
+                    {/* Time to First Dollar */}
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <Clock className="h-4 w-4 text-gray-400" />
+                        <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                          Time to First Dollar
+                        </span>
+                      </div>
+                      <div className="text-lg font-display font-semibold text-white">
+                        {hustle.timeToFirstIncome}
+                      </div>
+                    </div>
+
+                    {/* Income Potential */}
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <TrendingUp className="h-4 w-4 text-gray-400" />
+                        <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                          Income Potential
+                        </span>
+                      </div>
+                      <div className="text-lg font-display font-semibold text-white">
+                        {hustle.revenuePotential}
+                      </div>
+                    </div>
+
+                    {/* Skill Level */}
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <Zap className="h-4 w-4 text-gray-400" />
+                        <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                          Skill Level
+                        </span>
+                      </div>
+                      <div className="inline-block">
+                        <span
+                          className="text-xs font-semibold px-3 py-1 rounded-full text-white"
+                          style={{ backgroundColor: hustle.accentColor }}
+                        >
+                          {hustle.skillLevel}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Difficulty */}
+                    <div>
+                      <div className="flex items-center gap-2 mb-2">
+                        <CheckCircle2 className="h-4 w-4 text-gray-400" />
+                        <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                          Difficulty
+                        </span>
+                      </div>
+                      <div className="inline-block">
+                        <span
+                          className="text-xs font-semibold px-3 py-1 rounded-full text-white"
+                          style={{ backgroundColor: hustle.accentColor }}
+                        >
+                          {hustle.difficulty}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="border-t border-brand-subtle pt-6 space-y-3">
+                    <Link
+                      href="/quiz"
+                      className="btn-primary block text-center w-full py-3 rounded-lg font-semibold transition-all"
+                      style={{ backgroundColor: hustle.accentColor }}
+                    >
+                      Take the Hustle Quiz
+                    </Link>
+                    <Link
+                      href="/hustles"
+                      className="btn-dark block text-center w-full py-3 rounded-lg font-semibold border border-brand-subtle text-white hover:bg-brand-subtle transition-colors"
+                    >
+                      View All Hustles
+                    </Link>
+                  </div>
+                </div>
               </div>
-            )}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Related Hustles */}
-      {relatedHustles.length > 0 && (
-        <section className="bg-brand-cream border-t border-brand-border">
-          <div className="container-main py-14">
-            <h2 className="font-display font-bold text-brand-black text-2xl mb-8">
-              Related hustles
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {relatedHustles.map((h) => (
-                <HustleCard key={h.id} hustle={h} />
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Bottom Email Capture */}
+      {/* EMAIL CAPTURE */}
       <EmailCaptureSection
         variant="dark"
-        headline="Found this useful? Get a new one every week."
-        subheadline="Join 10,000+ builders who get the weekly hustle breakdown — free, every week, in your inbox."
-        ctaText="Subscribe free"
+        headline="Join Thousands Getting Weekly Hustle Breakdowns"
+        subheadline="Get detailed guides for side hustles that actually work, with real income numbers and startup costs."
+        ctaText="Get Free Access"
       />
     </>
   )
