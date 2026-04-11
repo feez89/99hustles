@@ -15,7 +15,6 @@ export default function Header() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 0)
     }
-
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -67,7 +66,7 @@ export default function Header() {
               href="/quiz"
               className="inline-block px-5 py-2.5 bg-white text-brand-black font-semibold text-sm rounded transition-all duration-200 hover:bg-white/90 active:scale-95"
             >
-              Find Your Hustle â
+              Find Your Hustle →
             </Link>
           </div>
 
@@ -103,7 +102,7 @@ export default function Header() {
                   href="/quiz"
                   className="block w-full text-center px-4 py-2.5 bg-white text-brand-black font-semibold text-sm rounded transition-all duration-200 hover:bg-white/90"
                 >
-                  Find Your Hustle â
+                  Find Your Hustle →
                 </Link>
               </div>
             </div>
