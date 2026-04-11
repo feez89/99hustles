@@ -1,33 +1,106 @@
 import { MetadataRoute } from 'next'
-import { SITE_URL } from '@/lib/constants'
-import { hustles } from '@/lib/data/hustles'
+import { getAllHustles } from '@/lib/data/hustles'
 import { episodes } from '@/lib/data/episodes'
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date()
+const BASE_URL = 'https://99hustles.com'
 
-  const staticRoutes: MetadataRoute.Sitemap = [
-    { url: SITE_URL,                   lastModified: now, changeFrequency: 'weekly',  priority: 1.0 },
-    { url: `${SITE_URL}/hustles`,      lastModified: now, changeFrequency: 'weekly',  priority: 0.9 },
-    { url: `${SITE_URL}/episodes`,     lastModified: now, changeFrequency: 'weekly',  priority: 0.9 },
-    { url: `${SITE_URL}/about`,        lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${SITE_URL}/newsletter`,   lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${SITE_URL}/contact`,      lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
+export default function sitemap(): MetadataRoute.Sitemap {
+  // Static pages with high priority
+  const staticPages: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}/`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1.0,
+    },
+    {
+      url: `${BASE_URL}/hustles`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/episodes`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/about`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/newsletter`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/quiz`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ]
 
-  const hustleRoutes: MetadataRoute.Sitemap = hustles.map((h) => ({
-    url:             `${SITE_URL}/hustles/${h.slug}`,
-    lastModified:    new Date(h.publishDate),
+  // SEO landing pages
+  const seoPages: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}/side-hustles-for-beginners`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/online-side-hustles`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/low-cost-side-hustles`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/best-ai-side-hustles`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/creative-side-hustles`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+  ]
+
+  // Dynamic hustle pages
+  const hustles = getAllHustles()
+  const hustlePages: MetadataRoute.Sitemap = hustles.map((hustle) => ({
+    url: `${BASE_URL}/hustles/${hustle.slug}`,
+    lastModified: new Date(hustle.updatedAt || hustle.publishedAt),
     changeFrequency: 'monthly' as const,
-    priority:        0.8,
+    priority: 0.8,
   }))
 
-  const episodeRoutes: MetadataRoute.Sitemap = episodes.map((e) => ({
-    url:             `${SITE_URL}/episodes/${e.slug}`,
-    lastModified:    new Date(e.publishDate),
-    changeFrequency: 'monthly' as const,
-    priority:        0.8,
+  // Dynamic episode pages
+  const episodePages: MetadataRoute.Sitemap = episodes.map((episode) => ({
+    url: `${BASE_URL}/episodes/${episode.slug}`,
+    lastModified: new Date(episode.publishedAt),
+    changeFrequency: 'never' as const,
+    priority: 0.7,
   }))
 
-  return [...staticRoutes, ...hustleRoutes, ...episodeRoutes]
+  return [...staticPages, ...seoPages, ...hustlePages, ...episodePages]
 }
