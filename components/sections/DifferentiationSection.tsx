@@ -2,41 +2,41 @@ export default function DifferentiationSection() {
   const features = [
     {
       id: 1,
-      icon: 'ð°',
+      icon: '💰',
       title: 'Startup Costs',
-      description: 'Exactly how much it costs to start, from $0 to funded.'
+      description: 'Exactly how much it costs to start, from $0 to funded.',
     },
     {
       id: 2,
-      icon: 'â±',
+      icon: '⏱',
       title: 'Time to First Dollar',
-      description: 'How long before you actually make money.'
+      description: 'How long before you actually make money.',
     },
     {
       id: 3,
-      icon: 'ð',
+      icon: '📊',
       title: 'Realistic Income Range',
-      description: 'Not best case â median operator income.'
+      description: 'Not best case — median operator income.',
     },
     {
       id: 4,
-      icon: 'ð ',
+      icon: '🛠',
       title: 'Tools & Platforms',
-      description: 'What you actually need to run the hustle.'
+      description: 'What you actually need to run the hustle.',
     },
     {
       id: 5,
-      icon: 'â',
+      icon: '✅',
       title: 'Step-by-Step Playbooks',
-      description: 'Documented breakdowns from real operators.'
+      description: 'Documented breakdowns from real operators.',
     },
     {
       id: 6,
-      icon: 'ð',
+      icon: '🎙',
       title: 'Podcast Deep Dives',
-      description: 'Extended interviews with people doing it.'
-    }
-  ];
+      description: 'Extended interviews with people doing it.',
+    },
+  ]
 
   return (
     <section className="section-y bg-brand-dark">
@@ -53,7 +53,8 @@ export default function DifferentiationSection() {
 
         {/* Subheadline */}
         <p className="text-white/70 text-center max-w-2xl mx-auto mb-16 font-sans">
-          Every hustle we document includes the real numbers â startup cost, realistic income ranges, tools used, and what actually trips people up.
+          Every hustle we document includes the real numbers — startup cost, realistic
+          income ranges, tools used, and what actually trips people up.
         </p>
 
         {/* Feature Grid */}
@@ -75,5 +76,5 @@ export default function DifferentiationSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }
