@@ -240,7 +240,7 @@ export function QuizFlow() {
   }
 
   const handleBack = () => {
-    if ((currentStep as number) === 'results') {
+    if (currentStep === 'results') {
       setCurrentStep(QUESTIONS.length - 1)
       setSelectedAnswer(
         answers[QUESTIONS.length - 1] ?? null
