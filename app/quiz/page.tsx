@@ -13,7 +13,7 @@ export default function QuizPage() {
           {/* Header */}
           <div className="text-center mb-12 md:mb-16">
             <p className="eyebrow mb-4 text-white/60">
-              Free Â· 60 Seconds Â· No Signup Required
+              Free · 60 Seconds · No Signup Required
             </p>
             <h1 className="heading-xl mb-4 text-white">
               Find Your Perfect Side Hustle
