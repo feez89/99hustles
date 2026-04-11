@@ -26,7 +26,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: '99 Hustles â Real People. Real Income. Real Breakdowns.',
+    default: '99 Hustles — Real People. Real Income. Real Breakdowns.',
     template: '%s | 99 Hustles',
   },
   description:
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://99hustles.com',
     siteName: '99 Hustles',
-    title: '99 Hustles â Real People. Real Income. Real Breakdowns.',
+    title: '99 Hustles — Real People. Real Income. Real Breakdowns.',
     description:
       'Documented income streams, hustle breakdowns, and long-form podcast conversations with real people building real businesses.',
     images: [
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '99 Hustles â Real People. Real Income. Real Breakdowns.',
+    title: '99 Hustles — Real People. Real Income. Real Breakdowns.',
     description:
       'Documented income streams, hustle breakdowns, and long-form podcast conversations with real people building real businesses.',
     images: ['https://99hustles.com/og-image.jpg'],
@@ -139,9 +139,8 @@ export default function RootLayout({
       'https://instagram.com/99hustles',
       'https://youtube.com/99hustles',
     ],
-    contact: {
+    contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+1-XXX-XXX-XXXX',
       contactType: 'Customer Service',
       email: 'hello@99hustles.com',
     },
