@@ -19,7 +19,7 @@ export const episodes: Episode[] = [
       name: 'Marcus Cole',
       title: 'Founder',
       company: 'Elevate Edit Studio',
-      bio: "Marcus Cole built a 6-figure video editing agency from his apartment in Atlanta without a film degree or a mentor. He now coaches other editors on scaling their freelance work into agencies. He's also an investor in two SaaS tools for content creators.",
+      bio: "Marcus Cole built a 6-figure video editing agency from his apartment in Atlanta without a film degree or a mentor. He now coaches other editors on scaling their freelance work into agencies. He\'s also an investor in two SaaS tools for content creators.",
     },
     highlights: [
       '"I sent 60 cold DMs before I got one response. That one response turned into $36,000 in revenue over 12 months."',
@@ -29,14 +29,14 @@ export const episodes: Episode[] = [
     relatedHustleSlugs: ['freelance-video-editing', 'social-media-agency'],
     duration: '58 min',
     publishDate: '2024-03-10',
-    youtubeId: 'dQw4w9WgXcQ',
+    youtubeId: 'eMwCSB7oB-Q',
     featured: true,
     category: 'Agency & Services',
   },
   {
     id: '2',
     slug: 'newsletter-monetization-playbook',
-    title: "From 0 to 47,000 Subscribers: Jasmine's Newsletter Went From Side Project to $14K/Month",
+    title: "From 0 to 47,000 Subscribers: Jasmine\'s Newsletter Went From Side Project to $14K/Month",
     episodeNumber: 9,
     summary:
       "Jasmine Reid started her newsletter 'The Operator Brief' as a weekly email she was already sending to friends in her industry. Eighteen months later, it has 47,000 subscribers and generates $14,000/month through sponsorships, a paid tier, and a digital product suite. This is the newsletter monetization playbook — including the exact sponsorship pitch that landed her first $3,000 deal at just 4,000 subscribers.",
@@ -61,7 +61,7 @@ export const episodes: Episode[] = [
     relatedHustleSlugs: ['newsletter-business', 'digital-products', 'faceless-youtube-channel'],
     duration: '64 min',
     publishDate: '2024-02-20',
-    youtubeId: 'dQw4w9WgXcQ',
+    youtubeId: 'KYVLfXDMuDs',
     featured: true,
     category: 'Content & Media',
   },
@@ -71,7 +71,7 @@ export const episodes: Episode[] = [
     title: "The Unfiltered Truth About Dropshipping in 2024 — What Nobody on YouTube Will Tell You",
     episodeNumber: 7,
     summary:
-      "Everyone's seen the dropshipping gurus with Lamborghinis. Nobody talks about the 97% failure rate or the actual path that works. Kevin Park tried dropshipping three times before figuring out the model that works — and it looks nothing like what you've seen on YouTube. This episode breaks down the actual math, the real risk, and the system that got him to $80K/month in GMV.",
+      "Everyone\'s seen the dropshipping gurus with Lamborghinis. Nobody talks about the 97% failure rate or the actual path that works. Kevin Park tried dropshipping three times before figuring out the model that works — and it looks nothing like what you\'ve seen on YouTube. This episode breaks down the actual math, the real risk, and the system that got him to $80K/month in GMV.",
     keyTakeaways: [
       'Branded dropshipping beats generic. Faceless AliExpress stores are dead — differentiated brands with better packaging win.',
       'The product is the ad. If you can\'t demo it in 15 seconds on TikTok, it\'s the wrong product.',
@@ -93,7 +93,7 @@ export const episodes: Episode[] = [
     relatedHustleSlugs: ['dropshipping', 'amazon-fba', 'print-on-demand'],
     duration: '71 min',
     publishDate: '2024-02-12',
-    youtubeId: 'dQw4w9WgXcQ',
+    youtubeId: 'T511o3duY9Q',
     featured: false,
     category: 'E-Commerce',
   },
@@ -115,7 +115,7 @@ export const episodes: Episode[] = [
       name: 'Priya Nair',
       title: 'Creator & Founder',
       company: 'WealthByDesign (YouTube)',
-      bio: "Priya Nair is a healthcare administrator and content creator who built a 100K+ subscriber YouTube channel while working full-time. Her channel covers personal finance, investing, and financial independence for millennials. She's been featured in multiple financial media publications.",
+      bio: "Priya Nair is a healthcare administrator and content creator who built a 100K+ subscriber YouTube channel while working full-time. Her channel covers personal finance, investing, and financial independence for millennials. She\'s been featured in multiple financial media publications.",
     },
     highlights: [
       '"I literally picked every single topic based on search volume. I don\'t make what I want to make — I make what people are already looking for."',
@@ -125,7 +125,7 @@ export const episodes: Episode[] = [
     relatedHustleSlugs: ['faceless-youtube-channel', 'newsletter-business', 'digital-products'],
     duration: '55 min',
     publishDate: '2024-01-22',
-    youtubeId: 'dQw4w9WgXcQ',
+    youtubeId: 'jKaFkDMlHHY',
     featured: true,
     category: 'Content & Media',
   },
@@ -135,7 +135,7 @@ export const episodes: Episode[] = [
     title: "$80K/Year Selling T-Shirts: The Print-on-Demand Playbook That Actually Works on Etsy",
     episodeNumber: 3,
     summary:
-      "DeShawn Williams makes $80K per year selling t-shirts, mugs, and wall art on Etsy — and he's never touched a single product. This is the real print-on-demand playbook: how he finds profitable niches before they saturate, how he creates designs (without being a designer), and how he runs Etsy ads at a 3.8x ROAS consistently.",
+      "DeShawn Williams makes $80K per year selling t-shirts, mugs, and wall art on Etsy — and he\'s never touched a single product. This is the real print-on-demand playbook: how he finds profitable niches before they saturate, how he creates designs (without being a designer), and how he runs Etsy ads at a 3.8x ROAS consistently.",
     keyTakeaways: [
       'Niche research is the actual business. DeShawn spends more time on research than design because finding the right niche does 80% of the work.',
       'Volume beats perfection. His top-performing design took 20 minutes in Canva. His "best" design took 3 hours and sold 6 units.',
@@ -157,7 +157,7 @@ export const episodes: Episode[] = [
     relatedHustleSlugs: ['print-on-demand', 'digital-products', 'dropshipping'],
     duration: '62 min',
     publishDate: '2024-01-08',
-    youtubeId: 'dQw4w9WgXcQ',
+    youtubeId: 'T_fi-mGaf9E',
     featured: false,
     category: 'E-Commerce',
   },
@@ -167,7 +167,7 @@ export const episodes: Episode[] = [
     title: "0 to 10 Clients in 90 Days: The Cold Outreach System That Built a $15K/Month SMMA",
     episodeNumber: 15,
     summary:
-      "Aaliyah Torres turned a $0 investment and a cold outreach strategy into a $15K/month social media management agency — in 90 days. She never ran ads. She didn't need a big following. She just needed a system and the willingness to hear 'no' a lot before hearing 'yes.' This is that system.",
+      "Aaliyah Torres turned a $0 investment and a cold outreach strategy into a $15K/month social media management agency — in 90 days. She never ran ads. She didn\'t need a big following. She just needed a system and the willingness to hear \'no\' a lot before hearing \'yes.\' This is that system.",
     keyTakeaways: [
       'Niche is everything. Aaliyah only works with med spas and aesthetic clinics — a focus that makes every pitch more relevant and conversion rates 3x higher.',
       'The DM is not the close. The DM is only the meeting invite. The close happens on the call. Stop trying to close in the DM.',
@@ -189,7 +189,7 @@ export const episodes: Episode[] = [
     relatedHustleSlugs: ['social-media-agency', 'freelance-video-editing', 'digital-products'],
     duration: '67 min',
     publishDate: '2024-03-25',
-    youtubeId: 'dQw4w9WgXcQ',
+    youtubeId: 'Mnl-b2xiB6U',
     featured: true,
     category: 'Agency & Services',
   },
@@ -203,7 +203,7 @@ export function getFeaturedEpisodes(): Episode[] {
   return episodes.filter((e) => e.featured)
 }
 
-export function getLatestEpisodes(count = 3): Episode[] {
+export function getLatestEpisodes(count: number = 3): Episode[] {
   return [...episodes]
     .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime())
     .slice(0, count)
