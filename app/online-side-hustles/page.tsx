@@ -27,19 +27,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: 'Can I really make money with online side hustles?',
-    a: 'Yes, absolutely. Online hustles range from modest $200â500/month passive income (ads, affiliate marketing) to substantial $2,000+/month active income (freelancing, consulting). The key is choosing something aligned with your skills and consistently executing. Most successful people start small and scale over time.',
+    a: 'Yes, absolutely. Online hustles range from modest $200–500/month passive income (ads, affiliate marketing) to substantial $2,000+/month active income (freelancing, consulting). The key is choosing something aligned with your skills and consistently executing. Most successful people start small and scale over time.',
   },
   {
     q: 'What online side hustle pays the most?',
-    a: 'High-paying online hustles include freelance writing, web development, consulting, and digital products. Freelancers with expertise can earn $50â200+ per hour. However, these typically require existing skills. Entry-level online hustles (content writing, virtual assistance) pay less but are easier to start.',
+    a: 'High-paying online hustles include freelance writing, web development, consulting, and digital products. Freelancers with expertise can earn $50–200+ per hour. However, these typically require existing skills. Entry-level online hustles (content writing, virtual assistance) pay less but are easier to start.',
   },
   {
     q: 'What online side hustle requires the least startup cost?',
-    a: 'Digital products, freelancing, blogging, and content creation have near-zero startup costs if you already have a computer and internet. You only need a domain and hosting ($10â15/month) to get started. Affiliate marketing and dropshipping require minimal investment as well.',
+    a: 'Digital products, freelancing, blogging, and content creation have near-zero startup costs if you already have a computer and internet. You only need a domain and hosting ($10–15/month) to get started. Affiliate marketing and dropshipping require minimal investment as well.',
   },
   {
     q: 'How much time do I need to dedicate to an online side hustle?',
-    a: 'Passive income streams (affiliate marketing, ads) require 5â10 hours/week upfront but generate money while you sleep. Active hustles (freelancing, consulting) are typically 10â20 hours/week. Some online hustles allow you to work on your own schedule, others have client expectations. Choose based on your available time.',
+    a: 'Passive income streams (affiliate marketing, ads) require 5–10 hours/week upfront but generate money while you sleep. Active hustles (freelancing, consulting) are typically 10–20 hours/week. Some online hustles allow you to work on your own schedule, others have client expectations. Choose based on your available time.',
   },
   {
     q: 'Do I need to be tech-savvy to do online side hustles?',
@@ -165,7 +165,7 @@ export default function OnlineSideHustlesPage() {
               >
                 <p className="font-display font-semibold text-brand-black group-hover:text-brand-black transition-colors flex items-center gap-2">
                   {link.label}
-                  <span className="text-gray-400 group-hover:translate-x-1 transition-transform">â</span>
+                  <span className="text-gray-400 group-hover:translate-x-1 transition-transform">→</span>
                 </p>
               </Link>
             ))}
