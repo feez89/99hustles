@@ -26,15 +26,15 @@ const QUESTIONS: Question[] = [
   {
     id: 1,
     text: 'How much time can you dedicate each week?',
-    options: ['Under 5 hours', '5â10 hours', '10â20 hours', '20+ hours'],
+    options: ['Under 5 hours', '5–10 hours', '10–20 hours', '20+ hours'],
   },
   {
     id: 2,
     text: "What's your starting budget?",
     options: [
-      '$0 â I want free to start',
+      '$0 – I want free to start',
       'Under $100',
-      '$100â$500',
+      '$100–$500',
       '$500+',
     ],
   },
@@ -73,8 +73,8 @@ const QUESTIONS: Question[] = [
     text: 'How soon do you need income?',
     options: [
       'This week',
-      'Within 1â3 months',
-      'In 3â6 months',
+      'Within 1–3 months',
+      'In 3–6 months',
       'Building long-term',
     ],
   },
@@ -113,7 +113,7 @@ const HUSTLES: Hustle[] = [
     bestFor: [
       'Products / selling things',
       '$500+',
-      'In 3â6 months',
+      'In 3–6 months',
       'Some business experience',
     ],
   },
@@ -124,7 +124,7 @@ const HUSTLES: Hustle[] = [
       'Design and sell custom products (t-shirts, mugs, hoodies) without inventory or upfront costs.',
     bestFor: [
       'Products / selling things',
-      '$0 â I want free to start',
+      '$0 – I want free to start',
       '100% online',
       'Skilled in a specific area',
     ],
@@ -137,7 +137,7 @@ const HUSTLES: Hustle[] = [
     bestFor: [
       'Services / helping people directly',
       'Some business experience',
-      'Within 1â3 months',
+      'Within 1–3 months',
       '100% online',
     ],
   },
@@ -150,7 +150,7 @@ const HUSTLES: Hustle[] = [
       'Content / creating media',
       'Building long-term',
       '100% online',
-      'Within 1â3 months',
+      'Within 1–3 months',
     ],
   },
   {
@@ -162,7 +162,7 @@ const HUSTLES: Hustle[] = [
       'Products / selling things',
       'Under $100',
       '100% online',
-      'Within 1â3 months',
+      'Within 1–3 months',
     ],
   },
   {
@@ -172,7 +172,7 @@ const HUSTLES: Hustle[] = [
       'Promote products and services online and earn commissions on every sale made through your links.',
     bestFor: [
       'Content / creating media',
-      '$0 â I want free to start',
+      '$0 – I want free to start',
       'Building long-term',
       '100% online',
     ],
@@ -223,13 +223,11 @@ export function QuizFlow() {
 
   const handleNext = () => {
     if (selectedAnswer === null) return
-
     const newAnswers = {
       ...answers,
       [currentStep as number]: selectedAnswer,
     }
     setAnswers(newAnswers)
-
     if ((currentStep as number) < QUESTIONS.length - 1) {
       setCurrentStep((currentStep as number) + 1)
       setSelectedAnswer(null)
@@ -268,7 +266,6 @@ export function QuizFlow() {
           return QUESTIONS[step]?.options[optionIdx] ?? ''
         }
       )
-
       const scored: ScoredHustle[] = HUSTLES.map((hustle) => {
         let score = 0
         answerTexts.forEach((answer) => {
@@ -278,7 +275,6 @@ export function QuizFlow() {
         })
         return { hustle, score }
       })
-
       scored.sort((a, b) => b.score - a.score)
       return scored.slice(0, 3)
     }
@@ -377,7 +373,7 @@ export function QuizFlow() {
               disabled={currentStep === 0}
               className="px-4 py-2.5 text-white/70 hover:text-white disabled:text-white/30 transition-colors text-sm font-medium"
             >
-              â Back
+              ← Back
             </button>
             <button
               onClick={handleNext}
@@ -388,8 +384,7 @@ export function QuizFlow() {
                   : 'bg-white text-brand-black hover:bg-white/90 active:scale-95'
               }`}
             >
-              Next
-              <ArrowRight size={16} />
+              Next <ArrowRight size={16} />
             </button>
           </div>
         </div>
@@ -480,8 +475,7 @@ export function QuizFlow() {
                     href="/hustles"
                     className="inline-flex items-center gap-2 text-white hover:text-white/80 font-semibold text-sm transition-colors"
                   >
-                    Explore This Hustle
-                    <ArrowRight size={16} />
+                    Explore This Hustle <ArrowRight size={16} />
                   </Link>
                 </div>
               )
@@ -496,7 +490,6 @@ export function QuizFlow() {
             <p className="text-white/70 mb-6">
               Get matched hustles + weekly tips delivered to your inbox
             </p>
-
             {!emailSubmitted ? (
               <form onSubmit={handleEmailSubmit} className="flex gap-3">
                 <input
@@ -505,6 +498,7 @@ export function QuizFlow() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
+                  aria-label="Email address"
                   className="flex-1 px-4 py-3 bg-brand-card border border-white/10 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-white/30 transition-colors"
                 />
                 <button
