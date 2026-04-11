@@ -1,4 +1,4 @@
-import { Episode } from 'A/types'
+import { Episode } from '@/types'
 
 export const episodes: Episode[] = [
   {
@@ -22,9 +22,9 @@ export const episodes: Episode[] = [
       bio: "Saria Parker is the founder and CEO of Sportsimist, a sports prediction and fan engagement platform. She built the company from the ground up with minimal outside funding and is passionate about creating tech products that bring sports communities together.",
     },
     highlights: [
-      ("I built the first version of Sportsimist with zero technical background. I just knew what the product needed to feel like for the user."',
-      ("Every no from an investor taught me something about my pitch. By the time I got a yes, I had the whole story locked."',
-      "(Sports fans are the most passionate audience in the world. If you can build something they love, they will market it for you."',
+      '"I built the first version of Sportsimist with zero technical background. I just knew what the product needed to feel like for the user."',
+      '"Every no from an investor taught me something about my pitch. By the time I got a yes, I had the whole story locked."',
+      '"Sports fans are the most passionate audience in the world. If you can build something they love, they will market it for you."',
     ],
     relatedHustleSlugs: ['tech-startup', 'social-media-agency'],
     duration: '52 min',
@@ -54,9 +54,9 @@ export const episodes: Episode[] = [
       bio: "Jake Tilk is a digital marketing strategist specializing in Instagram growth and monetization for small businesses and personal brands. He has helped clients in over a dozen industries grow engaged audiences and convert followers into paying customers.",
     },
     highlights: [
-      ("The algorithm does not care how good your content is. It cares how long people watch it. Engineer&or for watch time, not likes."),
-      ("I have helped accounts go from 200 followers to 50,000 in 90 days. The strategy is not magic — it is just consistency applied to the right content types."),
-      ("Most businesses are on Instagram to broadcast. The ones who win are on Instagram to have conversations."),
+      '"The algorithm does not care how good your content is. It cares how long people watch it. Engineer for watch time, not likes."',
+      '"I have helped accounts go from 200 followers to 50,000 in 90 days. The strategy is not magic — it is just consistency applied to the right content types."',
+      '"Most businesses are on Instagram to broadcast. The ones who win are on Instagram to have conversations."',
     ],
     relatedHustleSlugs: ['social-media-agency', 'digital-products', 'freelance-video-editing'],
     duration: '61 min',
@@ -88,7 +88,7 @@ export const episodes: Episode[] = [
     highlights: [
       '"I was fired from my job and had nothing. Real estate was the only asset class I found where a W-2 worker could build real wealth without a huge upfront advantage."',
       '"Cash flow is not a strategy. Cash flow is the whole point. If a property does not cash flow on day one, I walk away."',
-      *�$'By year three, I had enough passive income to cover my basic expenses. That was the day I realized I was already financially free — I just had not quit yet."',
+      '"By year three, I had enough passive income to cover my basic expenses. That was the day I realized I was already financially free — I just had not quit yet."',
     ],
     relatedHustleSlugs: ['real-estate-rentals', 'real-estate-development', 'mobile-home-investing'],
     duration: '68 min',
@@ -106,7 +106,7 @@ export const episodes: Episode[] = [
       "Peter Pru has done over $2.3 million in dropshipping revenue and he is one of the few people who will tell you what actually does and does not work. In this episode he exposes the outdated tactics that get beginners killed, reveals the branded dropshipping model that is working right now, and walks through the exact product research and ad testing framework that has driven his results.",
     keyTakeaways: [
       'Branded dropshipping is the only model that works long-term. Generic AliExpress stores are dead — you need a brand, a story, and a product that solves a real problem.',
-      'Tik tok organic is the free testing ground. Before spending a dollar on ads, validate your product with 10 organic TikTok videos.',
+      'TikTok organic is the free testing ground. Before spending a dollar on ads, validate your product with 10 organic TikTok videos.',
       'Product research is a full-time job at first. Peter spends more time finding the right product than running the actual store.',
       'Ad creative is the business. If your creatives are weak, no targeting in the world will save you. Invest in UGC and native-style ads.',
       'The backend makes or breaks your margin. Email marketing, upsells, and bundles can add 20-40% to revenue without touching ad spend.',
@@ -135,10 +135,10 @@ export const episodes: Episode[] = [
     title: "Kristin Ostrander Invested $50 in Her First Book and Turned It Into a $5 Million Amazon Empire",
     episodeNumber: 36,
     summary:
-      "Kristin Ostrander started selling on Amazon with a single book she bought for $50 at a thrift store. Today her Amazon business has generated over $5 million and she has taught thousands of people her wholesale bundling strategy. This episode breaks down her wholesale bundle strategy, how she scaled, and the one strategy most Amazon sellers overlook that completely changed her business trajectory.",
+      "Kristin Ostrander started selling on Amazon with a single book she bought for $50 at a thrift store. Today her Amazon business has generated over $5 million and she has taught thousands of people her wholesale bundling strategy. This episode breaks down exactly how she found her first winning product, how she scaled, and the one strategy most Amazon sellers overlook that completely changed her business trajectory.",
     keyTakeaways: [
       'The wholesale bundle strategy beats private label for beginners. Bundling existing branded products gives you proven demand without product development risk.',
-      'Sourcing relationships are a moat. Kristin built direct relationships with distributors —"once you have those contacts, competitors cannot easily replicate your supply chain.',
+      'Sourcing relationships are a moat. Kristin built direct relationships with distributors — once you have those contacts, competitors cannot easily replicate your supply chain.',
       'Amazon is a search engine. Your listing title, bullet points, and keywords are your SEO — treat them with the same rigor you would a Google campaign.',
       'Start with one product and nail it. Too many sellers spread across 50 products and master none. Depth beats breadth until you understand the platform.',
       'Profit margins, not revenue, is the real scorecard. A $100K/month Amazon seller with 8% margin earns less than a $30K/month seller with 30% margin.',
@@ -164,7 +164,7 @@ export const episodes: Episode[] = [
   {
     id: '6',
     slug: 'bryan-sanders-catering-business',
-title: "How Bryan Sanders Turned a Personal Tragedy Into a Thriving Catering Business",
+    title: "How Bryan Sanders Turned a Personal Tragedy Into a Thriving Catering Business",
     episodeNumber: 35,
     summary:
       "Bryan Sanders did not plan to start a catering business. A personal tragedy forced him to reimagine his life, and cooking — something he had always done for family — became the foundation of a new chapter. In this episode he shares how he went from zero catering experience to running a legitimate business serving events and corporate clients, and the systems that turned a passion into a profitable operation.",
@@ -173,7 +173,7 @@ title: "How Bryan Sanders Turned a Personal Tragedy Into a Thriving Catering Bus
       'Events are the fastest path to word-of-mouth. One great performance in front of 100 people generates more referrals than any marketing campaign.',
       'Pricing for profitability is a skill. Most new caterers underprice because they forget to include labor, overhead, and their own time. Know your true cost per head.',
       'Corporate accounts are the stable income base. Event catering is feast-or-famine; corporate lunch contracts provide predictable monthly revenue.',
-      'Health permits and licensing protect everything. Get legal early — ane complaint without proper permits can shut down the entire operation.',
+      'Health permits and licensing protect everything. Get legal early — one complaint without proper permits can shut down the entire operation.',
     ],
     guest: {
       name: 'Bryan Sanders',
@@ -192,14 +192,15 @@ title: "How Bryan Sanders Turned a Personal Tragedy Into a Thriving Catering Bus
     youtubeId: 'O6Cfobc6v54',
     featured: false,
     category: 'Services & Consulting',
-  },�
+  },
+  {
     id: '7',
     slug: 'd1-basketball-to-real-estate',
     title: "From D1 Basketball Player to Multi-Million Dollar Real Estate Developer — The Full Story",
     episodeNumber: 34,
     summary:
       "He played Division I basketball and expected a career in sports. When that door closed, he found a new arena: real estate development. In this episode, he shares how the discipline and team mentality from athletics translated directly into building a multi-million dollar development business, how he raised his first capital, and why most people overthink the barriers to entering real estate development.",
-     keyTakeaways: [
+    keyTakeaways: [
       'Transferable skills are underrated. The discipline, coachability, and competitive drive from athletics directly accelerated his real estate career.',
       'Development starts with relationships. His first deal came from networking — not from a real estate course or a late-night infomercial.',
       'Capital raising is a sales skill. Learning to pitch investors was the single highest-leverage thing he did in year one of his business.',
@@ -223,13 +224,14 @@ title: "How Bryan Sanders Turned a Personal Tragedy Into a Thriving Catering Bus
     youtubeId: 'OIaS_Fn2G-M',
     featured: false,
     category: 'Real Estate & Investing',
-  },�
+  },
+  {
     id: '8',
     slug: 'rachel-hernandez-mobile-homes',
     title: "From Landlord to $10K a Month: How Rachel Hernandez Discovered the Mobile Home Investing Blueprint",
     episodeNumber: 33,
     summary:
-      "Rachel Hernandez started in traditional real estate but found the returns thin !and the competition fierce. Mobile homes changed everything. Less competition, lower acquisition costs, and tenants who could not easily move their homes made it a cash flow machine unlike anything she had experienced. Rachel breaks down how she built a portfolio generating $10K+ per month with a strategy most investors completely overlook.",
+      "Rachel Hernandez started in traditional real estate but found the returns thin and the competition fierce. Mobile homes changed everything. Less competition, lower acquisition costs, and tenants who could not easily move their homes made it a cash flow machine unlike anything she had experienced. Rachel breaks down how she built a portfolio generating $10K+ per month with a strategy most investors completely overlook.",
     keyTakeaways: [
       'Mobile homes have a moat built in. Tenants own the home but rent the land — once they set up, they rarely move. That creates tenancy stability traditional landlords dream about.',
       'Entry costs are dramatically lower than single-family. A mobile home that generates $500/month cash flow might cost $15,000-$30,000, not $150,000.',
@@ -264,7 +266,7 @@ title: "How Bryan Sanders Turned a Personal Tragedy Into a Thriving Catering Bus
       "She was a single mother with a tax refund and a dream. Most people would have spent that money on bills or a vacation. She bought her first rental property. Eight years later, her portfolio is worth $2.2 million and generates enough passive income that she no longer works for anyone else. This episode is the full story of how she built it, the mistakes she made, and the strategy that changed everything.",
     keyTakeaways: [
       'The first property is the hardest — and the most important. Every subsequent deal builds on the confidence, knowledge, and equity from that first one.',
-      'House hacking turned her primary residence into a money-making asset. Renting out a room or Unit covered her mortgage from day one.',
+      'House hacking turned her primary residence into a money-making asset. Renting out a room or unit covered her mortgage from day one.',
       'She reinvested every dollar for the first four years. No upgrades, no lifestyle inflation — just capital recycled back into the next property.',
       'Relationships with local real estate agents led to off-market deals that would never appear on the MLS.',
       'Being a single mom was not a disadvantage — it was the ultimate motivation. She had to succeed for her family, and that clarity eliminated fear.',
@@ -287,13 +289,13 @@ title: "How Bryan Sanders Turned a Personal Tragedy Into a Thriving Catering Bus
     featured: true,
     category: 'Real Estate & Investing',
   },
-{
+  {
     id: '10',
     slug: 'bob-sharpe-youtube-income',
-    title: "Earning $20,000 a Month on YouTube with Bob Sharpe— The Creator Economy Breakdown",
+    title: "Earning $20,000 a Month on YouTube with Bob Sharpe — The Creator Economy Breakdown",
     episodeNumber: 31,
     summary:
-      "Bob Sharpe turned YouTube into a $20,000/month income stream � � and he is not a celebrity, a comedian, or a tech influencer. He is a regular person who figured out the system and executed it consistently. In this episode he breaks down how he grew his channel, diversified revenue well beyond AdSense, and built a business model that would survive even if YouTube changed the algorithm overnight.",
+      "Bob Sharpe turned YouTube into a $20,000/month income stream — and he is not a celebrity, a comedian, or a tech influencer. He is a regular person who figured out the system and executed it consistently. In this episode he breaks down how he grew his channel, diversified revenue well beyond AdSense, and built a business model that would survive even if YouTube changed the algorithm overnight.",
     keyTakeaways: [
       'AdSense is a starting point, not the destination. Bob earns the majority of his income from course sales, sponsorships, and affiliate deals — not ad revenue.',
       'Niche authority compounds faster than general fame. Being the definitive source on a specific topic attracts a loyal audience that is far more monetizable than a general audience.',
@@ -354,15 +356,15 @@ title: "How Bryan Sanders Turned a Personal Tragedy Into a Thriving Catering Bus
   {
     id: '12',
     slug: 'darrius-gates-trucking-empire',
-    title: "How Darrius Gates Built a 7-Figure Trucking Empire � � From One Truck to a Full Fleet",
+    title: "How Darrius Gates Built a 7-Figure Trucking Empire — From One Truck to a Full Fleet",
     episodeNumber: 29,
     summary:
-"Darrius Gates started with one truck, a CDL, and no experience running a business. Within five years he built a seven-figure trucking operation. In this episode he shares the full story: how he got his first contract, how he financed additional equipment, how he handles driver management, and the industry secrets most trucking entrepreneurs learn the hard way.",
+      "Darrius Gates started with one truck, a CDL, and no experience running a business. Within five years he built a seven-figure trucking operation. In this episode he shares the full story: how he got his first contract, how he financed additional equipment, how he handles driver management, and the industry secrets most trucking entrepreneurs learn the hard way.",
     keyTakeaways: [
       'Owner-operators win by getting off the truck fast. Driving yourself earns $80K-$120K. Managing a fleet earns multiples of that — but only if you build the systems to step out of the driver seat.',
       'Freight brokers are the fastest path to consistent loads. Direct shipper contracts are the ultimate goal, but broker relationships get trucks loaded while you build those direct relationships.',
       'Equipment maintenance is non-negotiable. One breakdown on a time-sensitive load can cost you a contract worth 10x the repair bill.',
-      'Business credit is the growth engine. Darrius financed his second truck through his business entity — and it changed his trajectory.',
+      'Business credit is the growth engine. Darrius financed his second truck through his business entity — not personal credit — and it changed his trajectory.',
       'FMCSA compliance protects everything. One serious violation can result in an out-of-service order that shuts down the entire operation.',
     ],
     guest: {
@@ -373,7 +375,7 @@ title: "How Bryan Sanders Turned a Personal Tragedy Into a Thriving Catering Bus
     },
     highlights: [
       '"I drove that first truck for 18 months to learn the business from the inside. Then I hired a driver and never looked back."',
-      '"Trucking is one of the most unsexy businesses in America � � and one of the most profitable. That is not a coincidence."',
+      '"Trucking is one of the most unsexy businesses in America — and one of the most profitable. That is not a coincidence."',
       '"I went from $0 to $1 million in revenue in four years. The playbook exists. Most people just do not know about it because trucking entrepreneurs do not post on Instagram."',
     ],
     relatedHustleSlugs: ['trucking-business'],
@@ -391,11 +393,11 @@ title: "How Bryan Sanders Turned a Personal Tragedy Into a Thriving Catering Bus
     summary:
       "Brianna Wise played college basketball and had no plan B. When the season ended, she leaned into her other passion: fashion and personal styling. What began as helping friends put together outfits evolved into a legitimate styling business serving clients from executives to brides. In this episode she shares how she priced her services, built a client base from zero, and turned a creative skill into a full-time income.",
     keyTakeaways: [
-      'Your personal brand IS your portfolio. Brianna built her styling reputation on social media before she ever had a paying client — her resume is her resume.',
+      'Your personal brand IS your portfolio. Brianna built her styling reputation on social media before she ever had a paying client — her own feed was her resume.',
       'Niche down to grow faster. She chose to specialize in professional wardrobe consulting for executives, which allowed her to charge premium rates and build word-of-mouth in a concentrated community.',
       'Retainer clients are the holy grail of styling. Monthly wardrobe management is more valuable than one-time shopping trips — recurring clients reduce the constant need for new business.',
-      'Partnerships with photographers and event planners are a referral pipeline. Creative professionals whn���[️ overlap with stylists send clients continuously once the relationship is established.',
-      'Undercharging is the most common error. Brianna doubled her rates and got more clients — not fewer. Premium pricing signals premium quality.',
+      'Partnerships with photographers and event planners are a referral pipeline. Creative professionals who overlap with stylists send clients continuously once the relationship is established.',
+      'Undercharging is the most common mistake. Brianna doubled her rates and got more clients — not fewer. Premium pricing signals premium quality.',
     ],
     guest: {
       name: 'Brianna Wise',
@@ -437,7 +439,7 @@ title: "How Bryan Sanders Turned a Personal Tragedy Into a Thriving Catering Bus
     },
     highlights: [
       '"My professor gave me a C on my business plan. Amazon gave me seven figures. I know which grade matters more."',
-      '"I was 23 years old with no money and no connections. The only advantage I had was I was willing to work harder !and longer than everyone around me."',
+      '"I was 23 years old with no money and no connections. The only advantage I had was I was willing to work harder and longer than everyone around me."',
       '"Every dollar I made in my first year went back into inventory. That discipline is the reason I have a real business today and not just a side hustle."',
     ],
     relatedHustleSlugs: ['amazon-fba', 'dropshipping'],
@@ -465,7 +467,7 @@ title: "How Bryan Sanders Turned a Personal Tragedy Into a Thriving Catering Bus
       name: 'Keisha Williams',
       title: 'Virtual Fitness Coach',
       company: 'Fit by Keisha',
-      bio: "Keisha Williams is a certified personal trainer whn���[️ pivoted to virtual coaching during the pandemic and built a thriving online fitness business. She now runs group programs and digital courses that reach clients across the country without a physical gym.",
+      bio: "Keisha Williams is a certified personal trainer who pivoted to virtual coaching during the pandemic and built a thriving online fitness business. She now runs group programs and digital courses that reach clients across the country without a physical gym.",
     },
     highlights: [
       '"COVID shut down my gym and I thought my career was over. It turned out to be the best thing that ever happened to my business."',
