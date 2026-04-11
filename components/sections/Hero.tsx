@@ -8,7 +8,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:50px_50px] pointer-events-none" />
 
       {/* Gold radial gradient accent */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-20 pointer-events-none"
+      <div
+        className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-20 pointer-events-none"
         style={{ background: 'radial-gradient(circle, #C9A84C 0%, transparent 70%)' }}
       />
 
@@ -25,14 +26,14 @@ export default function Hero() {
 
         {/* Subheadline */}
         <p className="text-white/70 text-center text-lg max-w-2xl mx-auto mb-12 font-sans">
-          Explore real income streams broken down with startup costs, time to first dollar, income potential, and honest operator playbooks.
+          Explore real income streams broken down with startup costs, time to first dollar,
+          income potential, and honest operator playbooks.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
           <Link href="/hustles" className="btn-primary">
-            Explore Hustles
-            <ArrowRight className="w-5 h-5" />
+            Explore Hustles <ArrowRight className="w-5 h-5" />
           </Link>
           <Link href="/quiz" className="btn-secondary">
             Take the Hustle Quiz
@@ -41,7 +42,7 @@ export default function Hero() {
 
         {/* Trust Strip */}
         <div className="text-center text-white/50 text-sm mb-16 font-sans">
-          <p>99+ hustles documented Â· Real episodes with real numbers Â· Built for operators, not gurus</p>
+          <p>99+ hustles documented · Real episodes with real numbers · Built for operators, not gurus</p>
         </div>
 
         {/* Stats Bar */}
