@@ -2,121 +2,114 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Menu, X, Zap } from 'lucide-react'
-
-const navLinks = [
-  { label: 'Hustles', href: '/hustles' },
-  { label: 'Episodes', href: '/episodes' },
-  { label: 'About', href: '/about' },
-]
+import { usePathname } from 'next/navigation'
+import { Menu, X } from 'lucide-react'
+import { NAV_LINKS } from '@/lib/constants'
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
+      setScrolled(window.scrollY > 0)
     }
-    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    setIsOpen(false)
+  }, [pathname])
+
+  const isActive = (href: string) => pathname === href
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-brand-black/95 backdrop-blur-md border-b border-white/10 shadow-lg'
-          : 'bg-brand-black'
+      className={`fixed top-0 left-0 right-0 z-50 bg-brand-black/95 backdrop-blur-sm transition-all duration-300 ${
+        scrolled ? 'border-b border-white/10' : ''
       }`}
     >
       <div className="container-main">
-        <div className="flex items-center justify-between h-16 md:h-18">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group" aria-label="99 Hustles Home">
-            <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center group-hover:bg-white-dark transition-colors">
-              <Zap className="w-4 h-4 text-brand-black" strokeWidth={2.5} />
+          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
+            <div className="flex items-center justify-center w-8 h-8 bg-white/10 rounded border border-white/20">
+              <span className="text-sm font-bold font-display text-white">99</span>
             </div>
-            <span className="text-white font-display font-700 text-lg tracking-tight">
-              99 <span className="text-white">Hustles</span>
+            <span className="text-base md:text-lg font-bold font-display text-white tracking-tight">
+              HUSTLES
             </span>
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
-            {navLinks.map((link) => (
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-8">
+            {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white/70 hover:text-white text-sm font-medium transition-colors duration-200 relative group"
+                className={`text-sm font-medium transition-colors ${
+                  isActive(link.href)
+                    ? 'text-white'
+                    : 'text-white/70 hover:text-white'
+                }`}
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300" />
               </Link>
             ))}
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:block flex-shrink-0">
             <Link
-              href="/newsletter"
-              className="text-white/70 hover:text-white text-sm font-medium transition-colors"
+              href="/quiz"
+              className="inline-block px-5 py-2.5 bg-white text-brand-black font-semibold text-sm rounded transition-all duration-200 hover:bg-white/90 active:scale-95"
             >
-              Free Guide
-            </Link>
-            <Link
-              href="/newsletter"
-              className="btn-primary text-xs px-4 py-2.5"
-            >
-              Join the List
+              Find Your Hustle â
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Toggle */}
           <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
-            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-            aria-expanded={isMenuOpen}
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden p-2 text-white hover:bg-white/10 rounded transition-colors"
+            aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
-      </div>
 
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-brand-black border-t border-white/10">
-          <nav className="container-main py-4 flex flex-col gap-1" aria-label="Mobile navigation">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsMenuOpen(false)}
-                className="text-white/80 hover:text-white text-base font-medium py-3 px-2 rounded-lg hover:bg-white/5 transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <div className="pt-4 mt-2 border-t border-white/10 flex flex-col gap-3">
-              <Link
-                href="/newsletter"
-                onClick={() => setIsMenuOpen(false)}
-                className="btn-primary w-full text-center justify-center"
-              >
-                Join the Free Newsletter
-              </Link>
-              <Link
-                href="/contact"
-                onClick={() => setIsMenuOpen(false)}
-                className="text-white/60 hover:text-white text-sm text-center transition-colors"
-              >
-                Partner with us
-              </Link>
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <nav className="md:hidden border-t border-white/10 bg-brand-black/50 backdrop-blur-sm animate-in slide-in-from-top-2 duration-200">
+            <div className="py-4 space-y-1">
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`block px-4 py-3 text-base font-medium transition-colors ${
+                    isActive(link.href)
+                      ? 'text-white bg-white/10'
+                      : 'text-white/70 hover:text-white hover:bg-white/5'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <div className="px-4 py-3 border-t border-white/10">
+                <Link
+                  href="/quiz"
+                  className="block w-full text-center px-4 py-2.5 bg-white text-brand-black font-semibold text-sm rounded transition-all duration-200 hover:bg-white/90"
+                >
+                  Find Your Hustle â
+                </Link>
+              </div>
             </div>
           </nav>
-        </div>
-      )}
+        )}
+      </div>
     </header>
   )
 }
