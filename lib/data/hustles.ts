@@ -1231,7 +1231,7 @@ export const hustles: Hustle[] = [
         cost: 'Free / $5–$15/month',
         url: 'https://framer.com',
       },
-  2   {
+      {
         name: 'Contra',
         description: 'Commission-free freelance platform',
         cost: 'Free',
@@ -1869,7 +1869,7 @@ export const hustles: Hustle[] = [
         cost: '$69–$199/month',
         url: 'https://kajabi.com',
       },
- 2    {
+      {
         name: 'Loom',
         description: 'Record screen-share and talking-head lessons quickly',
         cost: 'Free / $12.50/month',
