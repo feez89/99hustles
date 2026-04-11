@@ -10,10 +10,10 @@ interface Hustle {
   title: string
   description: string
   category: string
-  difficulty: 'Beginner' | 'Intermediate' | 'Advanced'
+  difficulty: 'Easy' | 'Medium' | 'Hard'
   startupCost: string
-  timeToFirstDollar: string
-  monthlyIncome: string
+  timeToFirstIncome: string
+  revenuePotential: string
   icon?: string
   featured?: boolean
 }
@@ -67,14 +67,14 @@ export default function FilteredHustles({ hustles: initialHustles }: FilteredHus
         results = [...results].reverse() // Assumes initial order is oldest first
         break
       case 'difficulty-asc': {
-        const difficultyOrder = { Beginner: 1, Intermediate: 2, Advanced: 3 }
+        const difficultyOrder = { Easy: 1, Medium: 2, Hard: 3 }
         results = [...results].sort(
           (a, b) => difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty]
         )
         break
       }
       case 'difficulty-desc': {
-        const difficultyOrder = { Beginner: 1, Intermediate: 2, Advanced: 3 }
+        const difficultyOrder = { Easy: 1, Medium: 2, Hard: 3 }
         results = [...results].sort(
           (a, b) => difficultyOrder[b.difficulty] - difficultyOrder[a.difficulty]
         )
