@@ -89,7 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const hustles = getAllHustles()
   const hustlePages: MetadataRoute.Sitemap = hustles.map((hustle) => ({
     url: `${BASE_URL}/hustles/${hustle.slug}`,
-    lastModified: new Date(hustle.updatedAt || hustle.publishedAt),
+    lastModified: new Date(hustle.publishDate),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }))
@@ -97,7 +97,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Dynamic episode pages
   const episodePages: MetadataRoute.Sitemap = episodes.map((episode) => ({
     url: `${BASE_URL}/episodes/${episode.slug}`,
-    lastModified: new Date(episode.publishedAt),
+    lastModified: new Date(episode.publishDate),
     changeFrequency: 'never' as const,
     priority: 0.7,
   }))
