@@ -1,3 +1,8 @@
+
+
+export function getAllHustles(): Hustle[] {
+  return hustles
+}
 import { Hustle } from '@/types'
 
 export const hustles: Hustle[] = [
