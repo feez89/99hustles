@@ -140,6 +140,7 @@ export default function EmailCaptureSection({
               <div className="flex-1">
                 <input
                   type="email"
+                  aria-label="Email address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder={placeholder}
@@ -169,7 +170,7 @@ export default function EmailCaptureSection({
 
           {!submitted && (
             <p className={cn('text-xs mt-4', isDark ? 'text-white/30' : 'text-gray-400')}>
-              Free forever. No spam. Unsubscribe anytime.
+              Free forever No spam. Unsubscribe anytime.
             </p>
           )}
         </div>
